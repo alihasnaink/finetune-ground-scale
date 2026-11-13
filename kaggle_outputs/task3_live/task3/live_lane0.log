@@ -1,0 +1,129 @@
+[05:13:10] lane 0/2: 25 questions, 125 calls to run (0 reused)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[05:14:10] model loaded in 45s (commit None), eos [151643, 151645]
+[05:14:30] [q00 parallel_0]  414/1024 tok 20.3s 20.4 tok/s | boxed='14' gold='14' | 1/125 calls, eta 42 min
+[05:14:45] [q00 parallel_1]  340/1024 tok 15.4s 22.0 tok/s | boxed='14' gold='14' | 2/125 calls, eta 37 min
+[05:15:05] [q00 parallel_2]  416/1024 tok 19.5s 21.3 tok/s | boxed='14' gold='14' | 3/125 calls, eta 37 min
+[05:15:22] [q00 single    ]  368/3072 tok 16.9s 21.8 tok/s | boxed='14' gold='14' | 4/125 calls, eta 36 min
+[05:15:39] [q00 refine    ]  375/2048 tok 17.5s 21.5 tok/s | boxed='14' gold='14' | 5/125 calls, eta 36 min
+[05:16:26] [q02 parallel_0] 1017/1024 tok 46.2s 22.0 tok/s | boxed='216' gold='216' | 6/125 calls, eta 45 min
+[05:17:10] [q02 parallel_1]  981/1024 tok 44.8s 21.9 tok/s | boxed='120' gold='216' | 7/125 calls, eta 51 min
+[05:17:58] [q02 parallel_2] 1024/1024 tok TRUNC 47.1s 21.7 tok/s | boxed=None gold='216' | 8/125 calls, eta 56 min
+[05:18:52] [q02 single    ] 1202/3072 tok 54.8s 21.9 tok/s | boxed='384' gold='216' | 9/125 calls, eta 61 min
+[05:19:43] [q02 refine    ] 1007/2048 tok 50.3s 20.0 tok/s | boxed='216' gold='216' | 10/125 calls, eta 64 min
+[05:20:28] [q04 parallel_0]  982/1024 tok 45.5s 21.6 tok/s | boxed='154' gold='154' | 11/125 calls, eta 65 min
+[05:21:10] [q04 parallel_1]  904/1024 tok 42.0s 21.5 tok/s | boxed='154' gold='154' | 12/125 calls, eta 66 min
+[05:21:50] [q04 parallel_2]  857/1024 tok 39.6s 21.6 tok/s | boxed='45' gold='154' | 13/125 calls, eta 66 min
+[05:22:31] [q04 single    ]  888/3072 tok 40.8s 21.8 tok/s | boxed='154' gold='154' | 14/125 calls, eta 66 min
+[05:23:19] [q04 refine    ]  970/2048 tok 48.5s 20.0 tok/s | boxed='154' gold='154' | 15/125 calls, eta 67 min
+[05:23:59] [q06 parallel_0]  877/1024 tok 40.3s 21.8 tok/s | boxed='6' gold='6' | 16/125 calls, eta 67 min
+[05:24:45] [q06 parallel_1]  989/1024 tok 45.5s 21.7 tok/s | boxed='6' gold='6' | 17/125 calls, eta 67 min
+[05:25:32] [q06 parallel_2] 1024/1024 tok TRUNC 47.2s 21.7 tok/s | boxed=None gold='6' | 18/125 calls, eta 68 min
+[05:26:29] [q06 single    ] 1221/3072 tok 57.2s 21.4 tok/s | boxed='6' gold='6' | 19/125 calls, eta 69 min
+[05:27:01] [q06 refine    ]  651/2048 tok 31.5s 20.7 tok/s | boxed='6' gold='6' | 20/125 calls, eta 67 min
+[05:27:16] [q08 parallel_0]  331/1024 tok 15.4s 21.5 tok/s | boxed='-9' gold='-9' | 21/125 calls, eta 65 min
+[05:27:32] [q08 parallel_1]  349/1024 tok 16.2s 21.5 tok/s | boxed='-9' gold='-9' | 22/125 calls, eta 63 min
+[05:27:47] [q08 parallel_2]  322/1024 tok 14.9s 21.6 tok/s | boxed='-9' gold='-9' | 23/125 calls, eta 60 min
+[05:28:03] [q08 single    ]  342/3072 tok 15.7s 21.7 tok/s | boxed='-9' gold='-9' | 24/125 calls, eta 58 min
+[05:28:20] [q08 refine    ]  354/2048 tok 16.8s 21.1 tok/s | boxed='-9' gold='-9' | 25/125 calls, eta 57 min
+[05:28:45] [q10 parallel_0]  544/1024 tok 24.9s 21.8 tok/s | boxed='-59' gold='59' | 26/125 calls, eta 56 min
+[05:29:07] [q10 parallel_1]  487/1024 tok 22.6s 21.5 tok/s | boxed='-59' gold='59' | 27/125 calls, eta 54 min
+[05:29:33] [q10 parallel_2]  552/1024 tok 25.5s 21.7 tok/s | boxed='-59' gold='59' | 28/125 calls, eta 53 min
+[05:29:55] [q10 single    ]  481/3072 tok 22.2s 21.7 tok/s | boxed='-59' gold='59' | 29/125 calls, eta 52 min
+[05:30:17] [q10 refine    ]  468/2048 tok 22.0s 21.3 tok/s | boxed='-59' gold='59' | 30/125 calls, eta 51 min
+[05:30:31] [q12 parallel_0]  316/1024 tok 14.1s 22.4 tok/s | boxed='56' gold='56' | 31/125 calls, eta 50 min
+[05:30:46] [q12 parallel_1]  325/1024 tok 14.6s 22.2 tok/s | boxed='56' gold='56' | 32/125 calls, eta 48 min
+[05:30:58] [q12 parallel_2]  266/1024 tok 12.0s 22.1 tok/s | boxed='56' gold='56' | 33/125 calls, eta 47 min
+[05:31:09] [q12 single    ]  243/3072 tok 10.8s 22.6 tok/s | boxed='56' gold='56' | 34/125 calls, eta 45 min
+[05:31:23] [q12 refine    ]  304/2048 tok 14.0s 21.7 tok/s | boxed='56' gold='56' | 35/125 calls, eta 44 min
+[05:31:46] [q14 parallel_0]  501/1024 tok 23.0s 21.8 tok/s | boxed='\\sqrt{58}' gold='7' | 36/125 calls, eta 44 min
+[05:32:08] [q14 parallel_1]  497/1024 tok 22.9s 21.7 tok/s | boxed='7' gold='7' | 37/125 calls, eta 43 min
+[05:32:30] [q14 parallel_2]  459/1024 tok 21.2s 21.7 tok/s | boxed='3' gold='7' | 38/125 calls, eta 42 min
+[05:32:49] [q14 single    ]  440/3072 tok 19.7s 22.3 tok/s | boxed='7' gold='7' | 39/125 calls, eta 41 min
+[05:33:12] [q14 refine    ]  471/2048 tok 22.4s 21.0 tok/s | boxed='\\sqrt{58}' gold='7' | 40/125 calls, eta 40 min
+[05:33:56] [q16 parallel_0]  951/1024 tok 43.7s 21.8 tok/s | boxed='58332.8' gold='\\frac{266664}{5}' | 41/125 calls, eta 40 min
+[05:34:23] [q16 parallel_1]  593/1024 tok 27.1s 21.9 tok/s | boxed='2222.2' gold='\\frac{266664}{5}' | 42/125 calls, eta 40 min
+[05:35:05] [q16 parallel_2]  936/1024 tok 42.8s 21.9 tok/s | boxed='53131.38333333333' gold='\\frac{266664}{5}' | 43/125 calls, eta 40 min
+[05:35:39] [q16 single    ]  738/3072 tok 33.3s 22.2 tok/s | boxed='22222' gold='\\frac{266664}{5}' | 44/125 calls, eta 40 min
+[05:36:10] [q16 refine    ]  654/2048 tok 31.7s 20.6 tok/s | boxed='58332.8' gold='\\frac{266664}{5}' | 45/125 calls, eta 39 min
+[05:36:58] [q18 parallel_0] 1024/1024 tok TRUNC 47.2s 21.7 tok/s | boxed=None gold='0' | 46/125 calls, eta 39 min
+[05:37:45] [q18 parallel_1] 1024/1024 tok TRUNC 47.3s 21.7 tok/s | boxed=None gold='0' | 47/125 calls, eta 39 min
+[05:38:32] [q18 parallel_2] 1024/1024 tok TRUNC 46.9s 21.9 tok/s | boxed=None gold='0' | 48/125 calls, eta 39 min
+[05:41:10] [q18 single    ] 3072/3072 tok TRUNC 158.4s 19.4 tok/s | boxed=None gold='0' | 49/125 calls, eta 42 min
+[05:42:09] [q18 refine    ] 1149/2048 tok 58.8s 19.5 tok/s | boxed='302562' gold='0' | 50/125 calls, eta 42 min
+[05:42:32] [q20 parallel_0]  491/1024 tok 22.6s 21.7 tok/s | boxed='0 \\text{ and } 4' gold='1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3' | 51/125 calls, eta 41 min
+[05:43:10] [q20 parallel_1]  835/1024 tok 38.1s 21.9 tok/s | boxed='2 + \\sqrt{3}, 2 - \\sqrt{3}' gold='1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3' | 52/125 calls, eta 41 min
+[05:43:46] [q20 parallel_2]  778/1024 tok 36.0s 21.6 tok/s | boxed='0' gold='1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3' | 53/125 calls, eta 40 min
+[05:44:55] [q20 single    ] 1503/3072 tok 69.7s 21.6 tok/s | boxed='1' gold='1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3' | 54/125 calls, eta 40 min
+[05:45:20] [q20 refine    ]  534/2048 tok 25.0s 21.3 tok/s | boxed='0 \\text{ and } 4' gold='1+\\sqrt 2,\\ 1-\\sqrt 2,\\ 2+\\sqrt 3,\\ 2-\\sqrt 3' | 55/125 calls, eta 40 min
+[05:45:50] [q22 parallel_0]  658/1024 tok 29.7s 22.1 tok/s | boxed='-2, 1' gold='1' | 56/125 calls, eta 39 min
+[05:46:18] [q22 parallel_1]  618/1024 tok 28.2s 21.9 tok/s | boxed='-2, 1' gold='1' | 57/125 calls, eta 38 min
+[05:46:48] [q22 parallel_2]  658/1024 tok 29.8s 22.1 tok/s | boxed='-2, 1' gold='1' | 58/125 calls, eta 38 min
+[05:47:15] [q22 single    ]  578/3072 tok 27.0s 21.4 tok/s | boxed='-2, 1' gold='1' | 59/125 calls, eta 37 min
+[05:47:47] [q22 refine    ]  669/2048 tok 31.3s 21.4 tok/s | boxed='-2, 1' gold='1' | 60/125 calls, eta 36 min
+[05:48:03] [q24 parallel_0]  361/1024 tok 16.4s 22.0 tok/s | boxed='(4, \\pi)' gold='(4,\\pi)' | 61/125 calls, eta 36 min
+[05:48:19] [q24 parallel_1]  349/1024 tok 15.7s 22.3 tok/s | boxed='(4, \\pi)' gold='(4,\\pi)' | 62/125 calls, eta 35 min
+[05:48:35] [q24 parallel_2]  376/1024 tok 16.8s 22.4 tok/s | boxed='(4, \\pi)' gold='(4,\\pi)' | 63/125 calls, eta 34 min
+[05:48:54] [q24 single    ]  403/3072 tok 18.4s 21.9 tok/s | boxed='(4, \\pi)' gold='(4,\\pi)' | 64/125 calls, eta 33 min
+[05:49:08] [q24 refine    ]  297/2048 tok 13.8s 21.6 tok/s | boxed='(4, \\pi)' gold='(4,\\pi)' | 65/125 calls, eta 32 min
+[05:49:24] [q26 parallel_0]  362/1024 tok 16.5s 21.9 tok/s | boxed='14' gold='14' | 66/125 calls, eta 32 min
+[05:49:42] [q26 parallel_1]  397/1024 tok 18.0s 22.1 tok/s | boxed='1' gold='14' | 67/125 calls, eta 31 min
+[05:50:03] [q26 parallel_2]  454/1024 tok 20.5s 22.2 tok/s | boxed='14' gold='14' | 68/125 calls, eta 30 min
+[05:50:20] [q26 single    ]  381/3072 tok 17.1s 22.3 tok/s | boxed='14' gold='14' | 69/125 calls, eta 29 min
+[05:50:35] [q26 refine    ]  345/2048 tok 15.6s 22.1 tok/s | boxed='14' gold='14' | 70/125 calls, eta 29 min
+[05:51:21] [q28 parallel_0] 1024/1024 tok TRUNC 46.2s 22.2 tok/s | boxed=None gold='18' | 71/125 calls, eta 28 min
+[05:52:08] [q28 parallel_1] 1024/1024 tok TRUNC 46.2s 22.2 tok/s | boxed=None gold='18' | 72/125 calls, eta 28 min
+[05:52:54] [q28 parallel_2] 1024/1024 tok TRUNC 46.3s 22.1 tok/s | boxed=None gold='18' | 73/125 calls, eta 28 min
+[05:55:33] [q28 single    ] 3072/3072 tok TRUNC 158.7s 19.4 tok/s | boxed=None gold='18' | 74/125 calls, eta 29 min
+[05:56:22] [q28 refine    ]  977/2048 tok 49.6s 19.7 tok/s | boxed='\\frac{49}{2}' gold='18' | 75/125 calls, eta 28 min
+[05:56:32] [q30 parallel_0]  231/1024 tok 10.2s 22.6 tok/s | boxed='11' gold='11' | 76/125 calls, eta 27 min
+[05:56:40] [q30 parallel_1]  174/1024 tok 7.8s 22.3 tok/s | boxed='11' gold='11' | 77/125 calls, eta 26 min
+[05:56:51] [q30 parallel_2]  237/1024 tok 10.5s 22.6 tok/s | boxed='11' gold='11' | 78/125 calls, eta 26 min
+[05:57:02] [q30 single    ]  244/3072 tok 11.0s 22.1 tok/s | boxed='11' gold='11' | 79/125 calls, eta 25 min
+[05:57:11] [q30 refine    ]  195/2048 tok 9.1s 21.5 tok/s | boxed='11' gold='11' | 80/125 calls, eta 24 min
+[05:57:41] [q32 parallel_0]  655/1024 tok 29.7s 22.0 tok/s | boxed='46' gold='81' | 81/125 calls, eta 24 min
+[05:58:27] [q32 parallel_1] 1024/1024 tok TRUNC 46.8s 21.9 tok/s | boxed=None gold='81' | 82/125 calls, eta 23 min
+[05:59:01] [q32 parallel_2]  748/1024 tok 34.0s 22.0 tok/s | boxed='81' gold='81' | 83/125 calls, eta 23 min
+[05:59:39] [q32 single    ]  841/3072 tok 38.0s 22.1 tok/s | boxed='81' gold='81' | 84/125 calls, eta 22 min
+[06:00:06] [q32 refine    ]  566/2048 tok 26.3s 21.5 tok/s | boxed='46' gold='81' | 85/125 calls, eta 22 min
+[06:00:27] [q34 parallel_0]  473/1024 tok 21.5s 22.0 tok/s | boxed='\\frac{160}{33}' gold='\\frac{160}{33}' | 86/125 calls, eta 21 min
+[06:00:56] [q34 parallel_1]  623/1024 tok 28.7s 21.7 tok/s | boxed='\\frac{160}{33}' gold='\\frac{160}{33}' | 87/125 calls, eta 20 min
+[06:01:21] [q34 parallel_2]  554/1024 tok 25.3s 21.9 tok/s | boxed='\\frac{160}{33}' gold='\\frac{160}{33}' | 88/125 calls, eta 20 min
+[06:01:46] [q34 single    ]  539/3072 tok 24.7s 21.9 tok/s | boxed='\\frac{160}{33}' gold='\\frac{160}{33}' | 89/125 calls, eta 19 min
+[06:02:06] [q34 refine    ]  440/2048 tok 20.2s 21.8 tok/s | boxed='\\frac{160}{33}' gold='\\frac{160}{33}' | 90/125 calls, eta 19 min
+[06:02:53] [q36 parallel_0] 1024/1024 tok TRUNC 47.5s 21.6 tok/s | boxed=None gold='2 \\sqrt{5}' | 91/125 calls, eta 18 min
+[06:03:41] [q36 parallel_1] 1024/1024 tok TRUNC 47.1s 21.7 tok/s | boxed=None gold='2 \\sqrt{5}' | 92/125 calls, eta 18 min
+[06:04:28] [q36 parallel_2] 1024/1024 tok TRUNC 47.6s 21.5 tok/s | boxed=None gold='2 \\sqrt{5}' | 93/125 calls, eta 17 min
+[06:05:14] [q36 single    ] 1009/3072 tok 45.6s 22.1 tok/s | boxed='3\\sqrt{3}' gold='2 \\sqrt{5}' | 94/125 calls, eta 17 min
+[06:06:00] [q36 refine    ]  921/2048 tok 46.0s 20.0 tok/s | boxed='2\\sqrt{3}' gold='2 \\sqrt{5}' | 95/125 calls, eta 16 min
+[06:06:15] [q38 parallel_0]  345/1024 tok 15.5s 22.2 tok/s | boxed='5' gold='5' | 96/125 calls, eta 16 min
+[06:06:32] [q38 parallel_1]  372/1024 tok 16.7s 22.3 tok/s | boxed='5' gold='5' | 97/125 calls, eta 15 min
+[06:06:53] [q38 parallel_2]  470/1024 tok 21.4s 21.9 tok/s | boxed='5' gold='5' | 98/125 calls, eta 15 min
+[06:07:13] [q38 single    ]  439/3072 tok 19.9s 22.0 tok/s | boxed='5' gold='5' | 99/125 calls, eta 14 min
+[06:07:31] [q38 refine    ]  397/2048 tok 18.0s 22.0 tok/s | boxed='5' gold='5' | 100/125 calls, eta 13 min
+[06:07:50] [q40 parallel_0]  408/1024 tok 18.1s 22.6 tok/s | boxed='4' gold='4' | 101/125 calls, eta 13 min
+[06:08:04] [q40 parallel_1]  322/1024 tok 14.4s 22.4 tok/s | boxed='4' gold='4' | 102/125 calls, eta 12 min
+[06:08:44] [q40 parallel_2]  877/1024 tok 40.0s 22.0 tok/s | boxed='4' gold='4' | 103/125 calls, eta 12 min
+[06:08:58] [q40 single    ]  315/3072 tok 14.1s 22.4 tok/s | boxed='4' gold='4' | 104/125 calls, eta 11 min
+[06:09:14] [q40 refine    ]  354/2048 tok 16.0s 22.1 tok/s | boxed='4' gold='4' | 105/125 calls, eta 10 min
+[06:09:53] [q42 parallel_0]  845/1024 tok 38.7s 21.8 tok/s | boxed='5' gold='5' | 106/125 calls, eta 10 min
+[06:10:35] [q42 parallel_1]  954/1024 tok 42.8s 22.3 tok/s | boxed='5' gold='5' | 107/125 calls, eta 9 min
+[06:11:06] [q42 parallel_2]  687/1024 tok 30.6s 22.4 tok/s | boxed='5' gold='5' | 108/125 calls, eta 9 min
+[06:11:36] [q42 single    ]  669/3072 tok 30.2s 22.2 tok/s | boxed='5' gold='5' | 109/125 calls, eta 8 min
+[06:12:15] [q42 refine    ]  796/2048 tok 38.3s 20.8 tok/s | boxed='5' gold='5' | 110/125 calls, eta 8 min
+[06:12:24] [q44 parallel_0]  224/1024 tok 9.7s 23.1 tok/s | boxed='1' gold='1' | 111/125 calls, eta 7 min
+[06:12:34] [q44 parallel_1]  216/1024 tok 9.4s 22.9 tok/s | boxed='1' gold='1' | 112/125 calls, eta 7 min
+[06:12:43] [q44 parallel_2]  207/1024 tok 9.1s 22.8 tok/s | boxed='1' gold='1' | 113/125 calls, eta 6 min
+[06:12:53] [q44 single    ]  224/3072 tok 9.9s 22.7 tok/s | boxed='1' gold='1' | 114/125 calls, eta 6 min
+[06:13:03] [q44 refine    ]  226/2048 tok 10.1s 22.5 tok/s | boxed='1' gold='1' | 115/125 calls, eta 5 min
+[06:13:32] [q46 parallel_0]  659/1024 tok 29.6s 22.3 tok/s | boxed='80' gold='80' | 116/125 calls, eta 5 min
+[06:13:58] [q46 parallel_1]  577/1024 tok 25.7s 22.5 tok/s | boxed='80' gold='80' | 117/125 calls, eta 4 min
+[06:14:32] [q46 parallel_2]  753/1024 tok 33.7s 22.4 tok/s | boxed='135' gold='80' | 118/125 calls, eta 4 min
+[06:14:56] [q46 single    ]  532/3072 tok 24.3s 21.9 tok/s | boxed='70' gold='80' | 119/125 calls, eta 3 min
+[06:15:19] [q46 refine    ]  483/2048 tok 22.7s 21.3 tok/s | boxed='80' gold='80' | 120/125 calls, eta 3 min
+[06:15:52] [q48 parallel_0]  771/1024 tok 33.7s 22.9 tok/s | boxed='3' gold='3' | 121/125 calls, eta 2 min
+[06:16:29] [q48 parallel_1]  817/1024 tok 36.3s 22.5 tok/s | boxed='3' gold='3' | 122/125 calls, eta 2 min
+[06:17:03] [q48 parallel_2]  759/1024 tok 34.0s 22.3 tok/s | boxed='7' gold='3' | 123/125 calls, eta 1 min
+[06:17:38] [q48 single    ]  787/3072 tok 35.2s 22.4 tok/s | boxed='3' gold='3' | 124/125 calls, eta 1 min
+[06:18:14] [q48 refine    ]  750/2048 tok 35.6s 21.0 tok/s | boxed='3' gold='3' | 125/125 calls, eta 0 min
+[06:18:14] lane 0 done: 125 calls in 64.1 min

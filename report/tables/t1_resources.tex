@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Task 1 training resources on one Tesla T4 (1{,}250 updates each). Training time excludes checkpointing and evaluation. Recovery checkpoint = full state (weights and optimizer) for full fine-tuning, adapter factors for LoRA/OPLoRA; inference export = merged FP16 model.}
+\label{tab:t1-resources}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lccccccl}
+\toprule
+Run & Trainable & Time (h) & Tokens/s & Peak mem (GB) & Ckpt (GiB) & Export (GiB) & Overhead \\
+\midrule
+Full FT & 596.0M (100.00\%) & 2.35 & 1174 & 11.2 & 6.66 & 1.12 & -- \\
+L2-SP & 596.0M (100.00\%) & 2.43 & 1134 & 12.3 & 6.66 & 1.12 & 233 ms/update penalty \\
+LoRA $r{=}4$ & 2.5M (0.42\%) & 2.60 & 1059 & 4.7 & 0.029 & 1.12 & merge/export 3.6 s \\
+LoRA $r{=}16$ & 10.1M (1.67\%) & 2.59 & 1063 & 4.8 & 0.113 & 1.12 & merge/export 3.5 s \\
+OPLoRA & 10.1M (1.67\%) & 3.27 & 841 & 5.1 & 0.113 & 1.12 & 308 MiB bases, 32 s SVD \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

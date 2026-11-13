@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Task 2 compute on one Tesla T4: wall time, peak GPU memory and trainable parameters by stage (connector 1.84M parameters; LoRA rank-16 adapters on the language model add 4.59M in stages 2--3). SigLIP features are cached once and shared by both runs.}
+\label{tab:t2-resources}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llcccl}
+\toprule
+Item & Tokens & Time (min) & Peak GPU (GB) & Trainable params & Note \\
+\midrule
+feature caching (SigLIP, separate from training) & shared & 2.73 & 1.36 & 0 & 9255 images, 56.6 img/s, 2.59 GiB FP16 \\
+image download & shared & 0.60 & -- & -- & 9255 downloaded \\
+\midrule
+train caption\_alignment & 196 & 43.99 & 1.55 & 1{,}837{,}056 & 2250 updates \\
+train visual\_instruction & 196 & 33.35 & 1.57 & 6{,}424{,}576 & 1500 updates \\
+train natural\_vqa & 196 & 16.25 & 1.60 & 6{,}424{,}576 & 750 updates \\
+final evaluation (generation + NLL, 4 conditions) & 196 & 1.61 & 5.06 & -- & generation 35--120 ms/answer \\
+development evaluations & 196 & 1.45 & -- & -- & 12 evaluations \\
+\midrule
+train caption\_alignment & 49 & 18.31 & 1.48 & 1{,}837{,}056 & 2250 updates \\
+train visual\_instruction & 49 & 17.50 & 1.48 & 6{,}424{,}576 & 1500 updates \\
+train natural\_vqa & 49 & 8.71 & 1.51 & 6{,}424{,}576 & 750 updates \\
+final evaluation (generation + NLL, 4 conditions) & 49 & 0.75 & 2.29 & -- & generation 21--41 ms/answer \\
+development evaluations & 49 & 0.62 & -- & -- & 12 evaluations \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

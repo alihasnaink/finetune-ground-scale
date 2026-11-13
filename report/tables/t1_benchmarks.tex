@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Task 1 benchmark scores (\%), with the change from baseline in pp. GSM8K: flexible-extract exact match; HellaSwag, ARC-Easy: normalized accuracy; BoolQ: accuracy.}
+\label{tab:t1-benchmarks}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccc}
+\toprule
+Condition & GSM8K & HellaSwag & BoolQ & ARC-Easy \\
+\midrule
+Baseline & 43.37 & 47.32 & 64.37 & 56.06 \\
+\midrule
+Full FT (mid) & 57.32 \,(+13.95) & 45.69 \,(-1.63) & 60.80 \,(-3.58) & 62.04 \,(+5.98) \\
+Full FT (final) & 64.44 \,(+21.08) & 46.06 \,(-1.26) & 61.28 \,(-3.09) & 63.47 \,(+7.41) \\
+\midrule
+L2-SP & 64.97 \,(+21.61) & 46.50 \,(-0.82) & 67.06 \,(+2.69) & 63.22 \,(+7.15) \\
+LoRA $r{=}4$ & 60.12 \,(+16.76) & 47.40 \,(+0.08) & 66.39 \,(+2.02) & 63.22 \,(+7.15) \\
+LoRA $r{=}16$ & 62.24 \,(+18.88) & 47.56 \,(+0.24) & 72.60 \,(+8.23) & 64.06 \,(+8.00) \\
+OPLoRA & 62.17 \,(+18.80) & 47.39 \,(+0.07) & 72.08 \,(+7.71) & 63.13 \,(+7.07) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

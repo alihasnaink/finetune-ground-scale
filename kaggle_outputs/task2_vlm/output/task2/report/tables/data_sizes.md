@@ -1,0 +1,13 @@
+### Selected data (pairs / examples)
+
+| set | n |
+|---|---|
+| vqa_train | 1536 |
+| vqa_dev | 32 |
+| vqa_test | 96 |
+| grounding_train_presence_pool | 6000 |
+| grounding_train_counting_pool | 6000 |
+| grounding_dev | 24 |
+| grounding_test | 64 |
+| caption_train_examples | 18000 |
+| caption_dev_examples | 96 |

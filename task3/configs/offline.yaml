@@ -1,0 +1,27 @@
+# Task 3, Steps 1-3, 5, 6: offline analysis of the supplied rollouts (CPU)
+seed: 6304
+
+paths:
+  data_root: task3_data              # supplied ATML-PA3-Data (not committed)
+  cache: outputs/task3/cache         # joined/graded rollouts (regenerable, not committed)
+  results: task3/results             # machine-readable results (committed)
+  live: kaggle_outputs/task3_live/task3/live   # Step 4 outputs, for the revision cases
+
+data:
+  split_math: task3/data/split_math.json
+  split_mathvista: task3/data/split_mathvista.json
+  mathvista_meta: task3/data/mathvista_meta.json
+
+offline:
+  budgets: [1, 2, 4, 8, 16, 32]
+  n_orders: 10                       # seeded permutations of the 32 rollout ids per question
+  n_boot: 1000                       # paired question-level bootstrap resamples
+  calib_quantiles: [0.05, 0.95]      # VisConf calibration (linear-interpolation percentiles)
+
+adaptive:
+  checks: [4, 8, 16]                 # stop checks; otherwise stop at 32
+  max_n: 32
+  tau: [0.5, 0.625, 0.75, 0.875, 1.0]
+  gamma: [0.0, 0.1, 0.25, 0.5]
+  tolerance_pp: 1.0                  # dev accuracy within 1 pp of fixed-32 self-consistency
+  quality_score: {math: K, mathvista: Z}   # self-certainty for MATH, VisConf for MathVista

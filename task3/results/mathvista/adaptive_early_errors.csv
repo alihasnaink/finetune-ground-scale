@@ -1,0 +1,3 @@
+policy,early_stops_pct,early_stop_accuracy,incorrect_early_stops_pct_of_runs,incorrect_early_stops_recovered_by_sc32_pct,n_incorrect_early_stops,questions_with_incorrect_early_stop,correct_early_stops_lost_by_sc32_pct
+agreement,68.2875,79.37030935383488,14.0875,11.801242236024844,1127,259,2.813653136531369
+quality,74.0125,76.79446039520352,17.175,13.100436681222707,1374,319,3.848691444908736

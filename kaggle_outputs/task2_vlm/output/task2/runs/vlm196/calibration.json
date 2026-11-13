@@ -1,0 +1,11 @@
+{
+  "rule": "fixed scalar s = mean ||e_t||_2 over Qwen input embeddings of all tokens of the calibration texts (training captions + training questions) / mean ||g_phi(F)||_2 over all visual tokens of the calibration images (training images) at initialisation; Z = s * g_phi(F)",
+  "scale": 0.054789625108242035,
+  "n_text_tokens": 19839,
+  "n_images": 512,
+  "text_norm_mean": 0.8718081116676331,
+  "text_norm_median": 0.8593806028366089,
+  "visual_norm_mean_before": 15.911919593811035,
+  "visual_norm_median_before": 16.37169075012207,
+  "visual_norm_mean_after": 0.8718081116676331
+}

@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Sampling versus selection failures for self-consistency (held-out). Sampling failure: no correct candidate among the $N$; selection failure: a correct candidate was available but not selected (RWC: the same for the quality-aware RWC selector, self-certainty for MATH and VisConf for MathVista). Groups: distinct answer groups (incl.\ NO\_ANSWER); cost: mean generated tokens per question.}
+\label{tab:t3-decomp}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{ccccccccccccccc}
+\toprule
+ & \multicolumn{7}{c}{MATH} & \multicolumn{7}{c}{MathVista} \\
+\cmidrule(lr){2-8}\cmidrule(lr){9-15}
+$N$ & Oracle & SC acc. & Samp.\ fail & Sel.\ fail & Sel.\ fail (RWC) & Groups & Tokens & Oracle & SC acc. & Samp.\ fail & Sel.\ fail & Sel.\ fail (RWC) & Groups & Tokens \\
+\midrule
+1 & 63.6 & 63.6 & 36.4 & 0.0 & 0.0 & 1.00 & 667 & 53.9 & 53.9 & 46.1 & 0.0 & 0.0 & 1.00 & 274 \\
+2 & 72.3 & 63.6 & 27.7 & 8.8 & 5.9 & 1.38 & 1{,}335 & 66.8 & 53.9 & 33.2 & 12.9 & 10.6 & 1.45 & 551 \\
+4 & 79.0 & 69.0 & 21.0 & 10.0 & 9.3 & 1.93 & 2{,}672 & 76.2 & 58.7 & 23.9 & 17.4 & 17.6 & 2.04 & 1{,}101 \\
+8 & 84.4 & 71.6 & 15.6 & 12.8 & 11.6 & 2.77 & 5{,}342 & 82.9 & 60.8 & 17.1 & 22.1 & 21.4 & 2.78 & 2{,}219 \\
+16 & 88.3 & 73.2 & 11.7 & 15.1 & 13.8 & 4.02 & 10{,}669 & 87.0 & 62.5 & 13.0 & 24.5 & 23.6 & 3.72 & 4{,}445 \\
+32 & 91.4 & 74.0 & 8.6 & 17.4 & 15.8 & 5.90 & 21{,}347 & 89.5 & 63.2 & 10.5 & 26.3 & 25.0 & 4.90 & 8{,}898 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

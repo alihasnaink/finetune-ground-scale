@@ -1,0 +1,31 @@
+{
+  "condition": "oplora_final",
+  "model_path": "/kaggle/working/task1_artifacts/exports/oplora/final",
+  "limit": null,
+  "gsm8k_flex": 0.621683093252464,
+  "gsm8k_flex_se": 0.013358407831777112,
+  "gsm8k_strict": 0.0,
+  "gsm8k_strict_se": 0.0,
+  "hellaswag_acc": 0.3784106751643099,
+  "hellaswag_acc_se": 0.004839995745602321,
+  "hellaswag_acc_norm": 0.47390957976498704,
+  "hellaswag_acc_norm_se": 0.004982983592459131,
+  "boolq_acc": 0.7207951070336391,
+  "boolq_acc_se": 0.007846210712705913,
+  "arc_easy_acc": 0.6632996632996633,
+  "arc_easy_acc_se": 0.009697166595752359,
+  "arc_easy_acc_norm": 0.6313131313131313,
+  "arc_easy_acc_norm_se": 0.009899640855681058,
+  "gsm8k_n": 1319,
+  "gsm8k_truncation_rate": 0.0037907505686125853,
+  "gsm8k_flex_extract_fail_rate": 0.000758150113722517,
+  "gsm8k_strict_extract_fail_rate": 1.0,
+  "gsm8k_mean_gen_tokens": 137.2865807429871,
+  "qualitative_truncated": 3,
+  "timings_s": {
+    "gsm8k_s": 1042.3383140410006,
+    "mc_s": 687.0204052059999,
+    "qualitative_s": 178.4631680909988
+  },
+  "peak_mem_gb": 6.868952751159668
+}

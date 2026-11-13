@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Task 2 held-out accuracy (\%) under four image conditions (64 grounding, 96 VQAv2 pairs). Lenient: leading yes/no or number of a sentence answer; pair: both images of a pair correct. CIs and NLL in Table~\ref{tab:t2-final}.}
+\label{tab:t2-main}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llcccccc}
+\toprule
+Tokens & Suite & Correct & Complementary & Mismatched & No image & No image (lenient) & Pair \\
+\midrule
+196 & Grounding & 69.5 & 11.7 & 37.5 & 0.0 & 24.2 & 53.1 \\
+196 & VQAv2 & 56.8 & 25.4 & 34.3 & 0.0 & 18.8 & 26.0 \\
+\midrule
+49 & Grounding & 72.7 & 11.7 & 32.8 & 33.6 & 33.6 & 56.2 \\
+49 & VQAv2 & 52.6 & 24.7 & 31.5 & 31.4 & 31.4 & 25.0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

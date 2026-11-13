@@ -1,0 +1,6 @@
+# Optional run: 49 visual tokens, each the mean of a 2 x 2 block of the 14 x 14 feature grid
+# (pooled before the connector). New connector and adapters; seed, data, budgets and evaluation
+# unchanged.
+run_name: vlm49
+model:
+  visual_tokens: 49

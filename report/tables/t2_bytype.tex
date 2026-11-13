@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Accuracy (\%) by question type for each image condition. $^\dagger$The 196-token model answers without an image in full sentences, so strict accuracy is 0; lenient accuracy is in Table~\ref{tab:t2-final}.}
+\label{tab:t2-bytype}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lccccccccc}
+\toprule
+ & & \multicolumn{4}{c}{196 visual tokens} & \multicolumn{4}{c}{49 visual tokens} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+Suite / type & Pairs & corr. & compl. & mism. & none & corr. & compl. & mism. & none \\
+\midrule
+Grounding / presence & 32 & 89.1 & 10.9 & 54.7 & 0.0$^\dagger$ & 90.6 & 9.4 & 48.4 & 50.0 \\
+Grounding / counting & 32 & 50.0 & 12.5 & 20.3 & 0.0 & 54.7 & 14.1 & 17.2 & 17.2 \\
+\midrule
+VQAv2 / yes/no & 36 & 67.8 & 47.2 & 59.0 & 0.0$^\dagger$ & 70.1 & 44.0 & 57.6 & 56.2 \\
+VQAv2 / number & 24 & 48.3 & 15.8 & 19.4 & 0.0 & 41.5 & 20.6 & 17.9 & 27.5 \\
+VQAv2 / other & 36 & 51.5 & 10.0 & 19.4 & 0.0 & 42.4 & 8.2 & 14.3 & 9.2 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

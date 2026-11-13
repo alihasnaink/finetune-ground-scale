@@ -1,0 +1,8 @@
+condition,annotated,truncated,format_ok json+template,plain_ok,coherence mean (0-2),repetition some/loop,math framing mild/strong,inappropriate
+baseline,6/6,0,4/4,2/2,1.83,0/0,0/0,0
+full_ft_mid,6/6,2,3/4,2/2,1.33,1/2,0/0,0
+full_ft_final,6/6,2,3/4 (+1 partial),0/2 (+2 partial),1.33,0/2,3/1,0
+l2sp_final,6/6,0,2/4 (+2 partial),2/2,1.67,0/0,3/0,0
+lora4_final,6/6,0,3/4,2/2,1.67,0/0,0/0,0
+lora16_final,6/6,1,2/4 (+1 partial),2/2,1.83,0/1,1/0,0
+oplora_final,6/6,0,3/4,2/2,1.83,1/0,2/0,0

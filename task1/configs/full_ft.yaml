@@ -1,0 +1,11 @@
+# Task 1, Step 1: Full fine-tuning (all original parameters, lambda = 0).
+run_name: full_ft
+method: full_ft
+
+train:
+  lr: 2.0e-5
+  l2sp_lambda: 0.0
+
+# Stages of this run that are exported, evaluated and diagnosed.
+# Full FT is the only method evaluated at the midpoint (manual, checkpoint schedule).
+stages: [mid, final]

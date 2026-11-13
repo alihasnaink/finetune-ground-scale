@@ -1,0 +1,10 @@
+{
+  "gsm8k_cot": {
+    "checked": 32,
+    "matching": 32
+  },
+  "hellaswag": {
+    "checked": 32,
+    "matching": 32
+  }
+}

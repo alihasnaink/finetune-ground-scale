@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Live comparison on 50 MATH questions (same 3{,}072-token allowance; per-question means, shared initial response charged to both parallel and refinement). Initial accuracy 62\%, parallel oracle 68\%. Revisions: W$\to$C 0, C$\to$W 0, C$\to$C 31, W$\to$W 19. Bootstrap: parallel $-$ single -4 pp [-16, 8], refinement $-$ single -4 pp [-14, 8].}
+\label{tab:t3-live}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccccc}
+\toprule
+Strategy & Acc.\ (\%) & No answer (\%) & Extracted (\%) & Truncated (\%) & In tokens & Out tokens & Time (s) & Peak mem (GB) \\
+\midrule
+Single (1$\times$3{,}072) & 66.0 & 4.0 & 96.0 & 4.0 & 108 & 738 & 34.7 & 6.09 \\
+Parallel (3$\times$1{,}024) + SC & 62.0 & 10.0 & 86.7 & 14.0 & 325 & 1878 & 86.3 & 5.94 \\
+Refinement (1{,}024 + 2{,}048) & 62.0 & 0.0 & 95.0 & 5.0 & 870 & 1142 & 53.5 & 6.17 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

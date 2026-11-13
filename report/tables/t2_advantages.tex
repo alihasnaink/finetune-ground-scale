@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Correct-image advantage over each control (paired over the same bootstrap resamples; 95\% CI). Accuracy and pair accuracy in pp; NLL advantage = NLL(control) $-$ NLL(correct), positive when the correct image makes the reference more likely. Last column: under the complementary swap, the answer keeps the original answer / follows the partner image's answer / is another answer (\%).}
+\label{tab:t2-advantages}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllcccc}
+\toprule
+Tokens & Suite & vs. & Accuracy adv.\ (pp) & Pair acc.\ adv.\ (pp) & NLL adv. & Swap: keep / follow / other \\
+\midrule
+196 & Grounding & complementary & 57.8 [44.5, 69.6] & 51.6 [39.1, 64.1] & 3.023 [2.396, 3.622] & 11.7 / 69.5 / 18.8 \\
+ &  & mismatched & 32.0 [21.9, 41.4] & 45.3 [31.2, 59.4] & 1.419 [1.045, 1.779] &  \\
+ &  & no image & 69.5 [60.9, 78.1] & 53.1 [40.6, 65.6] & 5.656 [5.076, 6.226] &  \\
+\midrule
+196 & VQAv2 & complementary & 31.4 [21.9, 40.9] & 21.9 [12.5, 32.3] & 2.114 [1.617, 2.663] & 21.4 / 52.6 / 26.0 \\
+ &  & mismatched & 22.6 [15.1, 30.6] & 18.8 [9.4, 28.1] & 1.233 [0.859, 1.626] &  \\
+ &  & no image & 56.8 [50.4, 63.4] & 26.0 [17.7, 35.4] & 8.040 [7.304, 8.818] &  \\
+\midrule
+49 & Grounding & complementary & 60.9 [48.4, 73.4] & 54.7 [42.2, 67.2] & 2.487 [2.003, 2.969] & 11.7 / 72.7 / 15.6 \\
+ &  & mismatched & 39.8 [31.2, 48.4] & 54.7 [42.2, 67.2] & 1.207 [0.926, 1.503] &  \\
+ &  & no image & 39.1 [31.2, 46.1] & 56.2 [43.8, 68.8] & 0.416 [0.168, 0.636] &  \\
+\midrule
+49 & VQAv2 & complementary & 27.8 [18.3, 37.5] & 20.8 [10.4, 31.2] & 1.446 [0.988, 1.960] & 20.8 / 49.0 / 30.2 \\
+ &  & mismatched & 21.1 [14.6, 28.0] & 22.9 [14.6, 32.3] & 0.950 [0.612, 1.341] &  \\
+ &  & no image & 21.1 [14.6, 28.1] & 25.0 [16.7, 34.4] & 0.774 [0.514, 1.071] &  \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

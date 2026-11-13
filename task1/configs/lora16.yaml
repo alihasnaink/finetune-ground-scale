@@ -1,0 +1,14 @@
+# Task 1 Step 3: LoRA-16 (r = 16, alpha = 32). Same adapter settings as LoRA-4.
+# OPLoRA uses the same r, alpha, init seed and targets, so both start from identical factors.
+run_name: lora16
+method: lora
+train:
+  lr: 2.0e-4
+  l2sp_lambda: 0.0
+adapter:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  protect_rank: null
+  init_seed: 6304
+stages: [final]

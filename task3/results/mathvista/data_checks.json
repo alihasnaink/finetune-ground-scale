@@ -1,0 +1,14 @@
+{
+  "rollouts": 32000,
+  "tokens": 8961703,
+  "zero_length": 0,
+  "capped": 487,
+  "null_extracted": 3032,
+  "nonfinite_logp": 0,
+  "nonfinite_kl": 0,
+  "nonfinite_attn": 0,
+  "zero_attn_denominator_tokens": 0,
+  "questions": 1000,
+  "rollout_accuracy": 0.5364375,
+  "scorer": "mathvista-official-normalize-v1 (+lowercase letter, RAW groups for unparseable)"
+}

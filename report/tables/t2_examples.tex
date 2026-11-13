@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Aligned complementary-pair examples (196-token model). Selection rule fixed before inspection: pairs in ID order, first pair per question type of each category (both correct; image-insensitive; image-sensitive error). Each row is one image of the pair; the complementary column shows the answer when the image is swapped with its partner.}
+\label{tab:t2-examples}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{p{0.24\linewidth}lllll}
+\toprule
+Question (category) & Ref. & Correct img & Compl.\ img & Mismatched & No image \\
+\midrule
+How many trains can you see? \emph{(both correct)} & 2 & 2 & 4 & 1 & \emph{The number of trains you can see depends on t\ldots} \\
+ & 4 & 4 & 2 & 1 & \emph{The number of trains you can see depends on t\ldots} \\
+\midrule
+How many kites can you see? \emph{(image-sensitive error)} & 2 & 2 & 4 & 1 & \emph{There are **no kites** visible in the sky.} \\
+ & 3 & 4 & 2 & 1 & \emph{There are **no kites** visible in the sky.} \\
+\midrule
+What color is the girl's shirt? \emph{(image-insensitive)} & white & white & white & white & \emph{The color of the girl's shirt is not specifie\ldots} \\
+ & pink & white & white & white & \emph{The color of the girl's shirt is not specifie\ldots} \\
+\midrule
+What is this person riding? \emph{(image-sensitive error)} & skateboard & skateboard & ski & elephant & \emph{The question is ambiguous and unclear. If you\ldots} \\
+ & skis & ski & skateboard & cow & \emph{The question is ambiguous and unclear. If you\ldots} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

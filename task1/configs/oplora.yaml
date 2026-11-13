@@ -1,0 +1,16 @@
+# Task 1 Step 4: OPLoRA-16 (r = 16, alpha = 32, protection rank k = 128).
+# Identical to LoRA-16 (lr, dropout, targets, init seed => same initial unprojected factors),
+# plus frozen FP32 bases U_k, V_k of each starting weight: B~ = B - U_k(U_k^T B),
+# A~ = A - (A V_k)V_k^T, dW = (alpha/r) B~ A~. Projected factors are exported and merged.
+run_name: oplora
+method: oplora
+train:
+  lr: 2.0e-4
+  l2sp_lambda: 0.0
+adapter:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  protect_rank: 128
+  init_seed: 6304
+stages: [final]

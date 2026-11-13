@@ -1,0 +1,15 @@
+# Task 1 Step 3: LoRA-4 (r = 4, alpha = 8). Frozen FP16 backbone, FP32 adapters on
+# q/k/v/o/gate/up/down in every layer, dropout 0.05, random A (Kaiming-uniform, fixed init seed),
+# zero B, no adapter biases. Evaluated at final only.
+run_name: lora4
+method: lora
+train:
+  lr: 2.0e-4
+  l2sp_lambda: 0.0
+adapter:
+  r: 4
+  alpha: 8
+  dropout: 0.05
+  protect_rank: null
+  init_seed: 6304
+stages: [final]

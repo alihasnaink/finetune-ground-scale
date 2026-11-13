@@ -1,0 +1,16 @@
+{
+  "search": "/kaggle/input",
+  "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+  "sources": [
+    {
+      "path": "/kaggle/input/notebooks/alihasnain11/task1-full-ft6e1c1a4687/task1",
+      "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+      "imported": []
+    },
+    {
+      "path": "/tmp/atml_task1/t1_import_szu27vww/task1_full_ft_report/task1",
+      "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+      "imported": []
+    }
+  ]
+}

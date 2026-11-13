@@ -1,0 +1,28 @@
+family,tau,gamma,policy,accuracy,mean_cost,mean_rollouts,sc32_accuracy,feasible
+agreement,,,agreement: always-32,82.5,18322.4,32.0,82.5,True
+quality,,,quality: always-32,82.5,18322.4,32.0,82.5,True
+agreement,0.5,,agreement: tau=0.5,80.95,5063.226500000001,6.7,82.5,False
+agreement,0.625,,agreement: tau=0.625,82.30000000000001,7139.2294999999995,9.264000000000001,82.5,True
+agreement,0.75,,agreement: tau=0.75,82.35,7752.935999999999,10.204,82.5,True
+agreement,0.875,,agreement: tau=0.875,82.55,9964.871,13.582,82.5,True
+agreement,1.0,,agreement: tau=1.0,82.55,10744.123500000002,15.074000000000002,82.5,True
+quality,0.5,0.0,"quality: tau=0.5, gamma=0.0",81.55,5503.246499999999,7.262,82.5,True
+quality,0.5,0.1,"quality: tau=0.5, gamma=0.1",81.69999999999999,5783.815500000001,7.68,82.5,True
+quality,0.5,0.25,"quality: tau=0.5, gamma=0.25",81.85,6124.8625,8.124,82.5,True
+quality,0.5,0.5,"quality: tau=0.5, gamma=0.5",82.29999999999998,7274.969,9.7,82.5,True
+quality,0.625,0.0,"quality: tau=0.625, gamma=0.0",82.30000000000001,7193.023500000001,9.342,82.5,True
+quality,0.625,0.1,"quality: tau=0.625, gamma=0.1",82.4,7336.269499999999,9.595999999999998,82.5,True
+quality,0.625,0.25,"quality: tau=0.625, gamma=0.25",82.4,7370.8865000000005,9.668000000000001,82.5,True
+quality,0.625,0.5,"quality: tau=0.625, gamma=0.5",82.5,7950.5105,10.52,82.5,True
+quality,0.75,0.0,"quality: tau=0.75, gamma=0.0",82.3,7797.361499999999,10.258,82.5,True
+quality,0.75,0.1,"quality: tau=0.75, gamma=0.1",82.35,7996.401499999999,10.595999999999998,82.5,True
+quality,0.75,0.25,"quality: tau=0.75, gamma=0.25",82.35,8002.132999999999,10.612,82.5,True
+quality,0.75,0.5,"quality: tau=0.75, gamma=0.5",82.39999999999999,8386.021,11.18,82.5,True
+quality,0.875,0.0,"quality: tau=0.875, gamma=0.0",82.55,9964.871,13.582,82.5,True
+quality,0.875,0.1,"quality: tau=0.875, gamma=0.1",82.55,9964.871,13.582,82.5,True
+quality,0.875,0.25,"quality: tau=0.875, gamma=0.25",82.55,9964.871,13.582,82.5,True
+quality,0.875,0.5,"quality: tau=0.875, gamma=0.5",82.55,9964.871,13.582,82.5,True
+quality,1.0,0.0,"quality: tau=1.0, gamma=0.0",82.55,10744.123500000002,15.074000000000002,82.5,True
+quality,1.0,0.1,"quality: tau=1.0, gamma=0.1",82.55,10744.123500000002,15.074000000000002,82.5,True
+quality,1.0,0.25,"quality: tau=1.0, gamma=0.25",82.55,10744.123500000002,15.074000000000002,82.5,True
+quality,1.0,0.5,"quality: tau=1.0, gamma=0.5",82.55,10744.123500000002,15.074000000000002,82.5,True

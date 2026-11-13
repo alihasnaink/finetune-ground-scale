@@ -1,0 +1,35 @@
+{
+  "run_name": "oplora",
+  "method": "oplora",
+  "updates": 1250,
+  "examples_seen": 40000,
+  "train_time_s": 11780.378544587938,
+  "train_time_note": "sum of per-update wall time (forward/backward/optimizer); excludes checkpointing, exports and evaluation",
+  "peak_mem_allocated_gb": 5.104727268218994,
+  "peak_mem_reserved_gb": 5.79296875,
+  "gpu": "Tesla T4",
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "skipped_updates": 0,
+  "recovery_checkpoint_bytes": {
+    "312": 121586785,
+    "625": 121586810,
+    "937": 121586832,
+    "1250": 121586856
+  },
+  "export_bytes": {
+    "final": 1203563952
+  },
+  "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+  "lr": 0.0002,
+  "l2sp_lambda": 0.0,
+  "amp": "fp16 autocast + dynamic loss scaling, fp32 master weights",
+  "overhead_adapter_params": 10092544,
+  "overhead_adapter_bytes_fp32": 40370176,
+  "overhead_export_merge_s": 3.0356125390026136,
+  "overhead_export_note": "merge dW into a fresh FP32 backbone copy + FP16 save (projected factors for OPLoRA)",
+  "overhead_basis_storage": "cuda fp32",
+  "overhead_basis_bytes": 322961408,
+  "overhead_basis_preprocess_s": 31.510575476999293,
+  "overhead_protect_rank": 128
+}

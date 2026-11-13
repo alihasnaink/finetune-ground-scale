@@ -1,0 +1,23 @@
+{
+  "search": "kaggle_outputs/task1_l2sp/output",
+  "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+  "sources": [
+    {
+      "path": "/tmp/t1_import_don46h4s/task1_l2sp_report/task1",
+      "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+      "imported": [
+        "eval/l2sp_final",
+        "runs/l2sp",
+        "diagnostics/activation_l2sp.csv",
+        "diagnostics/activation_summary_l2sp.csv",
+        "diagnostics/weight_space_l2sp.csv",
+        "env/env_l2sp.json"
+      ]
+    },
+    {
+      "path": "kaggle_outputs/task1_l2sp/output/task1",
+      "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+      "imported": []
+    }
+  ]
+}

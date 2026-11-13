@@ -1,0 +1,20 @@
+{
+  "rule": "lowest dev mean cost with dev accuracy >= fixed-32 SC - 1.0 pp; ties: higher accuracy, smaller tau, smaller gamma",
+  "quality_score": "Z",
+  "agreement": {
+    "tau": 0.625,
+    "gamma": null,
+    "dev_accuracy": 63.650000000000006,
+    "dev_mean_cost": 5255.5740000000005,
+    "dev_mean_rollouts": 14.036,
+    "dev_sc32_accuracy": 64.25
+  },
+  "quality": {
+    "tau": 0.5,
+    "gamma": 0.25,
+    "dev_accuracy": 63.3,
+    "dev_mean_cost": 4636.411,
+    "dev_mean_rollouts": 12.59,
+    "dev_sc32_accuracy": 64.25
+  }
+}

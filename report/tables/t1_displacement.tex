@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Final SFT loss (mean of the last 25 updates), parameter displacement and L2-SP penalty strength. $\Omega=\tfrac12\|\theta-\theta_0\|_2^2$; $\lambda=10^{-3}$ is applied only in L2-SP and shown for the other runs for comparison only.}
+\label{tab:t1-displacement}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccc}
+\toprule
+Run & SFT loss & $\|\theta-\theta_0\|_2$ & $\Omega$ & $\lambda\Omega$ & $\lambda\Omega$/SFT (\%) & penalty applied \\
+\midrule
+Full FT & 0.188 & 10.67 & 56.9 & 0.0569 & 30.3 & -- \\
+L2-SP & 0.188 & 6.28 & 19.7 & 0.0197 & 10.5 & \ding{51} \\
+LoRA $r{=}4$ & 0.216 & 9.12 & 41.6 & 0.0416 & 19.3 & -- \\
+LoRA $r{=}16$ & 0.202 & 13.32 & 88.7 & 0.0887 & 43.8 & -- \\
+OPLoRA & 0.203 & 12.43 & 77.3 & 0.0773 & 38.0 & -- \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

@@ -1,0 +1,13 @@
+item,run,time_min,peak_gpu_gb,trainable_params,note
+"feature caching (SigLIP, separate from training)",shared,2.726231294333333,1.359999656677246,0,"9255 images, 56.6 img/s, 2.59 GiB FP16"
+image download,shared,0.6030896659166671,,,9255 downloaded
+train caption_alignment,vlm196,43.99497819486698,1.5507616996765137,1837056,"connector 1,837,056, LoRA 0, 2250 updates"
+train visual_instruction,vlm196,33.34672015151693,1.5658493041992188,6424576,"connector 1,837,056, LoRA 4,587,520, 1500 updates"
+train natural_vqa,vlm196,16.2535226873834,1.6032633781433105,6424576,"connector 1,837,056, LoRA 4,587,520, 750 updates"
+"final evaluation (generation + NLL, 4 conditions)",vlm196,1.606505697483332,5.058099269866943,,"gen ms/answer: grounding correct 35, grounding complementary 32, grounding mismatched 32, grounding no_image 107, vqa correct 34, vqa complementary 35, vqa mismatched 36, vqa no_image 120"
+development evaluations,vlm196,1.4494394292166475,,,12 evaluations
+train caption_alignment,vlm49,18.31238008636671,1.4762945175170898,1837056,"connector 1,837,056, LoRA 0, 2250 updates"
+train visual_instruction,vlm49,17.503512521449966,1.4796886444091797,6424576,"connector 1,837,056, LoRA 4,587,520, 1500 updates"
+train natural_vqa,vlm49,8.714332628733223,1.5139293670654297,6424576,"connector 1,837,056, LoRA 4,587,520, 750 updates"
+"final evaluation (generation + NLL, 4 conditions)",vlm49,0.752802887116665,2.29372501373291,,"gen ms/answer: grounding correct 21, grounding complementary 17, grounding mismatched 17, grounding no_image 17, vqa correct 24, vqa complementary 24, vqa mismatched 24, vqa no_image 41"
+development evaluations,vlm49,0.6152135016666667,,,12 evaluations

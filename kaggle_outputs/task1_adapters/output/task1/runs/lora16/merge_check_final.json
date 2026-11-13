@@ -1,0 +1,20 @@
+{
+  "n_sequences": 4,
+  "max_len": 256,
+  "n_positions": 749,
+  "unmerged": "FP16 backbone + FP32 adapters under FP16 autocast (training model, eval mode)",
+  "merged": "FP16 export (W0 + dW merged in FP32, then cast), as used for evaluation",
+  "merged_vs_unmerged": {
+    "max_abs_diff": 0.1875,
+    "mean_abs_diff": 0.006802073679864407,
+    "top1_agreement": 0.998664915561676,
+    "max_logprob_diff": 0.2968711853027344
+  },
+  "adapter_effect_unmerged_vs_base": {
+    "max_abs_diff": 26.109375,
+    "mean_abs_diff": 1.3452270030975342,
+    "top1_agreement": 0.8024032115936279,
+    "max_logprob_diff": 39.16154479980469
+  },
+  "merge_error_small_vs_adapter_effect": true
+}

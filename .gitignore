@@ -1,0 +1,9 @@
+ATML-PA3.pdf
+__pycache__/
+*.pyc
+
+# supplied Task 3 rollout data (course-provided, ~400 MB; not redistributed). The splits and the
+# live subset derived from it are committed under task3/data/ (python -m task3.prepare_splits).
+task3_data/
+# local run outputs
+outputs/

@@ -1,0 +1,47 @@
+{
+  "lane": 0,
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "revision_requested": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "revision_loaded": null,
+  "dtype": "float16",
+  "eos_ids": [
+    151643,
+    151645
+  ],
+  "gen_kwargs": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0,
+    "eos_token_id": [
+      151643,
+      151645
+    ],
+    "pad_token_id": 151643
+  },
+  "model_load_s": 45.18448617400003,
+  "extractor": "last-literal-boxed-balanced-v2 (supplied-export rule)",
+  "env": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+    "time_utc": "2026-11-12T05:14:07Z",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "datasets": "4.8.5",
+    "lm_eval": null,
+    "accelerate": "1.15.0",
+    "peft": "0.21.2",
+    "numpy": "2.1.3",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.33.0",
+    "cuda_available": true,
+    "cuda": "13.0",
+    "gpus": [
+      "Tesla T4"
+    ],
+    "git_commit": "1388693738bba652ed817d71ae5c9590a593b01f",
+    "git_dirty": false
+  },
+  "gpu": "Tesla T4"
+}

@@ -1,0 +1,28 @@
+{
+  "run_name": "full_ft",
+  "method": "full_ft",
+  "updates": 1250,
+  "examples_seen": 40000,
+  "train_time_s": 8442.363266783002,
+  "train_time_note": "sum of per-update wall time (forward/backward/optimizer); excludes checkpointing, exports and evaluation",
+  "peak_mem_allocated_gb": 11.20795202255249,
+  "peak_mem_reserved_gb": 12.078125,
+  "gpu": "Tesla T4",
+  "trainable_params": 596049920,
+  "total_params": 596049920,
+  "skipped_updates": 0,
+  "recovery_checkpoint_bytes": {
+    "312": 7152923522,
+    "625": 7152923547,
+    "937": 7152923570,
+    "1250": 7152923594
+  },
+  "export_bytes": {
+    "mid": 1203563952,
+    "final": 1203563952
+  },
+  "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+  "lr": 2e-05,
+  "l2sp_lambda": 0.0,
+  "amp": "fp16 autocast + dynamic loss scaling, fp32 master weights"
+}

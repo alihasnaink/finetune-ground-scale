@@ -1,0 +1,14 @@
+run,stage,module,l2
+l2sp,final,down_proj,2.8108793384118003
+l2sp,final,embed_tokens,1.0169614948046377
+l2sp,final,gate_proj,2.7143701181361255
+l2sp,final,input_layernorm,0.05132530368773906
+l2sp,final,k_norm,0.019838188028918968
+l2sp,final,k_proj,1.6778981192177618
+l2sp,final,norm,0.010147135239713861
+l2sp,final,o_proj,2.345253698855908
+l2sp,final,post_attention_layernorm,0.05667692435099526
+l2sp,final,q_norm,0.020472777617389016
+l2sp,final,q_proj,2.0885417911278994
+l2sp,final,up_proj,2.748573594359071
+l2sp,final,v_proj,1.6858360411578943

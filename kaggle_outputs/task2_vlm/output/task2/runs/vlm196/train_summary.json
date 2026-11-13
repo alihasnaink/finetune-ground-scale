@@ -1,0 +1,78 @@
+{
+  "run_name": "vlm196",
+  "visual_tokens": 196,
+  "updates": 4500,
+  "examples": 72000,
+  "train_time_s": 5615.713262026038,
+  "train_time_note": "sum of per-update times (forward/backward/step); excludes dev evaluation, checkpointing and feature caching",
+  "skipped_updates": 0,
+  "stages": {
+    "caption_alignment": {
+      "train_time_s": 2639.6986916920187,
+      "peak_mem_gb": 1.5507616996765137,
+      "trainable": {
+        "connector": 1837056,
+        "lora": 0,
+        "total": 1837056,
+        "frozen_backbone_params": 596049920
+      },
+      "updates": 2250
+    },
+    "visual_instruction": {
+      "train_time_s": 2000.8032090910156,
+      "peak_mem_gb": 1.5658493041992188,
+      "trainable": {
+        "connector": 1837056,
+        "lora": 4587520,
+        "total": 6424576,
+        "frozen_backbone_params": 596049920
+      },
+      "updates": 1500
+    },
+    "natural_vqa": {
+      "train_time_s": 975.2113612430039,
+      "peak_mem_gb": 1.6032633781433105,
+      "trainable": {
+        "connector": 1837056,
+        "lora": 4587520,
+        "total": 6424576,
+        "frozen_backbone_params": 596049920
+      },
+      "updates": 750
+    }
+  },
+  "checkpoint_bytes": {
+    "250": 22065205,
+    "500": 22065205,
+    "750": 22065205,
+    "1000": 22065269,
+    "1250": 22065269,
+    "1500": 22065269,
+    "1750": 22065333,
+    "2000": 22065333,
+    "2250": 22065333,
+    "2500": 77380836,
+    "2750": 77380836,
+    "3000": 77380900,
+    "3250": 77380900,
+    "3500": 77380900,
+    "3750": 77380964,
+    "4000": 77381092,
+    "4250": 77381092,
+    "4500": 77381092
+  },
+  "stage_weight_bytes": {
+    "stage1.pt": 7350670,
+    "stage2.pt": 25764682,
+    "stage3.pt": 25764682
+  },
+  "gpu": "Tesla T4",
+  "calibration_scale": 0.054789625108242035,
+  "feature_cache": {
+    "n_images": 9255,
+    "cache_time_s": 163.57387766,
+    "images_per_s": 56.57993830252497,
+    "peak_gpu_mem_gb": 1.359999656677246,
+    "bytes": 2786273408
+  }
+}

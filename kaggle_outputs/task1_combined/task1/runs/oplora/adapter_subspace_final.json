@@ -1,0 +1,13 @@
+{
+  "k": 128,
+  "projected": true,
+  "rho_out_max": 1.5873248656372378e-08,
+  "rho_out_mean": 1.6976823568017174e-09,
+  "rho_in_max": 3.4854886350342495e-08,
+  "rho_in_mean": 2.012177163020553e-08,
+  "B_leak_max": 0.00012444521416909993,
+  "A_leak_max": 0.00018958559667225927,
+  "Uk_orth_err_max": 0.0007460713386535645,
+  "Vk_orth_err_max": 0.0007185935974121094,
+  "note": "rho_out = ||U_k^T dW||_F^2/||dW||_F^2, rho_in = ||dW V_k||_F^2/||dW||_F^2 over all adapted projections; OPLoRA constraints require both ~0 (FP32 round-off). For LoRA the bases are computed only for this report."
+}

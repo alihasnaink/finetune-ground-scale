@@ -1,0 +1,383 @@
+[{"stream_name":"stderr","time":6.655999203,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.656049833,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.656056397,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.656060748,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.214072259,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.214123942,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.214129668,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.214133747,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.324706324,"data":"Thu Nov 12 02:27:11 2026       \r\n"}
+,{"stream_name":"stdout","time":8.324738816,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":8.324742932,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\r\n"}
+,{"stream_name":"stdout","time":8.324745685,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":8.324748404,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\r\n"}
+,{"stream_name":"stdout","time":8.32475092,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\r\n"}
+,{"stream_name":"stdout","time":8.324753353,"data":"|                                         |                        |               MIG M. |\r\n"}
+,{"stream_name":"stdout","time":8.324755912,"data":"|=========================================+========================+======================|\r\n"}
+,{"stream_name":"stdout","time":8.374987851,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":8.375014041,"data":"| N/A   50C    P8              9W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":8.375019256,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":8.375023073,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":8.375027251,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":8.375031279,"data":"| N/A   49C    P8              9W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":8.375035274,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":8.375039345,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":8.375042599,"data":"\r\n"}
+,{"stream_name":"stdout","time":8.375046137,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":8.375049798,"data":"| Processes:                                                                              |\r\n"}
+,{"stream_name":"stdout","time":8.375064716,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\r\n"}
+,{"stream_name":"stdout","time":8.375069038,"data":"|        ID   ID                                                               Usage      |\r\n"}
+,{"stream_name":"stdout","time":8.37507292,"data":"|=========================================================================================|\r\n"}
+,{"stream_name":"stdout","time":8.375076756,"data":"|  No running processes found                                                             |\r\n"}
+,{"stream_name":"stdout","time":8.37508007,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stderr","time":8.80089556,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":9.003069488,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":9.003109274,"data":"\n"}
+,{"stream_name":"stderr","time":9.00311469,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":16.769522263,"data":"Updating files:  77% (364/470)\rUpdating files:  78% (367/470)\rUpdating files:  79% (372/470)\rUpdating files:  80% (376/470)\rUpdating files:  81% (381/470)\rUpdating files:  82% (386/470)\rUpdating files:  83% (391/470)\rUpdating files:  84% (395/470)\rUpdating files:  85% (400/470)\rUpdating files:  86% (405/470)\rUpdating files:  87% (409/470)\rUpdating files:  88% (414/470)\rUpdating files:  89% (419/470)\rUpdating files:  90% (423/470)\rUpdating files:  91% (428/470)\rUpdating files:  77% (364/470)\rUpdating files:  78% (367/470)\rUpdating files:  79% (372/470)\rUpdating files:  80% (376/470)\rUpdating files:  81% (381/470)\rUpdating files:  82% (386/470)\rUpdating files:  83% (391/470)\rUpdating files:  84% (395/470)\rUpdating files:  85% (400/470)\rUpdating files:  86% (405/470)\rUpdating files:  87% (409/470)\rUpdating files:  88% (414/470)\rUpdating files:  89% (419/470)\rUpdating files:  90% (423/470)\rUpdating files:  91% (428/470)\r\n"}
+,{"stream_name":"stderr","time":16.867931649,"data":"Updating files:  77% (364/470)\rUpdating files:  78% (367/470)\rUpdating files:  79% (372/470)\rUpdating files:  80% (376/470)\rUpdating files:  81% (381/470)\rUpdating files:  82% (386/470)\rUpdating files:  83% (391/470)\rUpdating files:  84% (395/470)\rUpdating files:  85% (400/470)\rUpdating files:  86% (405/470)\rUpdating files:  87% (409/470)\rUpdating files:  88% (414/470)\rUpdating files:  89% (419/470)\rUpdating files:  90% (423/470)\rUpdating files:  91% (428/470)\rUpdating files:  92% (433/470)\rUpdating files:  93% (438/470)\rUpdating files:  94% (442/470)\rUpdating files:  95% (447/470)\rUpdating files:  96% (452/470)\rUpdating files:  97% (456/470)\rUpdating files:  98% (461/470)\rUpdating files:  99% (466/470)\rUpdating files: 100% (470/470)\rUpdating files: 100% (470/470), done.\n"}
+,{"stream_name":"stdout","time":16.880244613,"data":"31e4806 more task2 fixes\n"}
+,{"stream_name":"stdout","time":16.88026173,"data":"\n"}
+,{"stream_name":"stderr","time":16.881453879,"data":"Updating files:  92% (433/470)\rUpdating files:  93% (438/470)\rUpdating files:  94% (442/470)\rUpdating files:  95% (447/470)\rUpdating files:  96% (452/470)\rUpdating files:  97% (456/470)\rUpdating files:  98% (461/470)\rUpdating files:  99% (466/470)\rUpdating files: 100% (470/470)\rUpdating files: 100% (470/470), done.\n"}
+,{"stream_name":"stderr","time":16.881472225,"data":"\n"}
+,{"stream_name":"stderr","time":16.881660521,"data":"Updating files:  92% (433/470)\rUpdating files:  93% (438/470)\rUpdating files:  94% (442/470)\rUpdating files:  95% (447/470)\rUpdating files:  96% (452/470)\rUpdating files:  97% (456/470)\rUpdating files:  98% (461/470)\rUpdating files:  99% (466/470)\rUpdating files: 100% (470/470)\rUpdating files: 100% (470/470), done.\n"}
+,{"stream_name":"stdout","time":34.499439274,"data":"torch 2.11.0+cu130 | transformers 5.20.2\n"}
+,{"stream_name":"stdout","time":34.501844795,"data":"GPUs: ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":34.501891079,"data":"COCO image roots: none (images are downloaded)\n"}
+,{"stream_name":"stdout","time":61.315201964,"data":"[02:28:04] annotations ready in 9s: ['captions_train2014.json', 'captions_val2014.json', 'instances_train2014.json', 'instances_val2014.json', 'v2_OpenEnded_mscoco_train2014_questions.json', 'v2_OpenEnded_mscoco_val2014_questions.json', 'v2_mscoco_train2014_annotations.json', 'v2_mscoco_train2014_complementary_pairs.json', 'v2_mscoco_val2014_annotations.json', 'v2_mscoco_val2014_complementary_pairs.json']\n"}
+,{"stream_name":"stdout","time":61.31524386,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":62.863480055,"data":"[02:28:05] loading COCO annotations\n"}
+,{"stream_name":"stdout","time":160.42989885,"data":"[02:29:43] VQAv2 val2014: {'pairs': 95144, 'eligible': 33919, 'low_agreement': 57053, 'same_consensus': 3378, 'type_or_image': 794}; eligible by type {'yes/no': 20963, 'other': 8033, 'number': 4923}\n"}
+,{"stream_name":"stdout","time":330.237305406,"data":"[02:32:33] VQAv2 train2014: {'pairs': 200394, 'low_agreement': 119903, 'same_consensus': 7086, 'eligible': 71962, 'type_or_image': 1443}; eligible by type {'other': 17368, 'yes/no': 44033, 'number': 10561}\n"}
+,{"stream_name":"stdout","time":331.09742545,"data":"[02:32:34] selection done: 9255 images, sha f0e9cd6ad9e1; checks ok\n"}
+,{"stream_name":"stdout","time":332.026497551,"data":"[02:32:34] images: 9255 needed, 9255 to download\n"}
+,{"stream_name":"stdout","time":338.60288644,"data":"[02:32:41]   downloaded 1000/9255\n"}
+,{"stream_name":"stdout","time":340.190089495,"data":"[02:32:43]   downloaded 2000/9255\n"}
+,{"stream_name":"stdout","time":343.344861983,"data":"[02:32:46]   downloaded 3000/9255\n"}
+,{"stream_name":"stdout","time":346.926721242,"data":"[02:32:49]   downloaded 4000/9255\n"}
+,{"stream_name":"stdout","time":350.614129231,"data":"[02:32:53]   downloaded 5000/9255\n"}
+,{"stream_name":"stdout","time":354.188717608,"data":"[02:32:57]   downloaded 6000/9255\n"}
+,{"stream_name":"stdout","time":357.788320291,"data":"[02:33:00]   downloaded 7000/9255\n"}
+,{"stream_name":"stdout","time":364.897476544,"data":"[02:33:07]   downloaded 8000/9255\n"}
+,{"stream_name":"stdout","time":366.767472632,"data":"[02:33:09]   downloaded 9000/9255\n"}
+,{"stream_name":"stdout","time":377.546274089,"data":"[transformers] \u001b[1mSiglipVisionModel LOAD REPORT\u001b[0m from: google/siglip-base-patch16-224\n"}
+,{"stream_name":"stdout","time":377.54632269,"data":"Key                                                          | Status     |  | \n"}
+,{"stream_name":"stdout","time":377.54632981,"data":"-------------------------------------------------------------+------------+--+-\n"}
+,{"stream_name":"stdout","time":377.546334428,"data":"text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546338956,"data":"text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546376286,"data":"text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.54638175,"data":"text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546386801,"data":"text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546404164,"data":"text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546407871,"data":"text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546411255,"data":"text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546414668,"data":"text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546418011,"data":"text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546421459,"data":"text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546429293,"data":"text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546431898,"data":"text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546434152,"data":"text_model.final_layer_norm.bias                             | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.5464365,"data":"text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546438778,"data":"text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546441117,"data":"text_model.final_layer_norm.weight                           | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546443344,"data":"text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546445681,"data":"text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546448795,"data":"logit_bias                                                   | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546460751,"data":"text_model.head.bias                                         | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546464584,"data":"text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546470522,"data":"text_model.head.weight                                       | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546474366,"data":"logit_scale                                                  | UNEXPECTED |  | \n"}
+,{"stream_name":"stdout","time":377.546477912,"data":"\n"}
+,{"stream_name":"stdout","time":377.546481742,"data":"Notes:\n"}
+,{"stream_name":"stdout","time":377.546485164,"data":"- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":382.484066546,"data":"[02:33:25]   features 64/9255\n"}
+,{"stream_name":"stdout","time":403.217415522,"data":"[02:33:46]   features 1344/9255\n"}
+,{"stream_name":"stdout","time":424.04819086,"data":"[02:34:06]   features 2624/9255\n"}
+,{"stream_name":"stdout","time":445.909839067,"data":"[02:34:28]   features 3904/9255\n"}
+,{"stream_name":"stdout","time":467.435194623,"data":"[02:34:50]   features 5184/9255\n"}
+,{"stream_name":"stdout","time":489.412984055,"data":"[02:35:12]   features 6464/9255\n"}
+,{"stream_name":"stdout","time":512.063572667,"data":"[02:35:34]   features 7744/9255\n"}
+,{"stream_name":"stdout","time":535.975209041,"data":"[02:35:58]   features 9024/9255\n"}
+,{"stream_name":"stdout","time":541.476439719,"data":"[02:36:04] features cached: 9255 images in 2.7 min (2.59 GiB); vision encoder released\n"}
+,{"stream_name":"stdout","time":541.476516022,"data":"[02:36:04] prepare done\n"}
+,{"stream_name":"stdout","time":546.171113839,"data":"--- task2.prepare finished in 8.5 min\n"}
+,{"stream_name":"stdout","time":546.171154747,"data":"{\n"}
+,{"stream_name":"stdout","time":546.171160578,"data":"  \"selection_sha256\": \"f0e9cd6ad9e12f2954a8344663ec537596a32fee4018677adf1d7dbb4da1b5ba\",\n"}
+,{"stream_name":"stdout","time":546.171165105,"data":"  \"seed\": 6304,\n"}
+,{"stream_name":"stdout","time":546.171168185,"data":"  \"checks\": {\n"}
+,{"stream_name":"stdout","time":546.171171851,"data":"    \"eval_images_unique_across_all_dev_test_sets\": true,\n"}
+,{"stream_name":"stdout","time":546.171175747,"data":"    \"eval_disjoint_from_training\": true,\n"}
+,{"stream_name":"stdout","time":546.171179777,"data":"    \"eval_all_val2014\": true,\n"}
+,{"stream_name":"stdout","time":546.171183341,"data":"    \"train_all_train2014\": true,\n"}
+,{"stream_name":"stdout","time":546.171186762,"data":"    \"pairs_have_distinct_images\": true,\n"}
+,{"stream_name":"stdout","time":546.171190165,"data":"    \"pairs_have_different_answers\": true,\n"}
+,{"stream_name":"stdout","time":546.171193671,"data":"    \"vqa_min_agreement_ok\": true,\n"}
+,{"stream_name":"stdout","time":546.171196858,"data":"    \"mismatch_maps_exclude_own_pair\": true,\n"}
+,{"stream_name":"stdout","time":546.171202012,"data":"    \"counts\": {\n"}
+,{"stream_name":"stdout","time":546.171209582,"data":"      \"vqa_test\": 192,\n"}
+,{"stream_name":"stdout","time":546.171212535,"data":"      \"vqa_dev\": 64,\n"}
+,{"stream_name":"stdout","time":546.171214842,"data":"      \"grounding_test\": 128,\n"}
+,{"stream_name":"stdout","time":546.171217267,"data":"      \"grounding_dev\": 48,\n"}
+,{"stream_name":"stdout","time":546.171219969,"data":"      \"caption_dev\": 96,\n"}
+,{"stream_name":"stdout","time":546.171222205,"data":"      \"caption_train\": 18000,\n"}
+,{"stream_name":"stdout","time":546.171224581,"data":"      \"grounding_train\": 24000,\n"}
+,{"stream_name":"stdout","time":546.17122788,"data":"      \"vqa_train\": 3072\n"}
+,{"stream_name":"stdout","time":546.171248129,"data":"    },\n"}
+,{"stream_name":"stdout","time":546.171251994,"data":"    \"pairs\": {\n"}
+,{"stream_name":"stdout","time":546.171255747,"data":"      \"vqa_train\": 1536,\n"}
+,{"stream_name":"stdout","time":546.171259259,"data":"      \"vqa_dev\": 32,\n"}
+,{"stream_name":"stdout","time":546.171262755,"data":"      \"vqa_test\": 96,\n"}
+,{"stream_name":"stdout","time":546.171266777,"data":"      \"grounding_train_presence_pool\": 6000,\n"}
+,{"stream_name":"stdout","time":546.171270349,"data":"      \"grounding_train_counting_pool\": 6000,\n"}
+,{"stream_name":"stdout","time":546.171273435,"data":"      \"grounding_dev\": 24,\n"}
+,{"stream_name":"stdout","time":546.171276745,"data":"      \"grounding_test\": 64,\n"}
+,{"stream_name":"stdout","time":546.171279775,"data":"      \"caption_train_examples\": 18000,\n"}
+,{"stream_name":"stdout","time":546.171282994,"data":"      \"caption_dev_examples\": 96\n"}
+,{"stream_name":"stdout","time":546.171286949,"data":"    }\n"}
+,{"stream_name":"stdout","time":546.171290348,"data":"  },\n"}
+,{"stream_name":"stdout","time":546.17129379,"data":"  \"vqa_filter_stats\": {\n"}
+,{"stream_name":"stdout","time":546.171297358,"data":"    \"val2014\": {\n"}
+,{"stream_name":"stdout","time":546.171300659,"data":"      \"pairs\": 95144,\n"}
+,{"stream_name":"stdout","time":546.171303769,"data":"      \"eligible\": 33919,\n"}
+,{"stream_name":"stdout","time":546.171321863,"data":"      \"low_agreement\": 57053,\n"}
+,{"stream_name":"stdout","time":546.171325692,"data":"      \"same_consensus\": 3378,\n"}
+,{"stream_name":"stdout","time":546.17132957,"data":"      \"type_or_image\": 794\n"}
+,{"stream_name":"stdout","time":546.171333434,"data":"    },\n"}
+,{"stream_name":"stdout","time":546.171336693,"data":"    \"train2014\": {\n"}
+,{"stream_name":"stdout","time":546.171341392,"data":"      \"pairs\": 200394,\n"}
+,{"stream_name":"stdout","time":546.171345424,"data":"      \"low_agreement\": 119903,\n"}
+,{"stream_name":"stdout","time":546.171351208,"data":"      \"same_consensus\": 7086,\n"}
+,{"stream_name":"stdout","time":546.171355139,"data":"      \"eligible\": 71962,\n"}
+,{"stream_name":"stdout","time":546.171415828,"data":"      \"type_or_image\": 1443\n"}
+,{"stream_name":"stdout","time":546.171419662,"data":"    }\n"}
+,{"stream_name":"stdout","time":546.17142317,"data":"  },\n"}
+,{"stream_name":"stdout","time":546.17142631,"data":"  \"grounding_rules\": {\n"}
+,{"stream_name":"stdout","time":546.171429295,"data":"    \"min_instance_area\": 1024,\n"}
+,{"stream_name":"stdout","time":546.171432592,"data":"    \"exclude_crowd\": true,\n"}
+,{"stream_name":"stdout","time":546.171436115,"data":"    \"count_range\": [\n"}
+,{"stream_name":"stdout","time":546.171439802,"data":"      1,\n"}
+,{"stream_name":"stdout","time":546.171442907,"data":"      4\n"}
+,{"stream_name":"stdout","time":546.17144623,"data":"    ],\n"}
+,{"stream_name":"stdout","time":546.171449278,"data":"    \"presence_negative\": \"no annotation of the category at all\",\n"}
+,{"stream_name":"stdout","time":546.171452544,"data":"    \"presence_positive\": \"a non-crowd instance with area \u003e= min_instance_area\",\n"}
+,{"stream_name":"stdout","time":546.171456915,"data":"    \"counting\": \"all instances of the category non-crowd and \u003e= min area; pairs have different counts\"\n"}
+,{"stream_name":"stdout","time":546.171461067,"data":"  },\n"}
+,{"stream_name":"stdout","time":546.17146445,"data":"  \"n_images\": 9255\n"}
+,{"stream_name":"stdout","time":546.171468026,"data":"}\n"}
+,{"stream_name":"stdout","time":546.186405732,"data":"vlm49 lane started on GPU 1 -\u003e /kaggle/working/task2/lane_vlm49_gpu1.log\n"}
+,{"stream_name":"stdout","time":556.259700135,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":570.852706618,"data":"[02:36:33] connector scale 0.0548 (text norm 0.8718, initial visual norm 15.9119)\n"}
+,{"stream_name":"stdout","time":577.956894321,"data":"[02:36:40] [dev @ 0] caption loss 5.5217 | grounding NLL 11.296 ΔNLL +0.349 | vqa NLL 13.885 ΔNLL +0.216\n"}
+,{"stream_name":"stdout","time":577.957163509,"data":"[02:36:40] stage 1 (caption_alignment): updates 0-\u003e2250, trainable 1,837,056 (connector 1,837,056, LoRA 0)\n"}
+,{"stream_name":"stdout","time":579.146212473,"data":"[02:36:42] grad check: connector grad norm 177\n"}
+,{"stream_name":"stdout","time":579.146263302,"data":"[02:36:42] [stage 1] update 1 (1/2250) loss 5.0358 lr {'connector': 8.928571428571428e-06} gnorm 176.992 scale 1024 1.22s/upd peak 1.45GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":637.77844758,"data":"[02:37:40] [stage 1] update 50 (50/2250) loss 3.2206 lr {'connector': 0.00044642857142857147} gnorm 7.267 scale 1024 1.19s/upd peak 1.50GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":696.954501902,"data":"[02:38:39] [stage 1] update 100 (100/2250) loss 3.1734 lr {'connector': 0.0008928571428571429} gnorm 2.358 scale 1024 1.22s/upd peak 1.50GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":756.488501909,"data":"[02:39:39] [stage 1] update 150 (150/2250) loss 2.9426 lr {'connector': 0.0009993350892872903} gnorm 1.785 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":815.827184592,"data":"[02:40:38] [stage 1] update 200 (200/2250) loss 2.8292 lr {'connector': 0.000996327905697773} gnorm 0.981 scale 1024 1.19s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":875.161932238,"data":"[02:41:38] [stage 1] update 250 (250/2250) loss 3.2774 lr {'connector': 0.0009909125749180002} gnorm 1.582 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":934.231819936,"data":"[02:42:37] [stage 1] update 300 (300/2250) loss 2.6056 lr {'connector': 0.000983118315182895} gnorm 0.929 scale 1024 1.20s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":992.840727159,"data":"[02:43:35] [stage 1] update 350 (350/2250) loss 2.8106 lr {'connector': 0.0009729871801584767} gnorm 0.862 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1051.570303435,"data":"[02:44:34] [stage 1] update 400 (400/2250) loss 2.7473 lr {'connector': 0.0009605738320427207} gnorm 0.854 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1110.256425287,"data":"[02:45:33] [stage 1] update 450 (450/2250) loss 2.3968 lr {'connector': 0.000945945246637509} gnorm 0.979 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1168.724232432,"data":"[02:46:31] [stage 1] update 500 (500/2250) loss 2.5119 lr {'connector': 0.0009291803519829472} gnorm 0.664 scale 1024 1.19s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1175.519546355,"data":"[02:46:38] [dev @ 500] caption loss 2.4888 | grounding NLL 4.618 ΔNLL +0.322 | vqa NLL 5.584 ΔNLL -0.031\n"}
+,{"stream_name":"stdout","time":1234.19617334,"data":"[02:47:37] [stage 1] update 550 (550/2250) loss 2.6496 lr {'connector': 0.0009103696025037797} gnorm 0.670 scale 1024 1.19s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1292.578858095,"data":"[02:48:35] [stage 1] update 600 (600/2250) loss 2.2341 lr {'connector': 0.0008896144909655866} gnorm 0.725 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1351.191472253,"data":"[02:49:34] [stage 1] update 650 (650/2250) loss 2.2767 lr {'connector': 0.0008670270008739836} gnorm 0.774 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1410.020419756,"data":"[02:50:32] [stage 1] update 700 (700/2250) loss 2.0332 lr {'connector': 0.0008427290022713872} gnorm 0.799 scale 1024 1.40s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1468.685568165,"data":"[02:51:31] [stage 1] update 750 (750/2250) loss 2.4618 lr {'connector': 0.0008168515941913034} gnorm 0.587 scale 1024 1.20s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1527.412921698,"data":"[02:52:30] [stage 1] update 800 (800/2250) loss 2.2365 lr {'connector': 0.0007895343973179051} gnorm 0.691 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1585.844555337,"data":"[02:53:28] [stage 1] update 850 (850/2250) loss 2.4043 lr {'connector': 0.0007609248006673322} gnorm 0.606 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1644.665607717,"data":"[02:54:27] [stage 1] update 900 (900/2250) loss 2.2731 lr {'connector': 0.0007311771663552146} gnorm 0.704 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1703.210525166,"data":"[02:55:26] [stage 1] update 950 (950/2250) loss 2.4188 lr {'connector': 0.0007004519967410759} gnorm 0.654 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1761.772536884,"data":"[02:56:24] [stage 1] update 1000 (1000/2250) loss 2.4632 lr {'connector': 0.0006689150684432535} gnorm 0.706 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1768.584540271,"data":"[02:56:31] [dev @ 1000] caption loss 2.4009 | grounding NLL 4.790 ΔNLL +0.381 | vqa NLL 6.425 ΔNLL +0.066\n"}
+,{"stream_name":"stdout","time":1827.231151445,"data":"[02:57:30] [stage 1] update 1050 (1050/2250) loss 2.2664 lr {'connector': 0.0006367365378967372} gnorm 0.701 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1885.635478277,"data":"[02:58:28] [stage 1] update 1100 (1100/2250) loss 2.4814 lr {'connector': 0.0006040900232798498} gnorm 0.680 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":1944.051697088,"data":"[02:59:26] [stage 1] update 1150 (1150/2250) loss 2.2873 lr {'connector': 0.0005711516677632126} gnorm 0.704 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2002.570697053,"data":"[03:00:25] [stage 1] update 1200 (1200/2250) loss 2.0902 lr {'connector': 0.0005380991891351972} gnorm 0.669 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2061.287113214,"data":"[03:01:24] [stage 1] update 1250 (1250/2250) loss 2.0135 lr {'connector': 0.0005051109209315805} gnorm 0.803 scale 1024 1.15s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2119.587988787,"data":"[03:02:22] [stage 1] update 1300 (1300/2250) loss 2.2891 lr {'connector': 0.0004723648502429564} gnorm 0.653 scale 1024 1.20s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2178.200797658,"data":"[03:03:21] [stage 1] update 1350 (1350/2250) loss 2.6021 lr {'connector': 0.00044003765739137924} gnorm 0.796 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2237.009017324,"data":"[03:04:19] [stage 1] update 1400 (1400/2250) loss 2.4360 lr {'connector': 0.00040830376265763545} gnorm 0.877 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2295.565515418,"data":"[03:05:18] [stage 1] update 1450 (1450/2250) loss 2.6779 lr {'connector': 0.0003773343852024884} gnorm 0.756 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2353.945072866,"data":"[03:06:16] [stage 1] update 1500 (1500/2250) loss 2.4154 lr {'connector': 0.00034729661925946123} gnorm 0.872 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2360.724004276,"data":"[03:06:23] [dev @ 1500] caption loss 2.3288 | grounding NLL 6.231 ΔNLL +0.493 | vqa NLL 7.509 ΔNLL +0.221\n"}
+,{"stream_name":"stdout","time":2419.024688705,"data":"[03:07:21] [stage 1] update 1550 (1550/2250) loss 2.0827 lr {'connector': 0.0003183525325835246} gnorm 0.744 scale 1024 1.15s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2477.746584152,"data":"[03:08:20] [stage 1] update 1600 (1600/2250) loss 2.2760 lr {'connector': 0.0002906582920199812} gnorm 0.890 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2536.300571972,"data":"[03:09:19] [stage 1] update 1650 (1650/2250) loss 1.8966 lr {'connector': 0.0002643633209115077} gnorm 0.839 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2594.843138849,"data":"[03:10:17] [stage 1] update 1700 (1700/2250) loss 2.0480 lr {'connector': 0.0002396094928895405} gnorm 0.757 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2653.407307045,"data":"[03:11:16] [stage 1] update 1750 (1750/2250) loss 1.7963 lr {'connector': 0.00021653036639987278} gnorm 0.808 scale 1024 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2711.760336107,"data":"[03:12:14] [stage 1] update 1800 (1800/2250) loss 2.3011 lr {'connector': 0.0001952504640925568} gnorm 0.991 scale 1024 1.15s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2770.49187293,"data":"[03:13:13] [stage 1] update 1850 (1850/2250) loss 2.3547 lr {'connector': 0.00017588460096413668} gnorm 0.856 scale 1024 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2829.047457255,"data":"[03:14:11] [stage 1] update 1900 (1900/2250) loss 1.9210 lr {'connector': 0.00015853726487720002} gnorm 0.790 scale 1024 1.38s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2887.606394313,"data":"[03:15:10] [stage 1] update 1950 (1950/2250) loss 2.3114 lr {'connector': 0.00014330205279963269} gnorm 0.887 scale 1024 1.20s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2946.2483336,"data":"[03:16:09] [stage 1] update 2000 (2000/2250) loss 2.2707 lr {'connector': 0.00013026116580532957} gnorm 0.867 scale 1024 1.28s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":2953.035007052,"data":"[03:16:15] [dev @ 2000] caption loss 2.2994 | grounding NLL 6.700 ΔNLL +0.538 | vqa NLL 7.585 ΔNLL +0.200\n"}
+,{"stream_name":"stdout","time":3011.430974373,"data":"[03:17:14] [stage 1] update 2050 (2050/2250) loss 2.1736 lr {'connector': 0.00011948496556106715} gnorm 0.823 scale 2048 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3070.008943202,"data":"[03:18:12] [stage 1] update 2100 (2100/2250) loss 2.2461 lr {'connector': 0.00011103159469249923} gnorm 0.812 scale 2048 1.19s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3128.460737309,"data":"[03:19:11] [stage 1] update 2150 (2150/2250) loss 1.9610 lr {'connector': 0.00010494666307757758} gnorm 0.829 scale 2048 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3186.957511051,"data":"[03:20:09] [stage 1] update 2200 (2200/2250) loss 2.1411 lr {'connector': 0.00010126300175999075} gnorm 0.765 scale 2048 1.17s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3245.733069571,"data":"[03:21:08] [stage 1] update 2250 (2250/2250) loss 2.0819 lr {'connector': 0.00010000048581037304} gnorm 0.813 scale 2048 1.16s/upd peak 1.55GB mix {'caption': 16, 'presence': 0, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3245.733114029,"data":"[03:21:08] stage 1 done: 44.0 min, peak 1.55 GB\n"}
+,{"stream_name":"stdout","time":3252.532878036,"data":"[03:21:15] [dev @ 2250] caption loss 2.2872 | grounding NLL 5.850 ΔNLL +0.565 | vqa NLL 6.911 ΔNLL +0.280\n"}
+,{"stream_name":"stdout","time":3252.532945188,"data":"[03:21:15] stage 2 (visual_instruction): updates 0-\u003e1500, trainable 6,424,576 (connector 1,837,056, LoRA 4,587,520)\n"}
+,{"stream_name":"stdout","time":3253.901477757,"data":"[03:21:16] grad check: connector grad norm 14.79, LoRA-B grad norm 72.99\n"}
+,{"stream_name":"stdout","time":3253.90151882,"data":"[03:21:16] [stage 2] update 2251 (1/1500) loss 6.1670 lr {'connector': 1.3333333333333334e-06, 'lora': 2.666666666666667e-07} gnorm 74.477 scale 2048 1.30s/upd peak 1.46GB mix {'caption': 2, 'presence': 6, 'counting': 8, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3318.692249123,"data":"[03:22:21] [stage 2] update 2300 (50/1500) loss 0.3848 lr {'connector': 6.666666666666667e-05, 'lora': 1.3333333333333333e-05} gnorm 4.279 scale 2048 1.31s/upd peak 1.57GB mix {'caption': 2, 'presence': 14, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3385.747844359,"data":"[03:23:28] [stage 2] update 2350 (100/1500) loss 0.4807 lr {'connector': 9.993702419962222e-05, 'lora': 1.9987404839924446e-05} gnorm 3.306 scale 2048 1.29s/upd peak 1.57GB mix {'caption': 2, 'presence': 12, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3452.947679645,"data":"[03:24:35] [stage 2] update 2400 (150/1500) loss 0.6731 lr {'connector': 9.940247990417938e-05, 'lora': 1.9880495980835876e-05} gnorm 3.464 scale 2048 1.32s/upd peak 1.57GB mix {'caption': 4, 'presence': 10, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3519.714419917,"data":"[03:25:42] [stage 2] update 2450 (200/1500) loss 1.2848 lr {'connector': 9.832894965189306e-05, 'lora': 1.9665789930378615e-05} gnorm 5.045 scale 2048 1.37s/upd peak 1.57GB mix {'caption': 8, 'presence': 2, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3586.449270985,"data":"[03:26:49] [stage 2] update 2500 (250/1500) loss 0.9448 lr {'connector': 9.672946464578345e-05, 'lora': 1.934589292915669e-05} gnorm 3.004 scale 2048 1.33s/upd peak 1.57GB mix {'caption': 6, 'presence': 8, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3594.086564278,"data":"[03:26:56] [dev @ 2500] caption loss 2.3276 | grounding NLL 0.610 ΔNLL +2.696 | vqa NLL 1.719 ΔNLL +1.314\n"}
+,{"stream_name":"stdout","time":3660.710992993,"data":"[03:28:03] [stage 2] update 2550 (300/1500) loss 1.4248 lr {'connector': 9.462344046710487e-05, 'lora': 1.8924688093420974e-05} gnorm 4.824 scale 2048 1.32s/upd peak 1.57GB mix {'caption': 6, 'presence': 4, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3727.5132929,"data":"[03:29:10] [stage 2] update 2600 (350/1500) loss 0.3941 lr {'connector': 9.203644139649052e-05, 'lora': 1.8407288279298106e-05} gnorm 2.911 scale 2048 1.48s/upd peak 1.57GB mix {'caption': 2, 'presence': 10, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3794.338790297,"data":"[03:30:17] [stage 2] update 2650 (400/1500) loss 0.5491 lr {'connector': 8.899987009821588e-05, 'lora': 1.7799974019643176e-05} gnorm 1.164 scale 2048 1.32s/upd peak 1.57GB mix {'caption': 4, 'presence': 12, 'counting': 0, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3860.796669381,"data":"[03:31:23] [stage 2] update 2700 (450/1500) loss 0.5938 lr {'connector': 8.555058643439348e-05, 'lora': 1.71101172868787e-05} gnorm 4.935 scale 2048 1.32s/upd peak 1.57GB mix {'caption': 4, 'presence': 6, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3928.131457708,"data":"[03:32:31] [stage 2] update 2750 (500/1500) loss 1.0065 lr {'connector': 8.173046003617868e-05, 'lora': 1.634609200723574e-05} gnorm 2.883 scale 2048 1.49s/upd peak 1.57GB mix {'caption': 8, 'presence': 6, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":3995.666646218,"data":"[03:33:38] [stage 2] update 2800 (550/1500) loss 0.4479 lr {'connector': 7.758586206316541e-05, 'lora': 1.5517172412633084e-05} gnorm 6.042 scale 2048 1.48s/upd peak 1.57GB mix {'caption': 2, 'presence': 12, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4061.708781515,"data":"[03:34:44] [stage 2] update 2850 (600/1500) loss 0.9098 lr {'connector': 7.316710232032489e-05, 'lora': 1.4633420464064978e-05} gnorm 3.402 scale 2048 1.33s/upd peak 1.57GB mix {'caption': 6, 'presence': 2, 'counting': 8, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4129.047502599,"data":"[03:35:51] [stage 2] update 2900 (650/1500) loss 0.1929 lr {'connector': 6.852781856512461e-05, 'lora': 1.3705563713024924e-05} gnorm 2.055 scale 2048 1.26s/upd peak 1.57GB mix {'caption': 0, 'presence': 12, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4195.458203463,"data":"[03:36:58] [stage 2] update 2950 (700/1500) loss 1.3004 lr {'connector': 6.372432541781238e-05, 'lora': 1.2744865083562477e-05} gnorm 2.558 scale 2048 1.34s/upd peak 1.57GB mix {'caption': 10, 'presence': 4, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4262.753451209,"data":"[03:38:05] [stage 2] update 3000 (750/1500) loss 1.1146 lr {'connector': 5.881493077821229e-05, 'lora': 1.1762986155642459e-05} gnorm 3.261 scale 2048 1.33s/upd peak 1.57GB mix {'caption': 6, 'presence': 4, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4270.384706726,"data":"[03:38:13] [dev @ 3000] caption loss 2.3121 | grounding NLL 0.644 ΔNLL +3.026 | vqa NLL 1.780 ΔNLL +1.582\n"}
+,{"stream_name":"stdout","time":4337.349336725,"data":"[03:39:20] [stage 2] update 3050 (800/1500) loss 0.1056 lr {'connector': 5.385922804680692e-05, 'lora': 1.0771845609361385e-05} gnorm 3.454 scale 2048 1.26s/upd peak 1.57GB mix {'caption': 0, 'presence': 10, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4404.538685478,"data":"[03:40:27] [stage 2] update 3100 (850/1500) loss 0.7372 lr {'connector': 4.8917372741582655e-05, 'lora': 9.783474548316532e-06} gnorm 2.599 scale 2048 1.32s/upd peak 1.57GB mix {'caption': 6, 'presence': 6, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4470.747436864,"data":"[03:41:33] [stage 2] update 3150 (900/1500) loss 0.8003 lr {'connector': 4.404935229153033e-05, 'lora': 8.809870458306066e-06} gnorm 3.896 scale 2048 1.30s/upd peak 1.57GB mix {'caption': 4, 'presence': 4, 'counting': 8, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4537.816428235,"data":"[03:42:40] [stage 2] update 3200 (950/1500) loss 0.2706 lr {'connector': 3.9314257870518325e-05, 'lora': 7.862851574103665e-06} gnorm 3.037 scale 2048 1.29s/upd peak 1.57GB mix {'caption': 2, 'presence': 12, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4604.374771808,"data":"[03:43:47] [stage 2] update 3250 (1000/1500) loss 0.0473 lr {'connector': 3.476956711048885e-05, 'lora': 6.95391342209777e-06} gnorm 1.443 scale 2048 1.26s/upd peak 1.57GB mix {'caption': 0, 'presence': 12, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4671.1173573,"data":"[03:44:54] [stage 2] update 3300 (1050/1500) loss 0.0109 lr {'connector': 3.047044640086738e-05, 'lora': 6.0940892801734765e-06} gnorm 0.788 scale 2048 1.27s/upd peak 1.57GB mix {'caption': 0, 'presence': 10, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4738.058188185,"data":"[03:46:00] [stage 2] update 3350 (1100/1500) loss 0.3536 lr {'connector': 2.64690812433255e-05, 'lora': 5.2938162486651e-06} gnorm 6.747 scale 2048 1.26s/upd peak 1.57GB mix {'caption': 0, 'presence': 6, 'counting': 10, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4804.407015113,"data":"[03:47:07] [stage 2] update 3400 (1150/1500) loss 0.5760 lr {'connector': 2.2814042790482863e-05, 'lora': 4.562808558096573e-06} gnorm 1.715 scale 2048 1.32s/upd peak 1.57GB mix {'caption': 4, 'presence': 10, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4870.763394852,"data":"[03:48:13] [stage 2] update 3450 (1200/1500) loss 0.7829 lr {'connector': 1.9549698257910675e-05, 'lora': 3.909939651582136e-06} gnorm 8.699 scale 2048 1.30s/upd peak 1.57GB mix {'caption': 2, 'presence': 10, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4937.321101927,"data":"[03:49:20] [stage 2] update 3500 (1250/1500) loss 0.8416 lr {'connector': 1.67156723662361e-05, 'lora': 3.3431344732472204e-06} gnorm 3.808 scale 2048 1.31s/upd peak 1.57GB mix {'caption': 6, 'presence': 8, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":4944.958034014,"data":"[03:49:27] [dev @ 3500] caption loss 2.3098 | grounding NLL 0.859 ΔNLL +3.607 | vqa NLL 2.027 ΔNLL +2.013\n"}
+,{"stream_name":"stdout","time":5011.424443151,"data":"[03:50:34] [stage 2] update 3550 (1300/1500) loss 0.4784 lr {'connector': 1.4346366350710833e-05, 'lora': 2.8692732701421665e-06} gnorm 4.885 scale 2048 1.29s/upd peak 1.57GB mix {'caption': 2, 'presence': 8, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":5077.908632852,"data":"[03:51:40] [stage 2] update 3600 (1350/1500) loss 0.5759 lr {'connector': 1.2470540376816374e-05, 'lora': 2.494108075363275e-06} gnorm 4.514 scale 2048 1.29s/upd peak 1.57GB mix {'caption': 4, 'presence': 10, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":5144.678543928,"data":"[03:52:47] [stage 2] update 3650 (1400/1500) loss 0.5281 lr {'connector': 1.1110964430814598e-05, 'lora': 2.2221928861629195e-06} gnorm 5.320 scale 2048 1.29s/upd peak 1.57GB mix {'caption': 2, 'presence': 8, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":5210.942723329,"data":"[03:53:53] [stage 2] update 3700 (1450/1500) loss 0.2437 lr {'connector': 1.0284141922959579e-05, 'lora': 2.0568283845919155e-06} gnorm 2.842 scale 2048 1.29s/upd peak 1.57GB mix {'caption': 2, 'presence': 10, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":5277.488907703,"data":"[03:55:00] [stage 2] update 3750 (1500/1500) loss 0.4325 lr {'connector': 1.0000109358453224e-05, 'lora': 2.000021871690645e-06} gnorm 6.455 scale 2048 1.48s/upd peak 1.57GB mix {'caption': 2, 'presence': 10, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":5277.488944111,"data":"[03:55:00] stage 2 done: 33.3 min, peak 1.57 GB\n"}
+,{"stream_name":"stdout","time":5285.175316033,"data":"[03:55:08] [dev @ 3750] caption loss 2.3105 | grounding NLL 0.778 ΔNLL +3.845 | vqa NLL 2.044 ΔNLL +2.057\n"}
+,{"stream_name":"stdout","time":5285.585112939,"data":"[03:55:08] stage 3 (natural_vqa): updates 0-\u003e750, trainable 6,424,576 (connector 1,837,056, LoRA 4,587,520)\n"}
+,{"stream_name":"stdout","time":5286.883473266,"data":"[03:55:09] grad check: connector grad norm 2.248, LoRA-B grad norm 6.054\n"}
+,{"stream_name":"stdout","time":5286.883506343,"data":"[03:55:09] [stage 3] update 3751 (1/750) loss 0.9576 lr {'connector': 1.3157894736842106e-06, 'lora': 2.6315789473684213e-07} gnorm 6.477 scale 2048 1.31s/upd peak 1.51GB mix {'caption': 4, 'presence': 0, 'counting': 2, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":5350.490471708,"data":"[03:56:13] [stage 3] update 3800 (50/750) loss 0.3838 lr {'connector': 4.997350326315222e-05, 'lora': 9.994700652630444e-06} gnorm 3.371 scale 2048 1.27s/upd peak 1.60GB mix {'caption': 0, 'presence': 0, 'counting': 6, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":5415.518191145,"data":"[03:57:18] [stage 3] update 3850 (100/750) loss 0.5126 lr {'connector': 4.918991880953423e-05, 'lora': 9.837983761906846e-06} gnorm 4.531 scale 2048 1.27s/upd peak 1.60GB mix {'caption': 0, 'presence': 0, 'counting': 2, 'vqa': 14}\n"}
+,{"stream_name":"stdout","time":5480.545559051,"data":"[03:58:23] [stage 3] update 3900 (150/750) loss 0.6783 lr {'connector': 4.735491618737391e-05, 'lora': 9.470983237474784e-06} gnorm 3.849 scale 2048 1.30s/upd peak 1.60GB mix {'caption': 2, 'presence': 6, 'counting': 0, 'vqa': 8}\n"}
+,{"stream_name":"stdout","time":5545.851659894,"data":"[03:59:28] [stage 3] update 3950 (200/750) loss 0.7798 lr {'connector': 4.4557447094148996e-05, 'lora': 8.911489418829799e-06} gnorm 5.410 scale 2048 1.49s/upd peak 1.60GB mix {'caption': 2, 'presence': 2, 'counting': 2, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":5610.98599407,"data":"[04:00:33] [stage 3] update 4000 (250/750) loss 0.6786 lr {'connector': 4.093311876086762e-05, 'lora': 8.186623752173524e-06} gnorm 5.148 scale 2048 1.28s/upd peak 1.60GB mix {'caption': 0, 'presence': 0, 'counting': 4, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":5618.638489321,"data":"[04:00:41] [dev @ 4000] caption loss 2.3176 | grounding NLL 0.799 ΔNLL +2.143 | vqa NLL 1.324 ΔNLL +1.427\n"}
+,{"stream_name":"stdout","time":5683.617441746,"data":"[04:01:46] [stage 3] update 4050 (300/750) loss 0.6906 lr {'connector': 3.66576203955825e-05, 'lora': 7.3315240791165e-06} gnorm 6.182 scale 4096 1.31s/upd peak 1.60GB mix {'caption': 2, 'presence': 0, 'counting': 2, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":5749.055736191,"data":"[04:02:51] [stage 3] update 4100 (350/750) loss 0.5950 lr {'connector': 3.193820665426115e-05, 'lora': 6.3876413308522314e-06} gnorm 4.483 scale 4096 1.31s/upd peak 1.60GB mix {'caption': 2, 'presence': 2, 'counting': 0, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":5813.830640946,"data":"[04:03:56] [stage 3] update 4150 (400/750) loss 0.3796 lr {'connector': 2.7003650977508303e-05, 'lora': 5.400730195501661e-06} gnorm 4.479 scale 4096 1.27s/upd peak 1.60GB mix {'caption': 0, 'presence': 4, 'counting': 4, 'vqa': 8}\n"}
+,{"stream_name":"stdout","time":5878.36212424,"data":"[04:05:01] [stage 3] update 4200 (450/750) loss 0.5320 lr {'connector': 2.2093155804843497e-05, 'lora': 4.4186311609687e-06} gnorm 4.279 scale 4096 1.30s/upd peak 1.60GB mix {'caption': 2, 'presence': 2, 'counting': 2, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":5943.722778731,"data":"[04:06:06] [stage 3] update 4250 (500/750) loss 0.3024 lr {'connector': 1.7444757243566928e-05, 'lora': 3.4889514487133856e-06} gnorm 4.326 scale 4096 1.27s/upd peak 1.60GB mix {'caption': 0, 'presence': 2, 'counting': 8, 'vqa': 6}\n"}
+,{"stream_name":"stdout","time":6008.773738612,"data":"[04:07:11] [stage 3] update 4300 (550/750) loss 0.3353 lr {'connector': 1.3283786275544901e-05, 'lora': 2.6567572551089803e-06} gnorm 4.797 scale 4096 1.26s/upd peak 1.60GB mix {'caption': 0, 'presence': 0, 'counting': 2, 'vqa': 14}\n"}
+,{"stream_name":"stdout","time":6073.579500663,"data":"[04:08:16] [stage 3] update 4350 (600/750) loss 0.7644 lr {'connector': 9.811945844572293e-06, 'lora': 1.9623891689144586e-06} gnorm 2.813 scale 4096 1.27s/upd peak 1.60GB mix {'caption': 0, 'presence': 2, 'counting': 2, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6138.520543654,"data":"[04:09:21] [stage 3] update 4400 (650/750) loss 0.5660 lr {'connector': 7.197533312177275e-06, 'lora': 1.4395066624354552e-06} gnorm 8.958 scale 4096 1.30s/upd peak 1.60GB mix {'caption': 2, 'presence': 0, 'counting': 2, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6203.945832871,"data":"[04:10:26] [stage 3] update 4450 (700/750) loss 0.8867 lr {'connector': 5.567282248031693e-06, 'lora': 1.1134564496063385e-06} gnorm 4.549 scale 4096 1.32s/upd peak 1.60GB mix {'caption': 6, 'presence': 2, 'counting': 2, 'vqa': 6}\n"}
+,{"stream_name":"stdout","time":6268.963468604,"data":"[04:11:31] [stage 3] update 4500 (750/750) loss 0.2239 lr {'connector': 5.000219023934344e-06, 'lora': 1.0000438047868689e-06} gnorm 2.367 scale 4096 1.29s/upd peak 1.60GB mix {'caption': 2, 'presence': 2, 'counting': 8, 'vqa': 4}\n"}
+,{"stream_name":"stdout","time":6268.963538164,"data":"[04:11:31] stage 3 done: 16.3 min, peak 1.60 GB\n"}
+,{"stream_name":"stdout","time":6276.672205313,"data":"[04:11:39] [dev @ 4500] caption loss 2.3298 | grounding NLL 0.850 ΔNLL +3.142 | vqa NLL 1.305 ΔNLL +1.962\n"}
+,{"stream_name":"stdout","time":6276.67225813,"data":"[04:11:39] training done: 93.6 min, skipped 0 updates\n"}
+,{"stream_name":"stdout","time":6278.219491958,"data":"--- task2.train finished in 95.5 min\n"}
+,{"stream_name":"stdout","time":6296.113795833,"data":"[04:11:59] [grounding] correct: accuracy 69.53 (lenient 69.53)\n"}
+,{"stream_name":"stdout","time":6303.389364483,"data":"[04:12:06] [grounding] complementary: accuracy 11.72 (lenient 11.72)\n"}
+,{"stream_name":"stdout","time":6310.688707979,"data":"[04:12:13] [grounding] mismatched: accuracy 37.50 (lenient 37.50)\n"}
+,{"stream_name":"stdout","time":6325.673949187,"data":"[04:12:28] [grounding] no_image: accuracy 0.00 (lenient 24.22)\n"}
+,{"stream_name":"stdout","time":6336.883824042,"data":"[04:12:39] [vqa] correct: accuracy 56.82 (lenient 56.82)\n"}
+,{"stream_name":"stdout","time":6348.13603797,"data":"[04:12:51] [vqa] complementary: accuracy 25.42 (lenient 25.42)\n"}
+,{"stream_name":"stdout","time":6359.502064209,"data":"[04:13:02] [vqa] mismatched: accuracy 34.27 (lenient 34.27)\n"}
+,{"stream_name":"stdout","time":6384.63381499,"data":"[04:13:27] [vqa] no_image: accuracy 0.00 (lenient 18.75)\n"}
+,{"stream_name":"stdout","time":6384.633854215,"data":"[04:13:27] final evaluation done in 1.6 min\n"}
+,{"stream_name":"stdout","time":6385.920221889,"data":"--- task2.evaluate finished in 1.8 min\n"}
+,{"stream_name":"stdout","time":6385.94192745,"data":"{'connector': 1.4346366350710833e-05, 'lora': 2.8692732701421665e-06} gnorm 5.989 scale 2048 0.69s/upd peak 1.48GB mix {'caption': 2, 'presence': 8, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":6385.941958966,"data":"[03:11:06] [stage 2] update 3600 (1350/1500) loss 0.6595 lr {'connector': 1.2470540376816374e-05, 'lora': 2.494108075363275e-06} gnorm 5.487 scale 2048 0.66s/upd peak 1.48GB mix {'caption': 4, 'presence': 10, 'counting': 2, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":6385.941967045,"data":"[03:11:41] [stage 2] update 3650 (1400/1500) loss 0.4424 lr {'connector': 1.1110964430814598e-05, 'lora': 2.2221928861629195e-06} gnorm 4.564 scale 2048 0.67s/upd peak 1.48GB mix {'caption': 2, 'presence': 8, 'counting': 6, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":6385.941971903,"data":"[03:12:17] [stage 2] update 3700 (1450/1500) loss 0.3155 lr {'connector': 1.0284141922959579e-05, 'lora': 2.0568283845919155e-06} gnorm 3.651 scale 2048 0.67s/upd peak 1.48GB mix {'caption': 2, 'presence': 10, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":6385.941976601,"data":"[03:12:51] [stage 2] update 3750 (1500/1500) loss 0.3876 lr {'connector': 1.0000109358453224e-05, 'lora': 2.000021871690645e-06} gnorm 4.562 scale 2048 0.68s/upd peak 1.48GB mix {'caption': 2, 'presence': 10, 'counting': 4, 'vqa': 0}\n"}
+,{"stream_name":"stdout","time":6385.941981708,"data":"[03:12:51] stage 2 done: 17.5 min, peak 1.48 GB\n"}
+,{"stream_name":"stdout","time":6385.941986062,"data":"[03:12:55] [dev @ 3750] caption loss 2.3591 | grounding NLL 0.899 ΔNLL +3.969 | vqa NLL 2.541 ΔNLL +1.280\n"}
+,{"stream_name":"stdout","time":6385.941990711,"data":"[03:12:55] stage 3 (natural_vqa): updates 0-\u003e750, trainable 6,424,576 (connector 1,837,056, LoRA 4,587,520)\n"}
+,{"stream_name":"stdout","time":6385.941996433,"data":"[03:12:55] grad check: connector grad norm 3.047, LoRA-B grad norm 11.6\n"}
+,{"stream_name":"stdout","time":6385.9420012,"data":"[03:12:55] [stage 3] update 3751 (1/750) loss 1.4680 lr {'connector': 1.3157894736842106e-06, 'lora': 2.6315789473684213e-07} gnorm 12.049 scale 2048 0.69s/upd peak 1.39GB mix {'caption': 4, 'presence': 0, 'counting': 2, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":6385.942016477,"data":"[03:13:29] [stage 3] update 3800 (50/750) loss 0.3827 lr {'connector': 4.997350326315222e-05, 'lora': 9.994700652630444e-06} gnorm 4.191 scale 2048 0.68s/upd peak 1.43GB mix {'caption': 0, 'presence': 0, 'counting': 6, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":6385.942022813,"data":"[03:14:04] [stage 3] update 3850 (100/750) loss 0.6518 lr {'connector': 4.918991880953423e-05, 'lora': 9.837983761906846e-06} gnorm 3.734 scale 2048 0.78s/upd peak 1.43GB mix {'caption': 0, 'presence': 0, 'counting': 2, 'vqa': 14}\n"}
+,{"stream_name":"stdout","time":6385.94202656,"data":"[03:14:40] [stage 3] update 3900 (150/750) loss 0.6779 lr {'connector': 4.735491618737391e-05, 'lora': 9.470983237474784e-06} gnorm 3.990 scale 2048 0.70s/upd peak 1.45GB mix {'caption': 2, 'presence': 6, 'counting': 0, 'vqa': 8}\n"}
+,{"stream_name":"stdout","time":6385.942030377,"data":"[03:15:14] [stage 3] update 3950 (200/750) loss 0.9434 lr {'connector': 4.4557447094148996e-05, 'lora': 8.911489418829799e-06} gnorm 5.470 scale 2048 0.74s/upd peak 1.45GB mix {'caption': 2, 'presence': 2, 'counting': 2, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":6385.942034541,"data":"[03:15:49] [stage 3] update 4000 (250/750) loss 0.7713 lr {'connector': 4.093311876086762e-05, 'lora': 8.186623752173524e-06} gnorm 6.094 scale 2048 0.69s/upd peak 1.49GB mix {'caption': 0, 'presence': 0, 'counting': 4, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6385.942039153,"data":"[03:15:53] [dev @ 4000] caption loss 2.3683 | grounding NLL 0.782 ΔNLL +2.185 | vqa NLL 1.512 ΔNLL +0.710\n"}
+,{"stream_name":"stdout","time":6385.942042945,"data":"[03:16:28] [stage 3] update 4050 (300/750) loss 0.6364 lr {'connector': 3.66576203955825e-05, 'lora': 7.3315240791165e-06} gnorm 5.326 scale 4096 0.72s/upd peak 1.51GB mix {'caption': 2, 'presence': 0, 'counting': 2, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6385.942047072,"data":"[03:17:03] [stage 3] update 4100 (350/750) loss 0.6106 lr {'connector': 3.193820665426115e-05, 'lora': 6.3876413308522314e-06} gnorm 3.149 scale 4096 0.67s/upd peak 1.51GB mix {'caption': 2, 'presence': 2, 'counting': 0, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6385.942051041,"data":"[03:17:37] [stage 3] update 4150 (400/750) loss 0.4309 lr {'connector': 2.7003650977508303e-05, 'lora': 5.400730195501661e-06} gnorm 5.220 scale 4096 0.66s/upd peak 1.51GB mix {'caption': 0, 'presence': 4, 'counting': 4, 'vqa': 8}\n"}
+,{"stream_name":"stdout","time":6385.942054987,"data":"[03:18:12] [stage 3] update 4200 (450/750) loss 0.6435 lr {'connector': 2.2093155804843497e-05, 'lora': 4.4186311609687e-06} gnorm 6.408 scale 4096 0.66s/upd peak 1.51GB mix {'caption': 2, 'presence': 2, 'counting': 2, 'vqa': 10}\n"}
+,{"stream_name":"stdout","time":6385.942058785,"data":"[03:18:47] [stage 3] update 4250 (500/750) loss 0.3226 lr {'connector': 1.7444757243566928e-05, 'lora': 3.4889514487133856e-06} gnorm 4.710 scale 4096 0.71s/upd peak 1.51GB mix {'caption': 0, 'presence': 2, 'counting': 8, 'vqa': 6}\n"}
+,{"stream_name":"stdout","time":6385.942063516,"data":"[03:19:22] [stage 3] update 4300 (550/750) loss 0.4389 lr {'connector': 1.3283786275544901e-05, 'lora': 2.6567572551089803e-06} gnorm 4.330 scale 4096 0.67s/upd peak 1.51GB mix {'caption': 0, 'presence': 0, 'counting': 2, 'vqa': 14}\n"}
+,{"stream_name":"stdout","time":6385.942067201,"data":"[03:19:56] [stage 3] update 4350 (600/750) loss 1.0833 lr {'connector': 9.811945844572293e-06, 'lora': 1.9623891689144586e-06} gnorm 4.095 scale 4096 0.65s/upd peak 1.51GB mix {'caption': 0, 'presence': 2, 'counting': 2, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6385.942072649,"data":"[03:20:31] [stage 3] update 4400 (650/750) loss 0.6529 lr {'connector': 7.197533312177275e-06, 'lora': 1.4395066624354552e-06} gnorm 5.830 scale 4096 0.69s/upd peak 1.51GB mix {'caption': 2, 'presence': 0, 'counting': 2, 'vqa': 12}\n"}
+,{"stream_name":"stdout","time":6385.942084002,"data":"[03:21:06] [stage 3] update 4450 (700/750) loss 0.9420 lr {'connector': 5.567282248031693e-06, 'lora': 1.1134564496063385e-06} gnorm 4.846 scale 4096 0.69s/upd peak 1.51GB mix {'caption': 6, 'presence': 2, 'counting': 2, 'vqa': 6}\n"}
+,{"stream_name":"stdout","time":6385.942086786,"data":"[03:21:41] [stage 3] update 4500 (750/750) loss 0.2734 lr {'connector': 5.000219023934344e-06, 'lora': 1.0000438047868689e-06} gnorm 3.931 scale 4096 0.67s/upd peak 1.51GB mix {'caption': 2, 'presence': 2, 'counting': 8, 'vqa': 4}\n"}
+,{"stream_name":"stdout","time":6385.94208939,"data":"[03:21:41] stage 3 done: 8.7 min, peak 1.51 GB\n"}
+,{"stream_name":"stdout","time":6385.942091765,"data":"[03:21:45] [dev @ 4500] caption loss 2.3821 | grounding NLL 0.814 ΔNLL +2.776 | vqa NLL 1.473 ΔNLL +0.868\n"}
+,{"stream_name":"stdout","time":6385.942094159,"data":"[03:21:45] training done: 44.5 min, skipped 0 updates\n"}
+,{"stream_name":"stdout","time":6385.942096438,"data":"[03:22:01] [grounding] correct: accuracy 72.66 (lenient 72.66)\n"}
+,{"stream_name":"stdout","time":6385.942098795,"data":"[03:22:04] [grounding] complementary: accuracy 11.72 (lenient 11.72)\n"}
+,{"stream_name":"stdout","time":6385.942101163,"data":"[03:22:08] [grounding] mismatched: accuracy 32.81 (lenient 32.81)\n"}
+,{"stream_name":"stdout","time":6385.942103451,"data":"[03:22:11] [grounding] no_image: accuracy 33.59 (lenient 33.59)\n"}
+,{"stream_name":"stdout","time":6385.942106116,"data":"[03:22:18] [vqa] correct: accuracy 52.55 (lenient 52.55)\n"}
+,{"stream_name":"stdout","time":6385.942126191,"data":"[03:22:25] [vqa] complementary: accuracy 24.74 (lenient 24.74)\n"}
+,{"stream_name":"stdout","time":6385.942130072,"data":"[03:22:32] [vqa] mismatched: accuracy 31.46 (lenient 31.46)\n"}
+,{"stream_name":"stdout","time":6385.942134016,"data":"[03:22:42] [vqa] no_image: accuracy 31.41 (lenient 31.41)\n"}
+,{"stream_name":"stdout","time":6385.942137773,"data":"[03:22:42] final evaluation done in 0.8 min\n"}
+,{"stream_name":"stdout","time":6385.942141536,"data":"\n"}
+,{"stream_name":"stdout","time":6388.536798201,"data":"[04:13:31] report: runs ['vlm196', 'vlm49']\n"}
+,{"stream_name":"stdout","time":6394.184915691,"data":"[04:13:37] wrote /kaggle/working/task2_report.zip (14.1 MiB)\n"}
+,{"stream_name":"stdout","time":6394.50567282,"data":"--- task2.report finished in 0.1 min\n"}
+,{"stream_name":"stdout","time":6395.023820833,"data":"24M\t/kaggle/working/task2\r\n"}
+,{"stream_name":"stdout","time":6395.023869383,"data":"3.0G\t/kaggle/working/task2_artifacts\r\n"}
+,{"stream_name":"stdout","time":6395.023874787,"data":"15M\t/kaggle/working/task2_report.zip\r\n"}
+,{"stream_name":"stdout","time":6395.023878683,"data":"2.6G\t/tmp/atml_task2\r\n"}
+,{"stream_name":"stdout","time":6395.321696151,"data":"vlm196 correct\n"}
+,{"stream_name":"stdout","time":6395.321732815,"data":"   Q: Does this image contain a backpack? | ref: yes | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321737514,"data":"   Q: Does this image contain a backpack? | ref: no | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321741058,"data":"   Q: Does this image contain a knife? | ref: yes | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321744748,"data":"   Q: Does this image contain a knife? | ref: no | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321748193,"data":"   Q: Does this image contain a remote? | ref: yes | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321751539,"data":"   Q: Does this image contain a remote? | ref: no | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321766756,"data":"vlm196 no_image\n"}
+,{"stream_name":"stdout","time":6395.321770266,"data":"   Q: Does this image contain a backpack? | ref: yes | pred: 'Yes, the image contains a backpack.' | tokens 8\n"}
+,{"stream_name":"stdout","time":6395.321773769,"data":"   Q: Does this image contain a backpack? | ref: no | pred: 'Yes, the image contains a backpack.' | tokens 8\n"}
+,{"stream_name":"stdout","time":6395.321778802,"data":"   Q: Does this image contain a knife? | ref: yes | pred: 'No, the image does not contain a knife.' | tokens 10\n"}
+,{"stream_name":"stdout","time":6395.321798084,"data":"   Q: Does this image contain a knife? | ref: no | pred: 'No, the image does not contain a knife.' | tokens 10\n"}
+,{"stream_name":"stdout","time":6395.321802217,"data":"   Q: Does this image contain a remote? | ref: yes | pred: 'No, the image does not contain a remote.' | tokens 10\n"}
+,{"stream_name":"stdout","time":6395.321805271,"data":"   Q: Does this image contain a remote? | ref: no | pred: 'No, the image does not contain a remote.' | tokens 10\n"}
+,{"stream_name":"stdout","time":6395.321808696,"data":"vlm49 correct\n"}
+,{"stream_name":"stdout","time":6395.3218125,"data":"   Q: Does this image contain a backpack? | ref: yes | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321816135,"data":"   Q: Does this image contain a backpack? | ref: no | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321819461,"data":"   Q: Does this image contain a knife? | ref: yes | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321823465,"data":"   Q: Does this image contain a knife? | ref: no | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321826999,"data":"   Q: Does this image contain a remote? | ref: yes | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321830391,"data":"   Q: Does this image contain a remote? | ref: no | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321833746,"data":"vlm49 no_image\n"}
+,{"stream_name":"stdout","time":6395.321836873,"data":"   Q: Does this image contain a backpack? | ref: yes | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321840206,"data":"   Q: Does this image contain a backpack? | ref: no | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321843493,"data":"   Q: Does this image contain a knife? | ref: yes | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321846829,"data":"   Q: Does this image contain a knife? | ref: no | pred: 'yes' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321850273,"data":"   Q: Does this image contain a remote? | ref: yes | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stdout","time":6395.321856268,"data":"   Q: Does this image contain a remote? | ref: no | pred: 'no' | tokens 1\n"}
+,{"stream_name":"stderr","time":6398.612391367,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6398.612433121,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6398.762455979,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6398.762485647,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6399.493287295,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":6399.717337156,"data":"[NbConvertApp] Writing 8832553 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":6402.229031551,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6402.851023508,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":6402.851069846,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":6402.85128484,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":6402.851574019,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":6402.852861359,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":6402.854176672,"data":"[NbConvertApp] Writing 379961 bytes to __results__.html\n"}
+]

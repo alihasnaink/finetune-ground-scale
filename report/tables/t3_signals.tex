@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{What the signals capture at $N{=}32$ (held-out; within-question statistics averaged over questions with mixed correctness: 469 MATH, 634 MathVista). Top$-$bottom: correctness of the top-quartile minus bottom-quartile rollouts (pp); $\rho_s$: Spearman correlation with correctness and with length $T$. Length itself correlates with correctness at -0.076 (MATH) and -0.050 (MathVista).}
+\label{tab:t3-signals}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{MATH} & \multicolumn{3}{c}{MathVista} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Score & Top$-$bottom & $\rho_s$(correct) & $\rho_s$(length) & Top$-$bottom & $\rho_s$(correct) & $\rho_s$(length) \\
+\midrule
+Mean log-prob $L$ & 13.4 & 0.134 & 0.225 & 2.0 & 0.029 & 0.329 \\
+Self-certainty $K$ & 20.4 & 0.198 & -0.161 & 4.4 & 0.048 & 0.349 \\
+Shortness ($-T$) & 7.8 & 0.076 & -1.000 & 5.1 & 0.050 & -1.000 \\
+\midrule
+Vision $V$ & -- & -- & -- & 4.8 & 0.041 & -0.686 \\
+Calibrated conf.\ $C$ & -- & -- & -- & 4.8 & 0.048 & 0.347 \\
+VisConf $Z=VC$ & -- & -- & -- & 9.3 & 0.089 & -0.275 \\
+Token fusion $Z^\text{tok}$ & -- & -- & -- & 9.1 & 0.080 & -0.322 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

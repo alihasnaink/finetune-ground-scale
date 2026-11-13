@@ -1,0 +1,40 @@
+### activation summary
+
+| run | stage | condition | layer | group | n | R_mean | R_median | R_std |
+|---|---|---|---|---|---|---|---|---|
+| full_ft | mid | full_ft_mid | 0 | math | 32 | 0.05232 | 0.05229 | 0.000342 |
+| full_ft | mid | full_ft_mid | 0 | nonmath | 32 | 0.02545 | 0.02617 | 0.00285 |
+| full_ft | mid | full_ft_mid | 13 | math | 32 | 0.05735 | 0.05740 | 0.000898 |
+| full_ft | mid | full_ft_mid | 13 | nonmath | 32 | 0.03056 | 0.02982 | 0.00353 |
+| full_ft | mid | full_ft_mid | 27 | math | 32 | 0.01996 | 0.01967 | 0.00178 |
+| full_ft | mid | full_ft_mid | 27 | nonmath | 32 | 0.02808 | 0.02848 | 0.00168 |
+| full_ft | final | full_ft_final | 0 | math | 32 | 0.05328 | 0.05325 | 0.000345 |
+| full_ft | final | full_ft_final | 0 | nonmath | 32 | 0.02619 | 0.02702 | 0.00287 |
+| full_ft | final | full_ft_final | 13 | math | 32 | 0.05792 | 0.05795 | 0.000923 |
+| full_ft | final | full_ft_final | 13 | nonmath | 32 | 0.03117 | 0.03053 | 0.00347 |
+| full_ft | final | full_ft_final | 27 | math | 32 | 0.01975 | 0.01944 | 0.00179 |
+| full_ft | final | full_ft_final | 27 | nonmath | 32 | 0.02824 | 0.02877 | 0.0019 |
+| l2sp | final | l2sp_final | 0 | math | 32 | 0.04551 | 0.04549 | 0.000301 |
+| l2sp | final | l2sp_final | 0 | nonmath | 32 | 0.02322 | 0.02425 | 0.0029 |
+| l2sp | final | l2sp_final | 13 | math | 32 | 0.04774 | 0.04768 | 0.000867 |
+| l2sp | final | l2sp_final | 13 | nonmath | 32 | 0.02813 | 0.02762 | 0.00313 |
+| l2sp | final | l2sp_final | 27 | math | 32 | 0.01872 | 0.01852 | 0.00149 |
+| l2sp | final | l2sp_final | 27 | nonmath | 32 | 0.02537 | 0.02572 | 0.00131 |
+| lora16 | final | lora16_final | 0 | math | 32 | 0.04334 | 0.04333 | 0.00101 |
+| lora16 | final | lora16_final | 0 | nonmath | 32 | 0.02817 | 0.03191 | 0.00775 |
+| lora16 | final | lora16_final | 13 | math | 32 | 0.05814 | 0.05802 | 0.00114 |
+| lora16 | final | lora16_final | 13 | nonmath | 32 | 0.02515 | 0.02436 | 0.00487 |
+| lora16 | final | lora16_final | 27 | math | 32 | 0.01004 | 0.01015 | 0.000912 |
+| lora16 | final | lora16_final | 27 | nonmath | 32 | 0.01358 | 0.01363 | 0.00225 |
+| lora4 | final | lora4_final | 0 | math | 32 | 0.07189 | 0.07192 | 0.000637 |
+| lora4 | final | lora4_final | 0 | nonmath | 32 | 0.01516 | 0.01647 | 0.00413 |
+| lora4 | final | lora4_final | 13 | math | 32 | 0.09777 | 0.09761 | 0.00196 |
+| lora4 | final | lora4_final | 13 | nonmath | 32 | 0.01408 | 0.01303 | 0.00562 |
+| lora4 | final | lora4_final | 27 | math | 32 | 0.00427 | 0.00408 | 0.00115 |
+| lora4 | final | lora4_final | 27 | nonmath | 32 | 0.00545 | 0.00595 | 0.00204 |
+| oplora | final | oplora_final | 0 | math | 32 | 0.05238 | 0.05242 | 0.000867 |
+| oplora | final | oplora_final | 0 | nonmath | 32 | 0.03220 | 0.03650 | 0.00947 |
+| oplora | final | oplora_final | 13 | math | 32 | 0.06062 | 0.06049 | 0.00133 |
+| oplora | final | oplora_final | 13 | nonmath | 32 | 0.02804 | 0.02636 | 0.0054 |
+| oplora | final | oplora_final | 27 | math | 32 | 0.00954 | 0.00958 | 0.00088 |
+| oplora | final | oplora_final | 27 | nonmath | 32 | 0.01265 | 0.01281 | 0.00178 |

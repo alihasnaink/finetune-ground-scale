@@ -1,0 +1,124 @@
+seed: 6304
+paths:
+  out_root: /kaggle/working/task2
+  artifacts_root: /kaggle/working/task2_artifacts
+  scratch_root: /tmp/atml_task2
+  coco_image_roots: []
+  prior_search: /kaggle/input
+sources:
+  coco_annotations: http://images.cocodataset.org/annotations/annotations_trainval2014.zip
+  coco_image_url: http://images.cocodataset.org/{split}/COCO_{split}_{image_id:012d}.jpg
+  vqa_base: https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa
+  vqa_files:
+  - v2_Questions_Train_mscoco.zip
+  - v2_Questions_Val_mscoco.zip
+  - v2_Annotations_Train_mscoco.zip
+  - v2_Annotations_Val_mscoco.zip
+  - v2_Complementary_Pairs_Train_mscoco.zip
+  - v2_Complementary_Pairs_Val_mscoco.zip
+  download_threads: 32
+models:
+  vision: google/siglip-base-patch16-224
+  language: Qwen/Qwen3-0.6B
+data:
+  caption_train_images: 6000
+  captions_per_train_image: 3
+  caption_dev_images: 96
+  grounding:
+    train_pool_presence: 6000
+    train_pool_counting: 6000
+    dev_presence: 12
+    dev_counting: 12
+    test_presence: 32
+    test_counting: 32
+    count_min: 1
+    count_max: 4
+    min_instance_area: 1024
+    exclude_crowd: true
+  vqa:
+    min_agreement: 8
+    train:
+      yes/no: 640
+      number: 256
+      other: 640
+    dev:
+      yes/no: 12
+      number: 8
+      other: 12
+    test:
+      yes/no: 36
+      number: 24
+      other: 36
+  caption_prompt: Write a short caption for this image.
+  caps:
+    question: 80
+    caption_target: 64
+    answer_target: 16
+features:
+  batch_size: 64
+  thumbnail_px: 256
+model:
+  visual_tokens: 196
+  connector_hidden: 1024
+  calibration_images: 512
+  calibration_texts: 2000
+  lora:
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    targets:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+train:
+  micro_batch_size: 8
+  grad_accum: 2
+  weight_decay: 0.01
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  grad_clip: 1.0
+  warmup_frac: 0.05
+  final_lr_frac: 0.1
+  gradient_checkpointing: true
+  init_loss_scale: 1024.0
+  checkpoint_every: 250
+  keep_last_checkpoints: 2
+  stages:
+  - name: caption_alignment
+    updates: 2250
+    connector_lr: 0.001
+    lora_lr: null
+    mixture:
+      caption: 1.0
+  - name: visual_instruction
+    updates: 1500
+    connector_lr: 0.0001
+    lora_lr: 2.0e-05
+    mixture:
+      presence: 0.5
+      counting: 0.25
+      caption: 0.25
+  - name: natural_vqa
+    updates: 750
+    connector_lr: 5.0e-05
+    lora_lr: 1.0e-05
+    mixture:
+      vqa: 0.7
+      presence: 0.1
+      counting: 0.1
+      caption: 0.1
+dev_eval:
+  every: 500
+  extra_updates:
+  - 2250
+  - 3750
+  - 4500
+  batch_size: 16
+final_eval:
+  batch_size: 8
+  max_new_tokens: 16
+  bootstrap_resamples: 4000
+run_name: vlm196

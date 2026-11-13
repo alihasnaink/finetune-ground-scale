@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Paired accuracy differences on the held-out split (pp) with 95\% intervals from 1{,}000 question-level bootstrap resamples (after averaging over orders). Holding the score fixed and changing the aggregation isolates consensus; holding the aggregation fixed isolates the signal.}
+\label{tab:t3-boot}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{MATH} & \multicolumn{2}{c}{MathVista} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Comparison & $N{=}8$ & $N{=}32$ & $N{=}8$ & $N{=}32$ \\
+\midrule
+Self-consistency $-$ FirstAns & +8.0 [7.0, 9.1] & +10.4 [8.8, 12.1] & +6.9 [5.8, 8.0] & +9.3 [7.5, 11.1] \\
+Max self-certainty $-$ Max mean log-prob & +2.8 [1.6, 4.0] & +6.6 [4.2, 9.1] & +2.5 [1.3, 3.8] & +6.5 [3.4, 9.8] \\
+Max self-certainty $-$ Self-consistency & -1.4 [-2.5, -0.3] & -3.4 [-5.8, -1.2] & -5.5 [-7.0, -4.0] & -8.6 [-11.5, -5.5] \\
+Self-certainty + RWC $-$ Max self-certainty & +2.5 [1.7, 3.4] & +5.0 [2.8, 7.2] & +5.5 [4.2, 6.6] & +9.1 [6.1, 12.0] \\
+Self-certainty + RWC $-$ Self-consistency & +1.2 [0.5, 1.8] & +1.6 [0.5, 2.7] & -0.1 [-0.8, 0.8] & +0.6 [-0.8, 2.1] \\
+\midrule
+Max VisConf $Z$ $-$ Max self-certainty & -- & -- & +1.7 [0.3, 3.2] & +3.1 [0.2, 6.4] \\
+VisConf + RWC $-$ Max VisConf $Z$ & -- & -- & +4.6 [3.5, 5.7] & +6.8 [3.9, 9.5] \\
+VisConf + RWC $-$ Self-consistency & -- & -- & +0.7 [-0.1, 1.6] & +1.3 [-0.1, 2.8] \\
+Max token fusion $Z^\text{tok}$ $-$ Max VisConf $Z$ & -- & -- & -0.9 [-1.6, -0.1] & -1.5 [-3.5, 0.4] \\
+Token fusion + RWC $-$ VisConf + RWC & -- & -- & -0.3 [-0.7, 0.2] & -0.6 [-1.4, 0.0] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

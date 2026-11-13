@@ -1,0 +1,63 @@
+{
+  "selection_sha256": "f0e9cd6ad9e12f2954a8344663ec537596a32fee4018677adf1d7dbb4da1b5ba",
+  "seed": 6304,
+  "checks": {
+    "eval_images_unique_across_all_dev_test_sets": true,
+    "eval_disjoint_from_training": true,
+    "eval_all_val2014": true,
+    "train_all_train2014": true,
+    "pairs_have_distinct_images": true,
+    "pairs_have_different_answers": true,
+    "vqa_min_agreement_ok": true,
+    "mismatch_maps_exclude_own_pair": true,
+    "counts": {
+      "vqa_test": 192,
+      "vqa_dev": 64,
+      "grounding_test": 128,
+      "grounding_dev": 48,
+      "caption_dev": 96,
+      "caption_train": 18000,
+      "grounding_train": 24000,
+      "vqa_train": 3072
+    },
+    "pairs": {
+      "vqa_train": 1536,
+      "vqa_dev": 32,
+      "vqa_test": 96,
+      "grounding_train_presence_pool": 6000,
+      "grounding_train_counting_pool": 6000,
+      "grounding_dev": 24,
+      "grounding_test": 64,
+      "caption_train_examples": 18000,
+      "caption_dev_examples": 96
+    }
+  },
+  "vqa_filter_stats": {
+    "val2014": {
+      "pairs": 95144,
+      "eligible": 33919,
+      "low_agreement": 57053,
+      "same_consensus": 3378,
+      "type_or_image": 794
+    },
+    "train2014": {
+      "pairs": 200394,
+      "low_agreement": 119903,
+      "same_consensus": 7086,
+      "eligible": 71962,
+      "type_or_image": 1443
+    }
+  },
+  "grounding_rules": {
+    "min_instance_area": 1024,
+    "exclude_crowd": true,
+    "count_range": [
+      1,
+      4
+    ],
+    "presence_negative": "no annotation of the category at all",
+    "presence_positive": "a non-crowd instance with area >= min_instance_area",
+    "counting": "all instances of the category non-crowd and >= min area; pairs have different counts"
+  },
+  "n_images": 9255
+}

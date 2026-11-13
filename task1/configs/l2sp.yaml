@@ -1,0 +1,14 @@
+# Task 1, Step 2: Full fine-tuning with L2-SP (starting-point regularisation).
+# Same recipe and learning rate as Full FT; adds lambda * 1/2 * ||theta - theta0||^2 to the objective.
+run_name: l2sp
+method: l2sp
+
+train:
+  lr: 2.0e-5
+  l2sp_lambda: 1.0e-3
+  # auto: keep theta0 on the GPU in BF16 if that is bit-exact (it is for the BF16 Qwen3 release),
+  # else FP32. Alternatives: gpu_fp32, cpu (pinned host copy streamed every update).
+  l2sp_ref_storage: auto
+
+# Only the final model is evaluated for L2-SP (manual, checkpoint schedule).
+stages: [final]

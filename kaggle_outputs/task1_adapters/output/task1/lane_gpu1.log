@@ -1,0 +1,88 @@
+[16:31:39] data: 40000 examples, sha256=d46b7f0b1022; 1250 updates x 32
+[16:31:45] lora: r=4 alpha=8 dropout=0.05 on 196 projections, 2,523,136 adapter parameters
+[16:31:45] params: trainable 2,523,136 / total 598,573,056
+[16:31:56] update 1/1250 loss 1.0286 lr 0.00e+00 gnorm 1.890 scale 65536 10.30s/upd peak 2.11GB eta 214min
+[16:34:57] update 25/1250 loss 0.3602 lr 1.26e-04 gnorm 0.441 scale 65536 7.49s/upd peak 2.17GB eta 156min
+[16:38:10] update 50/1250 loss 0.2806 lr 2.00e-04 gnorm 0.220 scale 65536 7.84s/upd peak 2.27GB eta 154min
+[16:41:21] update 75/1250 loss 0.2698 lr 2.00e-04 gnorm 0.231 scale 65536 7.46s/upd peak 2.27GB eta 150min
+[16:44:34] update 100/1250 loss 0.2706 lr 1.99e-04 gnorm 0.236 scale 65536 8.57s/upd peak 2.27GB eta 147min
+[16:47:44] update 125/1250 loss 0.2951 lr 1.98e-04 gnorm 0.292 scale 65536 7.75s/upd peak 2.27GB eta 144min
+[16:50:52] update 150/1250 loss 0.2603 lr 1.96e-04 gnorm 0.304 scale 65536 7.49s/upd peak 2.27GB eta 140min
+[16:54:01] update 175/1250 loss 0.2245 lr 1.94e-04 gnorm 0.279 scale 65536 7.60s/upd peak 2.27GB eta 137min
+[16:57:05] update 200/1250 loss 0.2204 lr 1.91e-04 gnorm 0.278 scale 65536 7.20s/upd peak 2.27GB eta 133min
+[17:00:16] update 225/1250 loss 0.2633 lr 1.89e-04 gnorm 0.290 scale 65536 7.75s/upd peak 2.27GB eta 130min
+[17:03:23] update 250/1250 loss 0.2604 lr 1.85e-04 gnorm 0.319 scale 65536 7.20s/upd peak 2.27GB eta 126min
+[17:06:32] update 275/1250 loss 0.2493 lr 1.82e-04 gnorm 0.235 scale 65536 9.09s/upd peak 2.27GB eta 123min
+[17:09:39] update 300/1250 loss 0.2267 lr 1.78e-04 gnorm 0.289 scale 65536 7.27s/upd peak 2.27GB eta 120min
+[17:11:10] recovery checkpoint @ update 312 (9984 examples): 0.03 GiB
+[17:12:50] update 325/1250 loss 0.2530 lr 1.74e-04 gnorm 0.290 scale 65536 7.30s/upd peak 2.27GB eta 117min
+[17:16:01] update 350/1250 loss 0.2346 lr 1.69e-04 gnorm 0.272 scale 65536 7.72s/upd peak 2.27GB eta 114min
+[17:19:10] update 375/1250 loss 0.1971 lr 1.64e-04 gnorm 0.267 scale 65536 7.43s/upd peak 2.27GB eta 111min
+[17:22:17] update 400/1250 loss 0.2197 lr 1.59e-04 gnorm 0.277 scale 65536 7.38s/upd peak 2.27GB eta 107min
+[17:25:22] update 425/1250 loss 0.2391 lr 1.54e-04 gnorm 0.299 scale 65536 7.33s/upd peak 2.27GB eta 104min
+[17:28:29] update 450/1250 loss 0.2449 lr 1.48e-04 gnorm 0.301 scale 65536 7.23s/upd peak 2.27GB eta 101min
+[17:31:38] update 475/1250 loss 0.1921 lr 1.43e-04 gnorm 0.243 scale 65536 7.74s/upd peak 2.27GB eta 98min
+[17:34:49] update 500/1250 loss 0.2224 lr 1.37e-04 gnorm 0.281 scale 65536 8.00s/upd peak 2.27GB eta 95min
+[17:37:56] update 525/1250 loss 0.2096 lr 1.31e-04 gnorm 0.259 scale 65536 7.57s/upd peak 2.27GB eta 91min
+[17:41:06] update 550/1250 loss 0.2142 lr 1.24e-04 gnorm 0.277 scale 65536 7.53s/upd peak 2.27GB eta 88min
+[17:44:11] update 575/1250 loss 0.2196 lr 1.18e-04 gnorm 0.325 scale 65536 7.45s/upd peak 2.27GB eta 85min
+[17:47:16] update 600/1250 loss 0.2185 lr 1.12e-04 gnorm 0.289 scale 65536 7.13s/upd peak 2.27GB eta 82min
+[17:50:23] update 625/1250 loss 0.2145 lr 1.05e-04 gnorm 0.254 scale 65536 8.48s/upd peak 2.27GB eta 79min
+[17:50:23] pruned recovery checkpoint update_0312
+[17:50:23] recovery checkpoint @ update 625 (20000 examples): 0.03 GiB
+[17:53:27] update 650/1250 loss 0.1941 lr 9.87e-05 gnorm 0.296 scale 65536 7.30s/upd peak 2.27GB eta 75min
+[17:56:28] update 675/1250 loss 0.2253 lr 9.22e-05 gnorm 0.283 scale 65536 6.84s/upd peak 2.27GB eta 72min
+[17:59:33] update 700/1250 loss 0.2245 lr 8.58e-05 gnorm 0.283 scale 65536 7.45s/upd peak 2.27GB eta 69min
+[18:02:37] update 725/1250 loss 0.2051 lr 7.94e-05 gnorm 0.275 scale 65536 7.36s/upd peak 2.27GB eta 66min
+[18:05:45] update 750/1250 loss 0.1681 lr 7.31e-05 gnorm 0.260 scale 65536 7.35s/upd peak 2.27GB eta 63min
+[18:08:50] update 775/1250 loss 0.1964 lr 6.69e-05 gnorm 0.254 scale 65536 7.41s/upd peak 2.27GB eta 59min
+[18:11:57] update 800/1250 loss 0.1924 lr 6.09e-05 gnorm 0.288 scale 65536 7.20s/upd peak 2.27GB eta 56min
+[18:15:03] update 825/1250 loss 0.2400 lr 5.50e-05 gnorm 0.315 scale 65536 7.15s/upd peak 2.27GB eta 53min
+[18:18:09] update 850/1250 loss 0.2156 lr 4.93e-05 gnorm 0.285 scale 65536 7.15s/upd peak 2.27GB eta 50min
+[18:21:14] update 875/1250 loss 0.2034 lr 4.39e-05 gnorm 0.291 scale 65536 7.22s/upd peak 2.27GB eta 47min
+[18:24:18] update 900/1250 loss 0.1947 lr 3.86e-05 gnorm 0.291 scale 65536 7.14s/upd peak 2.27GB eta 44min
+[18:27:26] update 925/1250 loss 0.2044 lr 3.36e-05 gnorm 0.266 scale 65536 7.59s/upd peak 2.27GB eta 41min
+[18:28:53] pruned recovery checkpoint update_0625
+[18:28:53] recovery checkpoint @ update 937 (29984 examples): 0.03 GiB
+[18:30:29] update 950/1250 loss 0.2246 lr 2.89e-05 gnorm 0.318 scale 65536 7.00s/upd peak 2.27GB eta 37min
+[18:33:36] update 975/1250 loss 0.2341 lr 2.45e-05 gnorm 0.318 scale 65536 7.24s/upd peak 2.27GB eta 34min
+[18:36:41] update 1000/1250 loss 0.2300 lr 2.04e-05 gnorm 0.283 scale 65536 7.51s/upd peak 2.27GB eta 31min
+[18:39:47] update 1025/1250 loss 0.2077 lr 1.67e-05 gnorm 0.276 scale 65536 7.41s/upd peak 2.27GB eta 28min
+[18:42:52] update 1050/1250 loss 0.2441 lr 1.33e-05 gnorm 0.305 scale 65536 7.26s/upd peak 2.27GB eta 25min
+[18:46:01] update 1075/1250 loss 0.1906 lr 1.02e-05 gnorm 0.304 scale 65536 6.99s/upd peak 2.27GB eta 22min
+[18:49:08] update 1100/1250 loss 0.2285 lr 7.56e-06 gnorm 0.315 scale 65536 7.35s/upd peak 2.27GB eta 19min
+[18:52:13] update 1125/1250 loss 0.2231 lr 5.29e-06 gnorm 0.290 scale 65536 7.61s/upd peak 2.27GB eta 16min
+[18:55:18] update 1150/1250 loss 0.1809 lr 3.41e-06 gnorm 0.276 scale 65536 7.30s/upd peak 2.27GB eta 12min
+[18:58:20] update 1175/1250 loss 0.1939 lr 1.93e-06 gnorm 0.279 scale 65536 7.01s/upd peak 2.27GB eta 9min
+[19:01:25] update 1200/1250 loss 0.1919 lr 8.73e-07 gnorm 0.291 scale 65536 7.25s/upd peak 2.27GB eta 6min
+[19:04:27] update 1225/1250 loss 0.2548 lr 2.27e-07 gnorm 0.301 scale 65536 7.16s/upd peak 2.27GB eta 3min
+[19:07:38] update 1250/1250 loss 0.1936 lr 3.36e-10 gnorm 0.287 scale 65536 7.15s/upd peak 2.27GB eta 0min
+[19:08:17] [final] subspace check: max rho_out 1.791e-01, max rho_in 2.683e-01 (k=128)
+[19:08:19] merge check: merged vs unmerged mean|Δlogit| 0.0069 (top-1 agree 0.9987); adapter effect 1.3492
+[19:08:19] [final] ||theta-theta0||_2 = 9.1235; FP16 export 1.12 GiB
+[19:08:20] pruned recovery checkpoint update_0937
+[19:08:20] recovery checkpoint @ update 1250 (40000 examples): 0.03 GiB
+[19:08:20] training done: 155.9 min, skipped 0 updates
+[19:08:29] [lora4_final] evaluating /kaggle/working/task1_artifacts/exports/lora4/final
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+generation_kwargs: {'max_gen_toks': 1024} specified through cli, these settings will update set parameters in yaml tasks. Ensure 'do_sample=True' for non-greedy decoding!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Overwriting default num_fewshot of gsm8k_cot from 8 to 0
+  0%|          | 0/1319 [00:00<?, ?it/s]100%|██████████| 1319/1319 [00:02<00:00, 531.45it/s]
+Running generate_until requests:   0%|          | 0/1319 [00:00<?, ?it/s]Running generate_until requests:   0%|          | 1/1319 [01:56<42:40:10, 116.55s/it]Running generate_until requests:   5%|▍         | 65/1319 [04:00<1:06:24,  3.18s/it] Running generate_until requests:  10%|▉         | 128/1319 [04:17<1:03:04,  3.18s/it]Running generate_until requests:  10%|▉         | 129/1319 [06:00<47:51,  2.41s/it]  Running generate_until requests:  12%|█▏        | 160/1319 [06:17<46:37,  2.41s/it]Running generate_until requests:  12%|█▏        | 161/1319 [07:44<51:20,  2.66s/it]Running generate_until requests:  15%|█▍        | 192/1319 [07:57<49:58,  2.66s/it]Running generate_until requests:  15%|█▍        | 193/1319 [09:27<53:07,  2.83s/it]Running generate_until requests:  17%|█▋        | 224/1319 [09:39<51:39,  2.83s/it]Running generate_until requests:  19%|█▉        | 257/1319 [10:06<31:57,  1.81s/it]Running generate_until requests:  22%|██▏       | 288/1319 [10:17<31:01,  1.81s/it]Running generate_until requests:  27%|██▋       | 353/1319 [12:13<25:14,  1.57s/it]Running generate_until requests:  32%|███▏      | 416/1319 [12:27<23:35,  1.57s/it]Running generate_until requests:  34%|███▍      | 449/1319 [12:48<15:28,  1.07s/it]Running generate_until requests:  39%|███▉      | 512/1319 [12:59<14:21,  1.07s/it]Running generate_until requests:  39%|███▉      | 513/1319 [14:39<16:52,  1.26s/it]Running generate_until requests:  44%|████▎     | 576/1319 [14:49<15:33,  1.26s/it]Running generate_until requests:  49%|████▊     | 641/1319 [15:19<09:26,  1.20it/s]Running generate_until requests:  51%|█████     | 672/1319 [15:37<09:00,  1.20it/s]Running generate_until requests:  51%|█████     | 673/1319 [16:59<12:24,  1.15s/it]Running generate_until requests:  56%|█████▌    | 736/1319 [17:17<11:11,  1.15s/it]Running generate_until requests:  58%|█████▊    | 769/1319 [17:36<07:55,  1.16it/s]Running generate_until requests:  63%|██████▎   | 832/1319 [17:47<07:01,  1.16it/s]Running generate_until requests:  63%|██████▎   | 833/1319 [19:25<08:47,  1.08s/it]Running generate_until requests:  66%|██████▌   | 864/1319 [19:37<08:13,  1.08s/it]Running generate_until requests:  68%|██████▊   | 897/1319 [21:22<09:03,  1.29s/it]Running generate_until requests:  73%|███████▎  | 960/1319 [21:37<07:42,  1.29s/it]Running generate_until requests:  78%|███████▊  | 1025/1319 [22:00<04:10,  1.17it/s]Running generate_until requests:  82%|████████▏ | 1088/1319 [22:17<03:17,  1.17it/s]Running generate_until requests:  85%|████████▍ | 1121/1319 [22:39<02:20,  1.41it/s]Running generate_until requests:  87%|████████▋ | 1152/1319 [22:49<01:58,  1.41it/s]Running generate_until requests:  87%|████████▋ | 1153/1319 [24:17<02:49,  1.02s/it]Running generate_until requests:  90%|████████▉ | 1184/1319 [24:27<02:17,  1.02s/it]Running generate_until requests:  97%|█████████▋| 1281/1319 [24:50<00:26,  1.44it/s]Running generate_until requests: 100%|██████████| 1319/1319 [24:58<00:00,  1.14s/it]
+[19:33:51] [lora4_final] GSM8K done in 25.3 min
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+Overwriting default num_fewshot of hellaswag from None to 0
+Overwriting default num_fewshot of boolq from None to 0
+Overwriting default num_fewshot of arc_easy from None to 0
+  0%|          | 0/10042 [00:00<?, ?it/s]100%|██████████| 10042/10042 [00:08<00:00, 1232.58it/s]
+  0%|          | 0/3270 [00:00<?, ?it/s]100%|██████████| 3270/3270 [00:01<00:00, 1824.21it/s]
+  0%|          | 0/2376 [00:00<?, ?it/s]100%|██████████| 2376/2376 [00:04<00:00, 481.61it/s]
+Tokenizing inputs:   0%|          | 0/56209 [00:00<?, ?it/s]Tokenizing inputs: 100%|██████████| 56209/56209 [00:27<00:00, 2040.73it/s]
+Running loglikelihood requests:   0%|          | 0/56209 [00:00<?, ?it/s]Running loglikelihood requests:   3%|▎         | 1441/56209 [00:30<19:04, 47.87it/s]Running loglikelihood requests:   4%|▍         | 2396/56209 [00:41<18:44, 47.87it/s]Running loglikelihood requests:   7%|▋         | 3987/56209 [01:00<12:30, 69.59it/s]Running loglikelihood requests:   8%|▊         | 4757/56209 [01:11<12:19, 69.59it/s]Running loglikelihood requests:  11%|█         | 5952/56209 [01:30<12:23, 67.62it/s]Running loglikelihood requests:  12%|█▏        | 6701/56209 [01:41<12:12, 67.62it/s]Running loglikelihood requests:  14%|█▍        | 7910/56209 [02:00<12:04, 66.68it/s]Running loglikelihood requests:  15%|█▌        | 8685/56209 [02:11<11:52, 66.68it/s]Running loglikelihood requests:  18%|█▊        | 9942/56209 [02:30<11:30, 67.04it/s]Running loglikelihood requests:  19%|█▉        | 10713/56209 [02:41<11:18, 67.04it/s]Running loglikelihood requests:  21%|██▏       | 11978/56209 [03:00<10:57, 67.24it/s]Running loglikelihood requests:  23%|██▎       | 12749/56209 [03:11<10:46, 67.24it/s]Running loglikelihood requests:  25%|██▍       | 14034/56209 [03:30<10:24, 67.58it/s]Running loglikelihood requests:  26%|██▋       | 14792/56209 [03:41<10:12, 67.58it/s]Running loglikelihood requests:  29%|██▊       | 16103/56209 [04:00<09:49, 68.00it/s]Running loglikelihood requests:  30%|███       | 16882/56209 [04:11<09:38, 68.00it/s]Running loglikelihood requests:  32%|███▏      | 18236/56209 [04:30<09:10, 68.94it/s]Running loglikelihood requests:  34%|███▍      | 19089/56209 [04:41<08:58, 68.94it/s]Running loglikelihood requests:  37%|███▋      | 20542/56209 [05:00<08:20, 71.32it/s]Running loglikelihood requests:  38%|███▊      | 21417/56209 [05:11<08:07, 71.32it/s]Running loglikelihood requests:  41%|████      | 22923/56209 [05:30<07:31, 73.74it/s]Running loglikelihood requests:  42%|████▏     | 23815/56209 [05:41<07:19, 73.74it/s]Running loglikelihood requests:  45%|████▌     | 25354/56209 [06:00<06:46, 75.89it/s]Running loglikelihood requests:  47%|████▋     | 26246/56209 [06:11<06:34, 75.89it/s]Running loglikelihood requests:  49%|████▉     | 27741/56209 [06:30<06:10, 76.94it/s]Running loglikelihood requests:  51%|█████     | 28686/56209 [06:41<05:57, 76.94it/s]Running loglikelihood requests:  54%|█████▍    | 30523/56209 [07:00<05:14, 81.66it/s]Running loglikelihood requests:  56%|█████▌    | 31605/56209 [07:11<05:01, 81.66it/s]Running loglikelihood requests:  60%|█████▉    | 33613/56209 [07:30<04:16, 88.04it/s]Running loglikelihood requests:  62%|██████▏   | 34946/56209 [07:41<04:01, 88.04it/s]Running loglikelihood requests:  67%|██████▋   | 37552/56209 [08:01<03:04, 100.98it/s]Running loglikelihood requests:  69%|██████▉   | 39062/56209 [08:11<02:49, 100.98it/s]Running loglikelihood requests:  74%|███████▍  | 41761/56209 [08:31<02:08, 112.73it/s]Running loglikelihood requests:  77%|███████▋  | 43285/56209 [08:41<01:54, 112.73it/s]Running loglikelihood requests:  82%|████████▏ | 46088/56209 [09:01<01:22, 122.16it/s]Running loglikelihood requests:  85%|████████▍ | 47645/56209 [09:11<01:10, 122.16it/s]Running loglikelihood requests:  90%|████████▉ | 50555/56209 [09:31<00:43, 130.17it/s]Running loglikelihood requests:  93%|█████████▎| 52190/56209 [09:41<00:30, 130.17it/s]Running loglikelihood requests:  99%|█████████▊| 55462/56209 [10:01<00:05, 140.16it/s]Running loglikelihood requests: 100%|██████████| 56209/56209 [10:04<00:00, 93.00it/s] 
+[19:45:16] [lora4_final] likelihood tasks done in 11.4 min
+[19:46:56] [lora4_final] GSM8K flex 0.6012 | hellaswag 0.4740 | boolq 0.6639 | arc_easy 0.6322

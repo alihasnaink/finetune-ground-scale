@@ -1,0 +1,4 @@
+# Main run: 196 visual tokens (14 x 14 SigLIP patch grid).
+run_name: vlm196
+model:
+  visual_tokens: 196

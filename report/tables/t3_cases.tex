@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Representative Task 3 cases, chosen by fixed rules (first held-out question in split order matching
+each category; details in \texttt{task3/results/cases.md}). Votes are answer-group counts; $W$ is the RWC vote
+weight (self-certainty for MATH, VisConf for MathVista). Premature stops use the frozen agreement policy
+($\tau{=}0.625$); such wrong-but-recoverable early stops are rare: 60 of 5{,}884 (MATH) and 133 of 5{,}463
+(MathVista) held-out early stops.}
+\label{tab:t3-cases}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llcp{0.52\linewidth}}
+\toprule
+Behavior & Question & Gold & Observation \\
+\midrule
+RWC fixes SC & MATH \texttt{test:2744} & 2 & 16 vs 15 votes for \texttt{0} vs \texttt{2}; self-certainty weights 5.5 vs 10.3, so RWC picks the correct minority \\
+SC beats RWC & MATH \texttt{test:2198} & 11 & correct \texttt{11} leads with 5 votes ($W{=}0.8$); confident wrong \texttt{14} has 4 votes but $W{=}3.2$ \\
+RWC fixes SC & MathVista \texttt{643} & A & 11 vs 10 votes for C vs A; VisConf weights 4.1 vs 5.5 \\
+SC beats RWC & MathVista \texttt{552} & 4 & \texttt{4} leads with 14 votes ($W{=}4.8$); \texttt{2} has 9 votes but $W{=}7.4$ \\
+\midrule
+Premature stop & MATH \texttt{test:2460} & 154 & stops at $n{=}4$ with \texttt{58} (3 of 4 votes); the full pool is tied 11/11 and fixed-32 SC returns \texttt{154} \\
+Premature stop & MathVista \texttt{847} & A & stops at $n{=}4$ with C (3 of 4 votes); A has 21 of 32 votes in the full pool \\
+\midrule
+Revision (W$\to$W) & MATH \texttt{test:3285} & 0 & initial response truncated at 1{,}024 tokens without an answer; the revision answers \texttt{302562} \\
+Revision (W$\to$W) & MATH \texttt{test:1324} & $\tfrac{3}{16}$ & revision keeps the wrong initial answer $\tfrac12$ \\
+Revision (C$\to$C) & MATH \texttt{test:943} & 14 & revision opens ``The solution provided is correct'' and keeps \texttt{14} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

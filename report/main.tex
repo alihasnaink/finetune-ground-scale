@@ -1,0 +1,291 @@
+\documentclass{article}
+
+\usepackage[nonatbib, final]{neurips}
+\usepackage[numbers]{natbib}
+
+\makeatletter
+\renewcommand{\@noticestring}{
+  \centering
+  
+}
+\makeatother
+
+\input{extra_pkgs}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+
+\usepackage{physics}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\p{(}{)}
+\DeclarePairedDelimiter\n{|}{|}
+\DeclarePairedDelimiter\B{[}{]}
+
+\title{Fine-Tuning, Vision-Language Models, and Test-Time Compute}
+
+\author{
+    Ali Hasnain \\
+    28100341 \\
+}
+
+\begin{document}
+
+\maketitle
+\suppressfloats[t]
+
+\begin{abstract}
+We study three ways of adapting and extending small language models on Tesla T4 GPUs. \emph{Fine-tuning:} adapting Qwen3-0.6B to MetaMathQA, full fine-tuning raises GSM8K accuracy from 43.4\% to 64.4\% but degrades HellaSwag and BoolQ. L2-SP matches this gain (65.0\%) with roughly 40\% less parameter displacement, and LoRA ($r{=}16$) reaches 62.2\% while training only 1.67\% of the parameters and improving every retention benchmark. OPLoRA nearly eliminates interference with the protected subspace but does not outperform LoRA and is the slowest adapter method. \emph{Vision-language models:} connecting a frozen SigLIP encoder to a frozen Qwen3-0.6B through an MLP connector and LoRA, the model reaches 69.5\% on annotation-derived grounding and 56.8\% on VQAv2. Accuracy falls to 11.7\% and 25.4\% when the image is swapped for its complement, so the model is using the image. Image sensitivity emerges mainly during visual instruction tuning rather than caption alignment. Pooling to 49 visual tokens halves training time at comparable accuracy but increases reliance on language priors. \emph{Test-time compute:} with 32 rollouts per question, self-consistency improves MATH from 63.6\% to 74.0\% and MathVista from 53.9\% to 63.2\%, and rank-weighted consensus on self-certainty adds a further 1.6 pp on MATH. Because oracle coverage reaches about 90\%, selection rather than generation is the main bottleneck. The best adaptive stopping policy on each dataset comes within 0.3 pp of fixed 32-sample accuracy with roughly half the tokens, whereas, under a matched live budget, neither parallel sampling nor sequential refinement beats a single generation. Code and results: \url{https://github.com/alihasnaink/finetune-ground-scale}.
+\end{abstract}
+
+\section{Fine-Tuning}
+\label{sec:finetuning}
+
+\subsection{Introduction}
+\label{sec:finetuning-intro}
+
+Fine-tuning adapts pretrained models to specialized tasks but can compromise previously acquired capabilities. We compare Full FT, which updates all parameters; L2-SP, which penalizes deviations from pretrained weights; LoRA, which learns low-rank adapters; and OPLoRA, which constrains adapter updates to reduce interference with dominant pretrained subspaces.
+
+We fine-tune Qwen3-0.6B on MetaMathQA and evaluate mathematical performance on GSM8K and retention on HellaSwag, BoolQ, and ARC-Easy. We investigate the effects of regularization, adapter rank, and orthogonal protection on performance, retention, and computational cost.
+
+\subsection{Experimental Setup}
+\label{sec:finetuning-setup}
+
+We use Qwen3-0.6B (596M parameters) and the first 40,000 eligible MetaMathQA examples, training for 1,250 updates (effective batch size 32). Five configurations are evaluated: Full FT, Full FT with L2-SP ($\lambda=10^{-3}$), LoRA (ranks 4 and 16), and OPLoRA (rank 16, protecting the top 128 singular directions). Training was performed on a Tesla T4 using FP16 mixed precision, dynamic loss scaling, and FP32 master weights. Evaluation uses GSM8K (1,319 questions) for mathematical performance and HellaSwag, BoolQ, and ARC-Easy for capability retention. Full FT was evaluated at updates 625 and 1,250, while the remaining methods were evaluated only at the final update. We additionally measured parameter displacement, subspace interference, and activation changes using \texttt{down\_proj} in layers 0, 13, and 27, alongside qualitative comparisons of model responses.
+
+\subsection{Results}
+\label{sec:finetuning-results}
+
+\paragraph{Benchmark results.}
+Full fine-tuning demonstrated the strongest progression on GSM8K, improving from 43.37\% at baseline to 57.32\% at the midpoint and 64.44\% in the final checkpoint (+21.08 percentage points; Table~\ref{tab:t1-benchmarks}). However, this improvement came with regressions on HellaSwag ($-1.26$ pp) and BoolQ ($-3.09$ pp). L2-SP and LoRA offered better retention of general capabilities, with LoRA $r{=}16$ achieving the highest BoolQ score (72.60\%, +8.23 pp). Overall, OPLoRA achieved improvements across all four benchmarks, although it did not outperform standard LoRA $r{=}16$.
+
+\paragraph{Learning and regularization.}
+The training-loss plot (Figure~\ref{fig:t1-loss}) shows rapid convergence during the initial updates, followed by a relatively stable plateau across all five runs. Full FT and L2-SP achieved the lowest final SFT loss (0.188), while LoRA $r{=}4$ had the highest (0.216; Table~\ref{tab:t1-displacement}). L2-SP reduced parameter displacement $\|\theta-\theta_0\|_2$ from 10.67 to 6.28, reducing the penalty $\Omega=\tfrac12\|\theta-\theta_0\|_2^2$ from 56.9 to 19.7. In contrast, LoRA $r{=}16$ exhibited the largest displacement (13.32), suggesting that a higher adapter rank does not necessarily constrain the magnitude of parameter updates.
+
+\paragraph{Training resources.}
+Full FT and L2-SP updated 596M parameters, whereas LoRA and OPLoRA trained only 2.5M--10.1M parameters (0.42--1.67\% of the full model; Table~\ref{tab:t1-resources}). LoRA $r{=}4$ required the least GPU memory (4.7 GB), compared with 11.2 GB for Full FT. However, training times were relatively close: 2.35 hours for Full FT versus 2.60 hours for LoRA $r{=}4$. OPLoRA was the most expensive adapter-based approach, taking 3.27 hours; the one-off basis computation took only 32 s, so most of the overhead comes from projecting the adapter factors at every update.
+
+\paragraph{Model diagnostics.}
+The diagnostics in Table~\ref{tab:t1-diagnostics} reveal differences in how each approach modifies the pretrained model. L2-SP produced smaller relative parameter updates than Full FT, consistent with its regularization objective. OPLoRA achieved near-zero subspace interference, indicating that its updates were effectively excluded from the measured dominant output singular subspaces. Activation correction ratios were higher for mathematical probes in layers 0 and 13, particularly for LoRA $r{=}4$, suggesting stronger changes in mathematical activations relative to non-mathematical ones; in layer 27 the ratio is below one for every method. However, these measurements describe selected layers and probes; they cannot independently establish that a particular modification caused the observed benchmark improvements.
+
+\paragraph{Qualitative findings.}
+Manual annotation of 42 responses (Table~\ref{tab:t1-annotation}) revealed differences that benchmark scores alone could not capture. Full FT exhibited repetitive mathematical-style continuations, including responses that reached the 512-token generation limit. L2-SP reduced some of these behaviors but retained occasional mathematical framing in ordinary responses. LoRA $r{=}4$ generally maintained coherent and concise responses, while higher-rank LoRA occasionally exhibited repetition and formatting failures. OPLoRA maintained relatively strong coherence and formatting performance. The selected examples in Table~\ref{tab:t1-examples} illustrate these behaviors using identical prompts and output formats, although the small, fixed annotation subset is insufficient to establish their prevalence across general usage.
+
+\input{tables/t1_benchmarks}
+
+\subsection{Discussion and Interpretation}
+\label{sec:finetuning-discussion}
+
+\paragraph{Forgetting and retention.}
+Catastrophic forgetting \citep{kirkpatrick2017overcoming} occurs when adapting to a new task interferes with parameters supporting existing capabilities. This explains the Full FT results: mathematical performance improved substantially (+21.08 pp on GSM8K), but HellaSwag and BoolQ declined. In contrast, L2-SP and LoRA largely preserved or improved performance on the retention benchmarks (L2-SP's only regression is $-0.82$ pp on HellaSwag), suggesting that specialization does not necessarily require sacrificing general capabilities.
+
+\paragraph{Starting-point regularization.}
+L2-SP regularization \citep{li2018l2sp} penalizes deviations from pretrained parameters, encouraging the model to preserve existing representations. This is consistent with L2-SP achieving smaller parameter displacement while maintaining strong mathematical performance.
+
+\paragraph{Adapter rank.}
+Low-Rank Adaptation \citep{hu2022lora} restricts parameter updates to low-rank matrices. Increasing rank provides greater adaptation capacity, consistent with the improved GSM8K and BoolQ results of LoRA $r{=}16$ compared with $r{=}4$.
+
+\paragraph{Orthogonal protection.}
+Orthogonal protection \citep{farajtabar2020ogd} restricts updates to directions orthogonal to a protected subspace, potentially reducing interference with existing knowledge. However, parameter-space orthogonality does not guarantee better downstream performance, as demonstrated by OPLoRA.
+
+\paragraph{Displacement versus behavior.}
+Parameter displacement alone does not determine behavioral changes. This explains why different parameter updates can produce different effects on mathematical and non-mathematical inputs. The activation correction measurements provide evidence of this input-dependent behavior, while subspace interference describes the geometry of parameter updates. Neither measurement independently establishes the cause of benchmark improvements.
+
+\paragraph{Efficiency.}
+LoRA's efficiency follows from its low-rank parameterization, which reduces trainable parameters from $d_\text{out}d_\text{in}$ to $r(d_\text{out}+d_\text{in})$. This substantially reduces optimizer and gradient memory requirements. The experiments support this theoretical advantage: LoRA $r{=}16$ trained only 1.67\% of the model parameters while achieving strong mathematical performance and general capability retention. In comparison, L2-SP still updates all model parameters despite restricting their displacement. OPLoRA introduces additional computational overhead through basis construction and the per-update projection of its adapter factors. These findings demonstrate that parameter efficiency does not necessarily translate into reductions in training time: LoRA $r{=}4$ was in fact slightly slower than Full FT (2.60 vs.\ 2.35 hours), since forward propagation and activation computation through the full model remain necessary.
+
+\paragraph{Qualitative behavior.}
+Full FT produced repetitive mathematical-style continuations, while L2-SP exhibited occasional mathematical framing. LoRA and OPLoRA generally maintained stronger coherence, although formatting failures and repetition were still observed. These findings highlight the distinction between retaining a capability and appropriately activating it. Qualitative evaluation therefore complements benchmark testing by identifying behavioral changes that accuracy metrics cannot capture. However, the 42-response subset provides illustrative rather than statistically representative evidence.
+
+\section{Vision-Language Models}
+\label{sec:vlm}
+
+\subsection{Introduction}
+\label{sec:vlm-intro}
+
+Vision-Language Models (VLMs) combine visual and linguistic information to answer questions about images, requiring the model to ground its responses in visual evidence rather than relying solely on language priors. We connect a pretrained SigLIP vision encoder to Qwen3-0.6B through a trainable connector, training it through caption alignment and visual question answering.
+
+The experiments examine caption-based alignment, annotation-derived visual grounding, and VQA fine-tuning using complementary image pairs. We also use image controls to assess whether the model genuinely relies on visual evidence when answering questions.
+
+\subsection{Experimental Setup}
+\label{sec:vlm-setup}
+
+We combine a frozen SigLIP-Base-Patch16-224 vision encoder with a frozen Qwen3-0.6B language model through a trainable two-layer MLP connector ($768 \rightarrow 1024 \rightarrow 1024$). We compare configurations using 196 visual tokens ($14\times14$ patches) and 49 tokens ($2\times2$ patch pooling). Training follows three stages: caption alignment (2,250 updates), visual instruction tuning (1,500 updates), and natural VQA (750 updates). The data comprises 18,000 COCO caption examples, annotation-derived presence and counting pairs, and 1,536 VQAv2 complementary training pairs. Evaluation uses 96 VQAv2 test pairs and 64 annotation-derived test pairs, comparing correct-image, complementary-image, mismatched-image, and no-image conditions. The connector contained approximately 1.84M parameters, while LoRA adapters were introduced only in the second and third training stages. Training used an effective batch size of 16, with FP16 autocasting and FP32 trainable parameters. We evaluated both visual-token configurations using greedy decoding with a 16-token output limit. Results were compared using 4,000 pair-level bootstrap resamples to obtain 95\% confidence intervals.
+
+\subsection{Results}
+\label{sec:vlm-results}
+
+\paragraph{Training dynamics.}
+Figure~\ref{fig:t2-curves} shows that caption alignment (stage 1) reduces the development caption loss from 5.52 to 2.29, which then stays flat (2.31--2.33) through the later stages, so caption replay prevents forgetting. However, stage 1 alone produces almost no image sensitivity: the image-swap penalty $\Delta$NLL on grounding stays between 0.3 and 0.6 for the 196-token model (below 1.0 for the 49-token model). Sensitivity emerges in stage 2, when visual instruction tuning and LoRA are introduced: grounding $\Delta$NLL rises from 0.57 to 2.70 at the first stage-2 evaluation and to 3.85 by the end of the stage, while correct-image answer NLL falls from 5.85 to about 0.6. The 49-token model diverges here: its no-image grounding NLL collapses from 11.0 to 1.3, whereas the 196-token model's remains at 6.7, consistent with the 49-token model's higher no-image accuracy. The shift to natural VQA in stage 3 briefly reduces $\Delta$NLL (3.85 to 2.14) before it partly recovers (3.14).
+
+\paragraph{Image grounding and overall accuracy.}
+With 196 visual tokens, the model achieves 69.5\% accuracy on Grounding and 56.8\% on VQAv2 when given the correct image (Table~\ref{tab:t2-main}). Replacing the image with a complementary image reduces accuracy to 11.7\% and 25.4\%, respectively. Mismatched images also reduce performance, confirming that predictions are influenced by visual content rather than relying entirely on language priors. The 49-token model achieves comparable correct-image accuracy (72.7\% Grounding and 52.6\% VQAv2), suggesting that reducing visual tokens does not necessarily compromise grounding performance.
+
+\paragraph{Performance without images.}
+The 196-token model achieves 0\% strict accuracy without an image because it then answers in full sentences (e.g.\ ``No, the image does not contain a knife.''); scoring the leading yes/no or number instead gives 24.2\% on Grounding and 18.8\% on VQAv2 (lenient accuracy, Table~\ref{tab:t2-main}). The 49-token model, which keeps answering tersely, retains 33.6\% Grounding and 31.4\% VQAv2 accuracy without images, close to chance on presence (50.0\%) and yes/no questions (56.2\%; Table~\ref{tab:t2-bytype}). This suggests that the smaller visual representation may encourage greater reliance on learned language priors, potentially at the expense of visual grounding.
+
+\paragraph{Question-type performance.}
+Grounding performance is strongest on presence questions (approximately 89--91\%) but weaker on counting questions (50--55\%; Table~\ref{tab:t2-bytype}). On VQAv2, yes/no questions achieve better accuracy (approximately 68--70\%) than numerical and other questions. Complementary-image accuracy remains substantially lower across question types, indicating that the model struggles when the relevant visual evidence is replaced.
+
+\paragraph{Correct-image advantage and pair diagnostics.}
+The correct image provides a substantial advantage over complementary images: 57.8 and 60.9 percentage points for the 196- and 49-token Grounding models, respectively (Table~\ref{tab:t2-advantages}). On VQAv2, the corresponding advantages are 31.4 and 27.8 points. Pair accuracy shows similar trends. Furthermore, under complementary swaps, the model follows the partner image's answer in 69.5--72.7\% of Grounding cases, demonstrating sensitivity to changes in visual evidence. The positive NLL advantages and their bootstrap confidence intervals, all of which exclude zero, further support the reliability of these differences.
+
+\paragraph{Qualitative findings.}
+The selected examples in Table~\ref{tab:t2-examples} illustrate three behaviors: successful grounding when both images support correct answers, image-insensitive predictions where swapping images does not change the response, and image-sensitive errors where the model's answer changes with the image but is still wrong. For example, the model correctly counts the trains in both images of a pair; for the kites pair its answer changes with the image, but it answers 4 where the reference is 3. Conversely, it consistently predicts the shirt color as white despite one reference indicating pink. These examples highlight both effective visual conditioning and remaining grounding failures.
+
+\paragraph{Computational efficiency.}
+Each run used a single Tesla T4 GPU (Table~\ref{tab:t2-resources}). Reducing visual tokens from 196 to 49 approximately halves training time: total stage training decreases from 93.59 to 44.52 minutes. Peak training memory also decreases slightly, from 1.60 GB to 1.51 GB. The model uses 1.84M trainable parameters during caption alignment and 6.42M during subsequent stages, including LoRA adapters. Shared SigLIP feature caching takes only 2.73 minutes for 9,255 images, making the overall training pipeline relatively lightweight.
+
+\input{tables/t2_main}
+
+\subsection{Discussion and Interpretation}
+\label{sec:vlm-discussion}
+
+\paragraph{Learning a visual interface.}
+The three-stage training (caption alignment, visual instruction tuning, and natural VQA) progressively establishes visual-language alignment and transfers it into question-answering capabilities. However, capabilities do not transfer uniformly: counting and numerical reasoning remain weaker than basic visual recognition.
+
+\paragraph{Grounding and generalization.}
+The model demonstrates meaningful dependence on visual evidence. With 196 tokens, correct-image accuracy reaches 69.5\% on Grounding and 56.8\% on VQAv2, dropping substantially under complementary and mismatched images. Grounding performance is stronger on annotation-derived questions than natural VQA (although the two suites use different metrics), suggesting difficulties generalizing to less structured language. The 49-token model's higher no-image accuracy also suggests greater reliance on linguistic priors.
+
+\paragraph{Measuring image use.}
+Reference NLL, generated-answer accuracy, pair-level diagnostics, and qualitative examples provide consistent evidence of visual conditioning. Complementary-image swaps frequently cause predictions to follow the partner image's answer, supporting image sensitivity. However, image sensitivity does not necessarily imply correct visual understanding. This is particularly important when interpreting counterfactual evaluations.
+
+\paragraph{Capabilities and cost.}
+The model learns caption alignment and visual question answering using a relatively lightweight connector and LoRA-based architecture. Reducing visual tokens from 196 to 49 cuts training time from 93.59 to 44.52 minutes and evaluation time from 1.61 to 0.75 minutes on a Tesla T4. Feature caching takes just 2.73 minutes for 9,255 images. These savings come with a potential trade-off in visual grounding, as the 49-token model relies more heavily on language priors.
+
+\section{Test-Time Compute}
+\label{sec:tts}
+
+\subsection{Introduction}
+\label{sec:tts-intro}
+
+Test-Time Compute (TTC) explores how additional computation during inference can improve model performance without retraining. We investigate parallel sampling, best-of-N selection, self-consistency, and sequential refinement. Using supplied LLM and VLM rollouts, we compare selection strategies, confidence and visual-grounding signals, parallel generation against sequential refinement, and adaptive sampling to study the trade-off between accuracy and computational cost.
+
+\subsection{Experimental Setup}
+\label{sec:tts-setup}
+
+We use 32 sampled rollouts per question from Qwen2.5-3B-Instruct on a 1,000-question MATH subset and Qwen2.5-VL-3B-Instruct on 1,000 MathVista questions. The supplied generations use temperature 0.7 and a 2,048-token limit. We reserve 200 questions per dataset for development and 800 for held-out evaluation. Offline experiments compare candidate budgets of 1, 2, 4, 8, 16, and 32 across ten rollout orders, using selection methods such as self-consistency, self-certainty, log-probability, and VisConf with rank-weighted consensus. A live experiment on 50 MATH questions compares one 3,072-token response, three parallel 1,024-token responses, and sequential refinement with a 1,024-token initial response followed by up to 2,048 tokens. Finally, adaptive stopping is evaluated at 4, 8, and 16 rollouts, with 32 as the maximum budget. All experiments compare accuracy against computational cost.
+
+\subsection{Results}
+\label{sec:tts-results}
+
+\paragraph{Sampling and selection.}
+Increasing the number of sampled answers improves accuracy on both MATH and MathVista when the answer is chosen by consensus (Figure~\ref{fig:t3-n}, Table~\ref{tab:t3-methods}); selecting the single highest-scoring rollout gains little or even declines as $N$ grows. Self-consistency raises accuracy from 63.6\% to 74.0\% on MATH and 53.9\% to 63.2\% on MathVista at $N{=}32$. Quality-aware selection (RWC) further improves these to 75.6\% and 64.5\%; the gain over self-consistency is significant on MATH (+1.6 pp, 95\% CI [0.5, 2.7]) but not on MathVista (+1.3 pp, [$-0.1$, 2.8]; Table~\ref{tab:t3-boot}). Oracle coverage reveals that many remaining errors arise from selecting incorrect candidates rather than failing to generate a correct one: at $N{=}32$ only 8.6\% (MATH) and 10.5\% (MathVista) of questions have no correct candidate, whereas self-consistency misses an available correct answer on 17.4\% and 26.3\% (Table~\ref{tab:t3-decomp}).
+
+\paragraph{Signal analysis.}
+Self-certainty and visual-confidence signals provide useful information about candidate quality, while response length is only weakly correlated with correctness (Spearman $-0.08$ on MATH and $-0.05$ on MathVista; Table~\ref{tab:t3-signals}). Combining confidence with consensus improves selection over choosing the highest-scoring rollout, particularly on MathVista (VisConf: 57.8\% $\rightarrow$ 64.5\%; self-certainty: 54.6\% $\rightarrow$ 63.8\% at $N{=}32$). However, token-level fusion offers no meaningful advantage over trajectory-level fusion: it is slightly worse (e.g.\ $-1.5$ pp for highest-score selection at $N{=}32$, Table~\ref{tab:t3-boot}), consistent with confidence and visual engagement being negatively correlated within rollouts (mean $-0.20$; Figure~\ref{fig:t3-traj}).
+
+\paragraph{Live inference.}
+Single generation achieves the highest accuracy (66\%) on the 50-question evaluation, compared with 62\% for parallel sampling and refinement (Table~\ref{tab:t3-live}). Parallel sampling is the most expensive, taking 86.3 seconds per question, while refinement takes 53.5 seconds and single generation 34.7 seconds. Neither provides a statistically significant improvement over single generation, suggesting that additional inference computation does not automatically improve accuracy.
+
+\paragraph{Adaptive inference.}
+Adaptive stopping achieves accuracy close to fixed 32-sample self-consistency while substantially reducing computational costs (Figure~\ref{fig:t3-cost}, Table~\ref{tab:t3-adaptive}). On MATH, agreement-based stopping achieves 73.7\% accuracy using approximately 10,112 tokens instead of 21,347. On MathVista, quality-aware stopping achieves 63.1\% using 3,967 tokens instead of 8,898. However, premature stopping can prevent potentially correct answers from emerging through further sampling.
+
+\paragraph{Qualitative findings.}
+Examples demonstrate that confidence-aware selection can recover correct minority answers, but can also favor confidently incorrect responses (Table~\ref{tab:t3-cases}). Similarly, adaptive stopping occasionally terminates too early, while a single round of refinement never corrected an initial mistake.
+
+\input{tables/t3_methods}
+
+\input{tables/t3_live}
+
+\input{tables/t3_adaptive}
+
+\subsection{Discussion and Interpretation}
+\label{sec:tts-discussion}
+
+\paragraph{Exploration and selection.}
+Repeated sampling improves the probability of generating a correct answer, as demonstrated by increasing oracle coverage on both datasets. However, actual accuracy improves more slowly because the selection mechanism may fail to identify the correct candidate. This reflects the distinction between exploration and exploitation: generating diverse reasoning paths increases candidate coverage, while selecting the best answer determines how effectively that coverage translates into accuracy. At higher sampling budgets, selection failures become increasingly important, particularly on MathVista.
+
+\paragraph{Evidence and consensus.}
+Answer agreement, self-certainty, and visual confidence provide complementary signals for identifying reliable candidates. Self-consistency benefits from consensus, while RWC modestly improves selection by incorporating candidate confidence. This is related to ensemble learning, where aggregating multiple predictions can reduce individual prediction errors. However, correlated errors and overconfidence limit these benefits: a majority can be consistently wrong, and a highly confident candidate can still be incorrect. Visual-confidence signals help on MathVista by incorporating evidence of image engagement, although their predictive strength remains limited.
+
+\paragraph{Breadth and refinement.}
+In the offline pools, generating independent alternatives provides useful exploration: oracle coverage rises from 63.6\% to 91.4\% on MATH as $N$ grows from 1 to 32. Parallel sampling increases candidate coverage, whereas refinement offers an opportunity to reconsider existing reasoning without guaranteeing correction. This aligns with the principle of search-based inference: exploring multiple independent solution paths can discover alternatives that a single trajectory misses. Under a fixed live budget, however, this advantage did not materialize: with only three candidates capped at 1,024 tokens each, 14\% of parallel responses were truncated and oracle coverage reached only 68\%, while the single 3,072-token response rarely needed its full allowance. Consequently, neither parallel sampling nor refinement significantly improves accuracy over single generation, despite their additional computational costs.
+
+\paragraph{Adaptive allocation.}
+Adaptive inference uses agreement and confidence as proxies for answer reliability to decide when additional sampling is unnecessary. This is related to sequential decision-making and optimal stopping, where computation continues only while the expected benefit of another observation justifies its cost. The experiments show that adaptive policies can approach fixed 32-sample accuracy with substantially fewer tokens. However, premature stopping remains possible when early consensus is misleading, demonstrating that agreement alone is not sufficient to establish correctness.
+
+\paragraph{Compute and reliability.}
+Quality-aware selection and adaptive stopping provide the most promising accuracy--cost trade-offs. RWC improves candidate selection, while adaptive policies reduce unnecessary generation. In particular, MathVista quality-aware stopping achieves 63.1\% accuracy using approximately 3,967 tokens, compared with 63.2\% using 8,898 tokens for fixed 32-sample self-consistency. On MATH, however, quality-aware stopping costs a small but significant $-0.95$ pp relative to fixed 32-sample self-consistency, whereas agreement-based stopping does not. Nevertheless, confident incorrect answers, correlated sampling errors, premature stopping, and unsuccessful revisions expose important reliability limitations.
+
+\section{Limitations and Conclusion}
+\label{sec:conclusion}
+
+\paragraph{Limitations.}
+All experiments use small models, T4 GPUs and one run per configuration, so small differences cannot be separated from seed variance; for example, LoRA $r{=}16$ and OPLoRA differ by only 0.07 pp on GSM8K. \emph{Fine-tuning:} each method's design space is only lightly explored (one L2-SP strength, two LoRA ranks, one OPLoRA setting). Retention is measured on three multiple-choice benchmarks, and the qualitative analysis covers just 42 responses. \emph{Vision-language models:} the held-out sets are small (64 and 96 pairs), so most differences between the 196- and 49-token models fall within the confidence intervals. Exact-match scoring is also sensitive to answer format. \emph{Test-time compute:} the live comparison uses only 50 questions, and splitting the budget truncated 14\% of parallel responses. All confidence signals correlate only weakly with correctness.
+
+\paragraph{Conclusion.}
+Across all three tasks, extra parameters, modalities or inference compute help only when they are constrained or selected well. Constrained fine-tuning (L2-SP, LoRA) keeps most of the specialization gain while largely avoiding the forgetting caused by full fine-tuning, though parameter efficiency did not reduce training time. A lightweight connector is enough for genuine visual grounding, but grounding appears mainly with instruction tuning, and counting remains weak. In test-time compute, sampling more raises coverage, but selection captures only part of it. Adaptive stopping gives the best accuracy--cost trade-off, and more compute is not automatically better. These results argue for evaluating with explicit controls (retention benchmarks, counterfactual images and oracle coverage) rather than headline accuracy alone.
+
+\bibliographystyle{plainnat}
+\bibliography{bibliography}
+
+\clearpage
+\appendix
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\thefigure}{A\arabic{figure}}
+
+\section{Additional Results}
+\label{app:results}
+
+This appendix contains the supporting tables and figures referenced in the main text.
+
+\subsection{Fine-Tuning}
+\label{app:t1}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/t1_training_loss.png}
+\caption{SFT training loss (token cross-entropy, penalty terms excluded) for the five runs. Left: all updates, with per-update values (thin) and 25-update means (thick); right: 25-update means on the plateau, where Full FT and L2-SP nearly coincide. The dashed line marks the Full FT midpoint checkpoint (update 625).}
+\label{fig:t1-loss}
+\end{figure}
+\input{tables/t1_displacement}
+\input{tables/t1_diagnostics}
+\input{tables/t1_resources}
+\input{tables/t1_annotation}
+\input{tables/t1_examples}
+
+\clearpage
+\subsection{Vision-Language Models}
+\label{app:t2}
+
+\input{tables/t2_final}
+\input{tables/t2_advantages}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/t2_learning_curves.png}
+\caption{Task 2 learning curves for the 196- and 49-token models. Top: training loss and development caption reference loss. Bottom: development answer NLL of the 196-token model under each image condition, and the image-swap penalty $\Delta$NLL = NLL(partner image) $-$ NLL(correct image). Dotted lines mark the stage boundaries (caption alignment $\to$ visual instruction tuning $\to$ natural VQA).}
+\label{fig:t2-curves}
+\end{figure}
+\input{tables/t2_bytype}
+\input{tables/t2_examples}
+\input{tables/t2_resources}
+
+\clearpage
+\subsection{Test-Time Compute}
+\label{app:t3}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/t3_accuracy_vs_n.png}
+\caption{Held-out accuracy and oracle coverage against the candidate budget $N$ (mean over 10 seeded orders). The gap between oracle coverage (dashed) and the selectors is the selection failure; quality RWC is self-certainty + RWC for MATH and VisConf + RWC for MathVista.}
+\label{fig:t3-n}
+\end{figure}
+\input{tables/t3_decomp}
+\input{tables/t3_boot}
+\input{tables/t3_signals}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/t3_trajectories.png}
+\caption{Calibrated confidence $c_t$ and visual engagement $v_t$ along the highest-VisConf correct and incorrect rollout of three MathVista held-out questions, chosen by a fixed rule (first question in split order where (A) VisConf-RWC is right and self-consistency wrong, (B) the reverse, (C) VisConf-Max and token-fusion-Max pick rollouts of different correctness).}
+\label{fig:t3-traj}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/t3_accuracy_vs_cost.png}
+\caption{Held-out accuracy against mean generated tokens per question for fixed budgets ($N=1,\dots,32$) and the two frozen adaptive stopping policies.}
+\label{fig:t3-cost}
+\end{figure}
+\input{tables/t3_cases}
+
+
+\end{document}

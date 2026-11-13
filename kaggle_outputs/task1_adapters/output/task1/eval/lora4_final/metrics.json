@@ -1,0 +1,31 @@
+{
+  "condition": "lora4_final",
+  "model_path": "/kaggle/working/task1_artifacts/exports/lora4/final",
+  "limit": null,
+  "gsm8k_flex": 0.601213040181956,
+  "gsm8k_flex_se": 0.013487360477060843,
+  "gsm8k_strict": 0.0,
+  "gsm8k_strict_se": 0.0,
+  "hellaswag_acc": 0.37572196773551086,
+  "hellaswag_acc_se": 0.004833189651626701,
+  "hellaswag_acc_norm": 0.47400916152160927,
+  "hellaswag_acc_norm_se": 0.004983035420235522,
+  "boolq_acc": 0.6639143730886851,
+  "boolq_acc_se": 0.00826177845657382,
+  "arc_easy_acc": 0.6544612794612794,
+  "arc_easy_acc_se": 0.009757948730670471,
+  "arc_easy_acc_norm": 0.6321548821548821,
+  "arc_easy_acc_norm_se": 0.009894923464455033,
+  "gsm8k_n": 1319,
+  "gsm8k_truncation_rate": 0.009097801364670205,
+  "gsm8k_flex_extract_fail_rate": 0.0,
+  "gsm8k_strict_extract_fail_rate": 1.0,
+  "gsm8k_mean_gen_tokens": 141.94162244124337,
+  "qualitative_truncated": 1,
+  "timings_s": {
+    "gsm8k_s": 1519.6838148749994,
+    "mc_s": 684.9782235880011,
+    "qualitative_s": 99.604762854
+  },
+  "peak_mem_gb": 6.868952751159668
+}

@@ -1,0 +1,31 @@
+{
+  "condition": "full_ft_final",
+  "model_path": "/kaggle/working/task1_artifacts/exports/full_ft/final",
+  "limit": null,
+  "gsm8k_flex": 0.6444275966641395,
+  "gsm8k_flex_se": 0.01318540225271385,
+  "gsm8k_strict": 0.0,
+  "gsm8k_strict_se": 0.0,
+  "hellaswag_acc": 0.3737303326030671,
+  "hellaswag_acc_se": 0.004828045774734821,
+  "hellaswag_acc_norm": 0.460565624377614,
+  "hellaswag_acc_norm_se": 0.004974238284524698,
+  "boolq_acc": 0.6128440366972477,
+  "boolq_acc_se": 0.008519429207594192,
+  "arc_easy_acc": 0.6616161616161617,
+  "arc_easy_acc_se": 0.00970903467052499,
+  "arc_easy_acc_norm": 0.6346801346801347,
+  "arc_easy_acc_norm_se": 0.009880576614806942,
+  "gsm8k_n": 1319,
+  "gsm8k_truncation_rate": 0.006065200909780136,
+  "gsm8k_flex_extract_fail_rate": 0.0,
+  "gsm8k_strict_extract_fail_rate": 1.0,
+  "gsm8k_mean_gen_tokens": 138.22668688400304,
+  "qualitative_truncated": 6,
+  "timings_s": {
+    "gsm8k_s": 1144.6919621550005,
+    "mc_s": 724.6940695620015,
+    "qualitative_s": 257.67452854399926
+  },
+  "peak_mem_gb": 6.868952751159668
+}

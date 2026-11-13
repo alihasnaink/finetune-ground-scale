@@ -1,0 +1,402 @@
+[{"stream_name":"stderr","time":8.254254947,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.254314249,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.25432216,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.254327727,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.876316811,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.87634731,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.876352236,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.876355872,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.091400674,"data":"Wed Nov 11 05:59:07 2026       \r\n"}
+,{"stream_name":"stdout","time":10.091440901,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.091445322,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\r\n"}
+,{"stream_name":"stdout","time":10.091448725,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.091451682,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\r\n"}
+,{"stream_name":"stdout","time":10.091454577,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\r\n"}
+,{"stream_name":"stdout","time":10.091457482,"data":"|                                         |                        |               MIG M. |\r\n"}
+,{"stream_name":"stdout","time":10.09146025,"data":"|=========================================+========================+======================|\r\n"}
+,{"stream_name":"stdout","time":10.141739959,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":10.141761792,"data":"| N/A   57C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":10.141766867,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":10.141770694,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.1417747,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":10.141778571,"data":"| N/A   52C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":10.141782105,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":10.141785497,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":10.141803783,"data":"\r\n"}
+,{"stream_name":"stdout","time":10.141811386,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":10.141815917,"data":"| Processes:                                                                              |\r\n"}
+,{"stream_name":"stdout","time":10.14183042,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\r\n"}
+,{"stream_name":"stdout","time":10.141834451,"data":"|        ID   ID                                                               Usage      |\r\n"}
+,{"stream_name":"stdout","time":10.141837846,"data":"|=========================================================================================|\r\n"}
+,{"stream_name":"stdout","time":10.141841307,"data":"|  No running processes found                                                             |\r\n"}
+,{"stream_name":"stdout","time":10.14184472,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stderr","time":10.576589174,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":10.779076997,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":10.779110148000001,"data":"\n"}
+,{"stream_name":"stderr","time":10.779117294,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":11.755892107,"data":"c947bb9 OOM crashed training so running it again\n"}
+,{"stream_name":"stdout","time":11.755915457,"data":"\n"}
+,{"stream_name":"stdout","time":16.378904388,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":16.783965144,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":16.986952778,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":19.062975183,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":19.417451087,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":19.670957036,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":20.986930506,"data":"  Building wheel for sqlitedict (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":21.240260157,"data":"  Building wheel for word2number (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":46.163127566,"data":"torch 2.11.0+cu130 | transformers 5.20.2 | lm_eval 0.4.13\n"}
+,{"stream_name":"stdout","time":46.164056516,"data":"GPUs: ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":49.316779997,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":75.77044514,"data":"[06:00:13] base model Qwen/Qwen3-0.6B @ c1899de289a04d12100db370d81485cdf75e47ca -\u003e /root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca\n"}
+,{"stream_name":"stdout","time":82.318156116,"data":"\n"}
+,{"stream_name":"stdout","time":82.318208582,"data":"Generating train split:   0%|          | 0/7473 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":82.318216795,"data":"Generating train split: 100%|██████████| 7473/7473 [00:00\u003c00:00, 69821.45 examples/s]\n"}
+,{"stream_name":"stdout","time":82.318223263,"data":"\n"}
+,{"stream_name":"stdout","time":82.318227961,"data":"Generating test split:   0%|          | 0/1319 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":82.318232674,"data":"Generating test split: 100%|██████████| 1319/1319 [00:00\u003c00:00, 318974.11 examples/s]\n"}
+,{"stream_name":"stdout","time":82.318237312,"data":"[06:00:19] GSM8K test questions for decontamination: 1319\n"}
+,{"stream_name":"stdout","time":89.270060137,"data":"\n"}
+,{"stream_name":"stdout","time":95.431929435,"data":"Generating train split:   0%|          | 0/395000 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":95.431964882,"data":"Generating train split: 100%|██████████| 395000/395000 [00:06\u003c00:00, 64105.21 examples/s]\n"}
+,{"stream_name":"stdout","time":95.431969888,"data":"[06:00:32] MetaMathQA rows: 395000; columns: ['type', 'query', 'original_question', 'response']\n"}
+,{"stream_name":"stdout","time":96.666548749,"data":"[06:00:34]   scanned 2000 rows, selected 2000\n"}
+,{"stream_name":"stdout","time":102.92140838,"data":"[06:00:40]   scanned 12000 rows, selected 12000\n"}
+,{"stream_name":"stdout","time":108.987195598,"data":"[06:00:46]   scanned 22000 rows, selected 22000\n"}
+,{"stream_name":"stdout","time":114.986471683,"data":"[06:00:52]   scanned 32000 rows, selected 31998\n"}
+,{"stream_name":"stdout","time":120.954827307,"data":"[06:00:58]   scanned 42000 rows, selected 40000\n"}
+,{"stream_name":"stdout","time":121.243908463,"data":"[06:00:58] selected 40000 examples (last source index 40001); excluded {'empty': 0, 'gsm8k_test_match': 0, 'too_long': 2}; sha256=d46b7f0b1022\n"}
+,{"stream_name":"stdout","time":141.339812079,"data":"\n"}
+,{"stream_name":"stdout","time":141.339852342,"data":"Generating train split:   0%|          | 0/39905 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":141.33986222,"data":"Generating train split: 100%|██████████| 39905/39905 [00:00\u003c00:00, 286242.96 examples/s]\n"}
+,{"stream_name":"stdout","time":141.339871529,"data":"\n"}
+,{"stream_name":"stdout","time":141.339879141,"data":"Generating test split:   0%|          | 0/10003 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":141.339886787,"data":"Generating test split: 100%|██████████| 10003/10003 [00:00\u003c00:00, 259094.08 examples/s]\n"}
+,{"stream_name":"stdout","time":141.339894339,"data":"\n"}
+,{"stream_name":"stdout","time":141.553951812,"data":"Generating validation split:   0%|          | 0/10042 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":141.553983046,"data":"Generating validation split: 100%|██████████| 10042/10042 [00:00\u003c00:00, 284003.92 examples/s]\n"}
+,{"stream_name":"stdout","time":141.554013706,"data":"\n"}
+,{"stream_name":"stdout","time":146.692703312,"data":"Map:   0%|          | 0/39905 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":146.692752205,"data":"Map: 100%|██████████| 39905/39905 [00:05\u003c00:00, 7793.22 examples/s]\n"}
+,{"stream_name":"stdout","time":150.369762696,"data":"\n"}
+,{"stream_name":"stdout","time":151.915614529,"data":"Map:   0%|          | 0/10042 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":151.915645961,"data":"Map: 100%|██████████| 10042/10042 [00:01\u003c00:00, 6496.67 examples/s]\n"}
+,{"stream_name":"stdout","time":153.019506057,"data":"[06:01:30] probe set: 32 math + 32 non-math prompts\n"}
+,{"stream_name":"stdout","time":162.463567825,"data":"/kaggle/working/repo/task1/prepare.py:51: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.\n"}
+,{"stream_name":"stdout","time":162.463624515,"data":"  tasks = get_task_dict([cfg.eval.gsm8k_task, *cfg.eval.mc_tasks], TaskManager())\n"}
+,{"stream_name":"stdout","time":169.881795952,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":169.881870482,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":177.969144084,"data":"\n"}
+,{"stream_name":"stdout","time":177.969178552,"data":"Generating train split:   0%|          | 0/9427 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":177.969186049,"data":"Generating train split: 100%|██████████| 9427/9427 [00:00\u003c00:00, 399717.99 examples/s]\n"}
+,{"stream_name":"stdout","time":177.969191715,"data":"\n"}
+,{"stream_name":"stdout","time":177.969195857,"data":"Generating validation split:   0%|          | 0/3270 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":177.969200349,"data":"Generating validation split: 100%|██████████| 3270/3270 [00:00\u003c00:00, 343872.99 examples/s]\n"}
+,{"stream_name":"stdout","time":177.96920491,"data":"\n"}
+,{"stream_name":"stdout","time":177.969209207,"data":"Generating test split:   0%|          | 0/3245 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":177.96922051,"data":"Generating test split: 100%|██████████| 3245/3245 [00:00\u003c00:00, 357691.43 examples/s]\n"}
+,{"stream_name":"stdout","time":186.646971526,"data":"\n"}
+,{"stream_name":"stdout","time":186.647018309,"data":"Generating train split:   0%|          | 0/2251 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":186.647025765,"data":"Generating train split: 100%|██████████| 2251/2251 [00:00\u003c00:00, 345622.81 examples/s]\n"}
+,{"stream_name":"stdout","time":186.647032301,"data":"\n"}
+,{"stream_name":"stdout","time":186.647036898,"data":"Generating test split:   0%|          | 0/2376 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":186.647041853,"data":"Generating test split: 100%|██████████| 2376/2376 [00:00\u003c00:00, 402474.31 examples/s]\n"}
+,{"stream_name":"stdout","time":186.647046924,"data":"\n"}
+,{"stream_name":"stdout","time":186.647051472,"data":"Generating validation split:   0%|          | 0/570 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":186.647056207,"data":"Generating validation split: 100%|██████████| 570/570 [00:00\u003c00:00, 187789.90 examples/s]\n"}
+,{"stream_name":"stdout","time":186.943025272,"data":"[06:02:04] eval task arc_easy: 2376 docs\n"}
+,{"stream_name":"stdout","time":186.94305644,"data":"[06:02:04] eval task boolq: 3270 docs\n"}
+,{"stream_name":"stdout","time":187.964068725,"data":"[06:02:05] eval task hellaswag: 10042 docs\n"}
+,{"stream_name":"stdout","time":187.964101943,"data":"[06:02:05] eval task gsm8k_cot: 1319 docs\n"}
+,{"stream_name":"stdout","time":187.964107402,"data":"[06:02:05] prepare done\n"}
+,{"stream_name":"stdout","time":192.265198943,"data":"--- task1.prepare finished in 2.4 min\n"}
+,{"stream_name":"stdout","time":194.860970344,"data":"[06:02:12] imported from /kaggle/input/notebooks/alihasnain11/task1-full-ft4ccc39401f/task1: nothing new\n"}
+,{"stream_name":"stdout","time":194.861003788,"data":"[06:02:12] evaluation conditions now available: []\n"}
+,{"stream_name":"stdout","time":194.861014236,"data":"[06:02:12] WARNING: no baseline found - the report will show scores without changes from baseline. Attach the Full FT notebook output as an input to get them.\n"}
+,{"stream_name":"stdout","time":194.86101967,"data":"--- task1.import_prior finished in 0.0 min\n"}
+,{"stream_name":"stdout","time":194.861025126,"data":"eval worker started on GPU 1, pid 290 -\u003e /kaggle/working/task1/eval_worker_gpu1.log\n"}
+,{"stream_name":"stdout","time":204.397214654,"data":"[06:02:21] data: 40000 examples, sha256=d46b7f0b1022; 1250 updates x 32\n"}
+,{"stream_name":"stdout","time":209.701895209,"data":"[06:02:27] params: trainable 596,049,920 / total 596,049,920\n"}
+,{"stream_name":"stdout","time":218.886049331,"data":"[06:02:36] update 1/1250 loss 1.0285 lr 0.00e+00 gnorm 33.289 scale 65536 9.18s/upd peak 8.90GB eta 191min\n"}
+,{"stream_name":"stdout","time":379.996016257,"data":"[06:05:17] update 25/1250 loss 0.2369 lr 1.26e-05 gnorm 2.421 scale 65536 6.73s/upd peak 11.02GB eta 139min\n"}
+,{"stream_name":"stdout","time":555.985592178,"data":"[06:08:13] update 50/1250 loss 0.2442 lr 2.00e-05 gnorm 2.013 scale 65536 7.57s/upd peak 11.21GB eta 139min\n"}
+,{"stream_name":"stdout","time":725.973252894,"data":"[06:11:03] update 75/1250 loss 0.2591 lr 2.00e-05 gnorm 2.177 scale 65536 6.61s/upd peak 11.21GB eta 135min\n"}
+,{"stream_name":"stdout","time":894.328162744,"data":"[06:13:51] update 100/1250 loss 0.2600 lr 1.99e-05 gnorm 1.948 scale 65536 7.71s/upd peak 11.21GB eta 131min\n"}
+,{"stream_name":"stdout","time":1064.905039219,"data":"[06:16:42] update 125/1250 loss 0.2821 lr 1.98e-05 gnorm 2.122 scale 65536 7.03s/upd peak 11.21GB eta 128min\n"}
+,{"stream_name":"stdout","time":1230.466476952,"data":"[06:19:27] update 150/1250 loss 0.2396 lr 1.96e-05 gnorm 1.845 scale 65536 6.68s/upd peak 11.21GB eta 125min\n"}
+,{"stream_name":"stdout","time":1399.531009972,"data":"[06:22:16] update 175/1250 loss 0.2197 lr 1.94e-05 gnorm 1.916 scale 65536 6.98s/upd peak 11.21GB eta 122min\n"}
+,{"stream_name":"stdout","time":1563.809159108,"data":"[06:25:01] update 200/1250 loss 0.2186 lr 1.91e-05 gnorm 2.273 scale 65536 6.58s/upd peak 11.21GB eta 118min\n"}
+,{"stream_name":"stdout","time":1735.235916175,"data":"[06:27:52] update 225/1250 loss 0.2580 lr 1.89e-05 gnorm 1.950 scale 65536 7.07s/upd peak 11.21GB eta 116min\n"}
+,{"stream_name":"stdout","time":1898.946209313,"data":"[06:30:36] update 250/1250 loss 0.2585 lr 1.85e-05 gnorm 2.040 scale 65536 6.01s/upd peak 11.21GB eta 113min\n"}
+,{"stream_name":"stdout","time":2069.640995467,"data":"[06:33:27] update 275/1250 loss 0.2493 lr 1.82e-05 gnorm 1.820 scale 65536 8.76s/upd peak 11.21GB eta 110min\n"}
+,{"stream_name":"stdout","time":2242.872378022,"data":"[06:36:20] update 300/1250 loss 0.2239 lr 1.78e-05 gnorm 2.075 scale 65536 6.35s/upd peak 11.21GB eta 107min\n"}
+,{"stream_name":"stdout","time":2346.957027232,"data":"[06:38:04] recovery checkpoint @ update 312 (9984 examples): 6.66 GiB\n"}
+,{"stream_name":"stdout","time":2437.060312582,"data":"[06:39:34] update 325/1250 loss 0.2553 lr 1.74e-05 gnorm 2.046 scale 65536 6.40s/upd peak 11.21GB eta 105min\n"}
+,{"stream_name":"stdout","time":2610.568163887,"data":"[06:42:28] update 350/1250 loss 0.2371 lr 1.69e-05 gnorm 1.819 scale 65536 7.28s/upd peak 11.21GB eta 102min\n"}
+,{"stream_name":"stdout","time":2777.848946777,"data":"[06:45:15] update 375/1250 loss 0.2038 lr 1.64e-05 gnorm 1.658 scale 65536 6.88s/upd peak 11.21GB eta 99min\n"}
+,{"stream_name":"stdout","time":2946.965638393,"data":"[06:48:04] update 400/1250 loss 0.2145 lr 1.59e-05 gnorm 1.729 scale 65536 6.75s/upd peak 11.21GB eta 96min\n"}
+,{"stream_name":"stdout","time":3111.208828311,"data":"[06:50:48] update 425/1250 loss 0.2396 lr 1.54e-05 gnorm 1.920 scale 65536 6.10s/upd peak 11.21GB eta 93min\n"}
+,{"stream_name":"stdout","time":3280.314212203,"data":"[06:53:37] update 450/1250 loss 0.2305 lr 1.48e-05 gnorm 1.819 scale 65536 5.75s/upd peak 11.21GB eta 90min\n"}
+,{"stream_name":"stdout","time":3448.759799905,"data":"[06:56:26] update 475/1250 loss 0.1779 lr 1.43e-05 gnorm 1.470 scale 65536 6.90s/upd peak 11.21GB eta 87min\n"}
+,{"stream_name":"stdout","time":3621.760641798,"data":"[06:59:19] update 500/1250 loss 0.2147 lr 1.37e-05 gnorm 1.606 scale 65536 7.63s/upd peak 11.21GB eta 85min\n"}
+,{"stream_name":"stdout","time":3789.901427953,"data":"[07:02:07] update 525/1250 loss 0.2119 lr 1.31e-05 gnorm 1.645 scale 65536 6.70s/upd peak 11.21GB eta 82min\n"}
+,{"stream_name":"stdout","time":3964.856830605,"data":"[07:05:02] update 550/1250 loss 0.2084 lr 1.24e-05 gnorm 1.774 scale 65536 6.64s/upd peak 11.21GB eta 79min\n"}
+,{"stream_name":"stdout","time":4130.542475898,"data":"[07:07:48] update 575/1250 loss 0.2071 lr 1.18e-05 gnorm 1.749 scale 65536 6.32s/upd peak 11.21GB eta 76min\n"}
+,{"stream_name":"stdout","time":4298.713099096,"data":"[07:10:36] update 600/1250 loss 0.1969 lr 1.12e-05 gnorm 1.579 scale 65536 6.36s/upd peak 11.21GB eta 73min\n"}
+,{"stream_name":"stdout","time":4467.001235933,"data":"[07:13:24] update 625/1250 loss 0.2070 lr 1.05e-05 gnorm 1.468 scale 65536 8.14s/upd peak 11.21GB eta 71min\n"}
+,{"stream_name":"stdout","time":4470.347515247,"data":"[07:13:27] [mid] ||theta-theta0||_2 = 10.0305; FP16 export 1.12 GiB\n"}
+,{"stream_name":"stdout","time":4499.252475026,"data":"[07:13:56] pruned recovery checkpoint update_0312\n"}
+,{"stream_name":"stdout","time":4499.252519544,"data":"[07:13:56] recovery checkpoint @ update 625 (20000 examples): 6.66 GiB\n"}
+,{"stream_name":"stdout","time":4668.594956829,"data":"[07:16:46] update 650/1250 loss 0.1734 lr 9.87e-06 gnorm 1.562 scale 65536 6.58s/upd peak 11.21GB eta 68min\n"}
+,{"stream_name":"stdout","time":4835.495948834,"data":"[07:19:32] update 675/1250 loss 0.2125 lr 9.22e-06 gnorm 1.592 scale 65536 6.55s/upd peak 11.21GB eta 65min\n"}
+,{"stream_name":"stdout","time":5007.838982263,"data":"[07:22:25] update 700/1250 loss 0.2042 lr 8.58e-06 gnorm 1.656 scale 65536 6.68s/upd peak 11.21GB eta 62min\n"}
+,{"stream_name":"stdout","time":5175.784282567,"data":"[07:25:13] update 725/1250 loss 0.1829 lr 7.94e-06 gnorm 1.495 scale 65536 7.03s/upd peak 11.21GB eta 59min\n"}
+,{"stream_name":"stdout","time":5345.438248389,"data":"[07:28:02] update 750/1250 loss 0.1522 lr 7.31e-06 gnorm 1.440 scale 65536 6.61s/upd peak 11.21GB eta 56min\n"}
+,{"stream_name":"stdout","time":5513.109637725,"data":"[07:30:50] update 775/1250 loss 0.1765 lr 6.69e-06 gnorm 1.511 scale 65536 7.03s/upd peak 11.21GB eta 54min\n"}
+,{"stream_name":"stdout","time":5682.517219977,"data":"[07:33:39] update 800/1250 loss 0.1723 lr 6.09e-06 gnorm 1.490 scale 65536 6.44s/upd peak 11.21GB eta 51min\n"}
+,{"stream_name":"stdout","time":5846.248375535,"data":"[07:36:23] update 825/1250 loss 0.2272 lr 5.50e-06 gnorm 1.833 scale 65536 6.11s/upd peak 11.21GB eta 48min\n"}
+,{"stream_name":"stdout","time":6011.605850772,"data":"[07:39:09] update 850/1250 loss 0.1972 lr 4.93e-06 gnorm 1.582 scale 65536 6.85s/upd peak 11.21GB eta 45min\n"}
+,{"stream_name":"stdout","time":6175.667567504,"data":"[07:41:53] update 875/1250 loss 0.1797 lr 4.39e-06 gnorm 1.589 scale 65536 6.23s/upd peak 11.21GB eta 42min\n"}
+,{"stream_name":"stdout","time":6340.873927525,"data":"[07:44:38] update 900/1250 loss 0.1670 lr 3.86e-06 gnorm 1.457 scale 65536 6.11s/upd peak 11.21GB eta 39min\n"}
+,{"stream_name":"stdout","time":6509.608753827,"data":"[07:47:27] update 925/1250 loss 0.1831 lr 3.36e-06 gnorm 1.535 scale 65536 6.81s/upd peak 11.21GB eta 37min\n"}
+,{"stream_name":"stdout","time":6612.144785303,"data":"[07:49:09] pruned recovery checkpoint update_0625\n"}
+,{"stream_name":"stdout","time":6612.144872305,"data":"[07:49:09] recovery checkpoint @ update 937 (29984 examples): 6.66 GiB\n"}
+,{"stream_name":"stdout","time":6698.872339788,"data":"[07:50:36] update 950/1250 loss 0.1886 lr 2.89e-06 gnorm 1.724 scale 65536 5.86s/upd peak 11.21GB eta 34min\n"}
+,{"stream_name":"stdout","time":6871.532235425,"data":"[07:53:28] update 975/1250 loss 0.2071 lr 2.45e-06 gnorm 1.739 scale 65536 6.32s/upd peak 11.21GB eta 31min\n"}
+,{"stream_name":"stdout","time":7039.929260829,"data":"[07:56:17] update 1000/1250 loss 0.2106 lr 2.04e-06 gnorm 1.635 scale 65536 6.64s/upd peak 11.21GB eta 28min\n"}
+,{"stream_name":"stdout","time":7208.509652564,"data":"[07:59:05] update 1025/1250 loss 0.1747 lr 1.67e-06 gnorm 1.443 scale 65536 6.89s/upd peak 11.21GB eta 25min\n"}
+,{"stream_name":"stdout","time":7375.016660118,"data":"[08:01:52] update 1050/1250 loss 0.2154 lr 1.33e-06 gnorm 1.830 scale 65536 6.51s/upd peak 11.21GB eta 22min\n"}
+,{"stream_name":"stdout","time":7546.471798789,"data":"[08:04:43] update 1075/1250 loss 0.1681 lr 1.02e-06 gnorm 1.782 scale 65536 6.16s/upd peak 11.21GB eta 20min\n"}
+,{"stream_name":"stdout","time":7714.334323431,"data":"[08:07:31] update 1100/1250 loss 0.1943 lr 7.56e-07 gnorm 1.740 scale 65536 6.40s/upd peak 11.21GB eta 17min\n"}
+,{"stream_name":"stdout","time":7882.538656785,"data":"[08:10:19] update 1125/1250 loss 0.1927 lr 5.29e-07 gnorm 1.523 scale 65536 7.24s/upd peak 11.21GB eta 14min\n"}
+,{"stream_name":"stdout","time":8054.672254615,"data":"[08:13:12] update 1150/1250 loss 0.1647 lr 3.41e-07 gnorm 1.526 scale 65536 6.91s/upd peak 11.21GB eta 11min\n"}
+,{"stream_name":"stdout","time":8220.448305594,"data":"[08:15:57] update 1175/1250 loss 0.1678 lr 1.93e-07 gnorm 1.462 scale 65536 6.57s/upd peak 11.21GB eta 8min\n"}
+,{"stream_name":"stdout","time":8393.082877781,"data":"[08:18:50] update 1200/1250 loss 0.1671 lr 8.73e-08 gnorm 1.586 scale 65536 6.62s/upd peak 11.21GB eta 6min\n"}
+,{"stream_name":"stdout","time":8558.821484793,"data":"[08:21:36] update 1225/1250 loss 0.2178 lr 2.27e-08 gnorm 1.702 scale 65536 6.47s/upd peak 11.21GB eta 3min\n"}
+,{"stream_name":"stdout","time":8731.553026622,"data":"[08:24:29] update 1250/1250 loss 0.1646 lr 3.36e-11 gnorm 1.563 scale 65536 6.20s/upd peak 11.21GB eta 0min\n"}
+,{"stream_name":"stdout","time":8734.815599883,"data":"[08:24:32] [final] ||theta-theta0||_2 = 10.6703; FP16 export 1.12 GiB\n"}
+,{"stream_name":"stdout","time":8771.147831615,"data":"[08:25:08] pruned recovery checkpoint update_0937\n"}
+,{"stream_name":"stdout","time":8771.147868711,"data":"[08:25:08] recovery checkpoint @ update 1250 (40000 examples): 6.66 GiB\n"}
+,{"stream_name":"stdout","time":8771.147874481,"data":"[08:25:08] training done: 140.7 min, skipped 0 updates\n"}
+,{"stream_name":"stdout","time":8772.718081273,"data":"--- task1.train finished in 143.0 min\n"}
+,{"stream_name":"stdout","time":8782.968382648,"data":"[08:25:20] [full_ft_final] evaluating /kaggle/working/task1_artifacts/exports/full_ft/final\n"}
+,{"stream_name":"stdout","time":8785.02110953,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":8785.021161405,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":8785.021166866,"data":"generation_kwargs: {'max_gen_toks': 1024} specified through cli, these settings will update set parameters in yaml tasks. Ensure 'do_sample=True' for non-greedy decoding!\n"}
+,{"stream_name":"stdout","time":8794.798702326,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":8797.219480236,"data":"Overwriting default num_fewshot of gsm8k_cot from 8 to 0\n"}
+,{"stream_name":"stdout","time":8797.219523714,"data":"\n"}
+,{"stream_name":"stdout","time":8799.609052312,"data":"  0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":8799.609098538,"data":"100%|██████████| 1319/1319 [00:02\u003c00:00, 558.30it/s]\n"}
+,{"stream_name":"stdout","time":8799.609104253,"data":"\n"}
+,{"stream_name":"stdout","time":8839.700469452,"data":"Running generate_until requests:   0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":8855.574905298,"data":"Running generate_until requests:   3%|▎         | 33/1319 [00:40\u003c26:02,  1.21s/it]\n"}
+,{"stream_name":"stdout","time":8947.404506585,"data":"Running generate_until requests:   5%|▍         | 64/1319 [00:55\u003c25:24,  1.21s/it]\n"}
+,{"stream_name":"stdout","time":8965.578229255,"data":"Running generate_until requests:   5%|▍         | 65/1319 [02:27\u003c51:29,  2.46s/it]\n"}
+,{"stream_name":"stdout","time":8987.382568383,"data":"Running generate_until requests:  10%|▉         | 128/1319 [02:45\u003c48:54,  2.46s/it]\n"}
+,{"stream_name":"stdout","time":9005.578880678,"data":"Running generate_until requests:  10%|▉         | 129/1319 [03:07\u003c26:06,  1.32s/it]\n"}
+,{"stream_name":"stdout","time":9023.5278818,"data":"Running generate_until requests:  12%|█▏        | 160/1319 [03:25\u003c25:25,  1.32s/it]\n"}
+,{"stream_name":"stdout","time":9035.580312857,"data":"Running generate_until requests:  15%|█▍        | 193/1319 [03:43\u003c18:03,  1.04it/s]\n"}
+,{"stream_name":"stdout","time":9141.718610415,"data":"Running generate_until requests:  17%|█▋        | 224/1319 [03:55\u003c17:33,  1.04it/s]\n"}
+,{"stream_name":"stdout","time":9155.582917036,"data":"Running generate_until requests:  19%|█▉        | 257/1319 [05:42\u003c23:19,  1.32s/it]\n"}
+,{"stream_name":"stdout","time":9179.426175559,"data":"Running generate_until requests:  24%|██▍       | 320/1319 [05:55\u003c21:56,  1.32s/it]\n"}
+,{"stream_name":"stdout","time":9195.584191565,"data":"Running generate_until requests:  27%|██▋       | 353/1319 [06:19\u003c14:19,  1.12it/s]\n"}
+,{"stream_name":"stdout","time":9304.539426154,"data":"Running generate_until requests:  32%|███▏      | 416/1319 [06:35\u003c13:23,  1.12it/s]\n"}
+,{"stream_name":"stdout","time":9315.587289065,"data":"Running generate_until requests:  34%|███▍      | 449/1319 [08:24\u003c15:17,  1.05s/it]\n"}
+,{"stream_name":"stdout","time":9434.887789585,"data":"Running generate_until requests:  36%|███▋      | 480/1319 [08:35\u003c14:44,  1.05s/it]\n"}
+,{"stream_name":"stdout","time":9445.589592775,"data":"Running generate_until requests:  41%|████▏     | 545/1319 [10:35\u003c15:01,  1.16s/it]\n"}
+,{"stream_name":"stdout","time":9469.938863093,"data":"Running generate_until requests:  44%|████▎     | 576/1319 [10:45\u003c14:25,  1.16s/it]\n"}
+,{"stream_name":"stdout","time":9485.590899268,"data":"Running generate_until requests:  49%|████▊     | 641/1319 [11:10\u003c10:04,  1.12it/s]\n"}
+,{"stream_name":"stdout","time":9584.079267055,"data":"Running generate_until requests:  53%|█████▎    | 704/1319 [11:25\u003c09:08,  1.12it/s]\n"}
+,{"stream_name":"stdout","time":9595.593933124,"data":"Running generate_until requests:  53%|█████▎    | 705/1319 [13:04\u003c11:21,  1.11s/it]\n"}
+,{"stream_name":"stdout","time":9617.775269737,"data":"Running generate_until requests:  58%|█████▊    | 768/1319 [13:15\u003c10:11,  1.11s/it]\n"}
+,{"stream_name":"stdout","time":9635.594593625,"data":"Running generate_until requests:  61%|██████    | 801/1319 [13:38\u003c07:19,  1.18it/s]\n"}
+,{"stream_name":"stdout","time":9718.702897677,"data":"Running generate_until requests:  63%|██████▎   | 832/1319 [13:55\u003c06:53,  1.18it/s]\n"}
+,{"stream_name":"stdout","time":9735.59707365,"data":"Running generate_until requests:  63%|██████▎   | 833/1319 [15:19\u003c09:30,  1.17s/it]\n"}
+,{"stream_name":"stdout","time":9757.000469921,"data":"Running generate_until requests:  68%|██████▊   | 896/1319 [15:35\u003c08:16,  1.17s/it]\n"}
+,{"stream_name":"stdout","time":9767.268994774,"data":"Running generate_until requests:  70%|███████   | 929/1319 [15:57\u003c05:43,  1.13it/s]\n"}
+,{"stream_name":"stdout","time":9809.866830822,"data":"Running generate_until requests:  75%|███████▌  | 992/1319 [16:07\u003c04:48,  1.13it/s]\n"}
+,{"stream_name":"stdout","time":9825.599247364,"data":"Running generate_until requests:  80%|████████  | 1057/1319 [16:50\u003c02:59,  1.46it/s]\n"}
+,{"stream_name":"stdout","time":9841.746438103,"data":"Running generate_until requests:  85%|████████▍ | 1120/1319 [17:05\u003c02:16,  1.46it/s]\n"}
+,{"stream_name":"stdout","time":9855.600229255,"data":"Running generate_until requests:  87%|████████▋ | 1153/1319 [17:22\u003c01:35,  1.73it/s]\n"}
+,{"stream_name":"stdout","time":9874.580477017,"data":"Running generate_until requests:  92%|█████████▏| 1216/1319 [17:35\u003c00:59,  1.73it/s]\n"}
+,{"stream_name":"stdout","time":9885.601300394,"data":"Running generate_until requests:  97%|█████████▋| 1281/1319 [17:54\u003c00:17,  2.18it/s]\n"}
+,{"stream_name":"stdout","time":9921.543749526,"data":"Running generate_until requests:  99%|█████████▉| 1312/1319 [18:05\u003c00:03,  2.18it/s]\n"}
+,{"stream_name":"stdout","time":9921.54378795,"data":"Running generate_until requests: 100%|█████████▉| 1313/1319 [18:41\u003c00:03,  1.74it/s]\n"}
+,{"stream_name":"stdout","time":9921.543811223,"data":"Running generate_until requests: 100%|██████████| 1319/1319 [18:41\u003c00:00,  1.18it/s]\n"}
+,{"stream_name":"stdout","time":9930.176339298,"data":"[08:44:27] [full_ft_final] GSM8K done in 19.1 min\n"}
+,{"stream_name":"stdout","time":9930.176383647,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":9930.17639277,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":9946.594981219,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":9946.595055305,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":9952.317901363,"data":"Overwriting default num_fewshot of hellaswag from None to 0\n"}
+,{"stream_name":"stdout","time":9952.317961149,"data":"Overwriting default num_fewshot of boolq from None to 0\n"}
+,{"stream_name":"stdout","time":9952.317973571,"data":"Overwriting default num_fewshot of arc_easy from None to 0\n"}
+,{"stream_name":"stdout","time":9953.319184512,"data":"\n"}
+,{"stream_name":"stdout","time":9961.892832292,"data":"  0%|          | 0/10042 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":9961.892956514,"data":"100%|██████████| 10042/10042 [00:08\u003c00:00, 1171.62it/s]\n"}
+,{"stream_name":"stdout","time":9961.892969296,"data":"\n"}
+,{"stream_name":"stdout","time":9964.032279822,"data":"  0%|          | 0/3270 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":9964.03234577,"data":"100%|██████████| 3270/3270 [00:01\u003c00:00, 1645.25it/s]\n"}
+,{"stream_name":"stdout","time":9964.032355079,"data":"\n"}
+,{"stream_name":"stdout","time":9969.1659946,"data":"  0%|          | 0/2376 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":9969.166058823,"data":"100%|██████████| 2376/2376 [00:05\u003c00:00, 474.84it/s]\n"}
+,{"stream_name":"stdout","time":9969.16625626,"data":"\n"}
+,{"stream_name":"stdout","time":9998.852145819,"data":"Tokenizing inputs:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":9998.852192962,"data":"Tokenizing inputs: 100%|██████████| 56209/56209 [00:29\u003c00:00, 1895.55it/s]\n"}
+,{"stream_name":"stdout","time":9999.698725045,"data":"\n"}
+,{"stream_name":"stdout","time":10029.8989695,"data":"Running loglikelihood requests:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10045.710293533,"data":"Running loglikelihood requests:   2%|▏         | 1089/56209 [00:30\u003c25:28, 36.07it/s]\n"}
+,{"stream_name":"stdout","time":10059.971310638,"data":"Running loglikelihood requests:   4%|▍         | 2124/56209 [00:46\u003c24:59, 36.07it/s]\n"}
+,{"stream_name":"stdout","time":10075.711175043,"data":"Running loglikelihood requests:   6%|▌         | 3329/56209 [01:00\u003c15:01, 58.64it/s]\n"}
+,{"stream_name":"stdout","time":10089.966005883,"data":"Running loglikelihood requests:   8%|▊         | 4439/56209 [01:16\u003c14:42, 58.64it/s]\n"}
+,{"stream_name":"stdout","time":10105.718252687,"data":"Running loglikelihood requests:   9%|▉         | 5324/56209 [01:30\u003c13:37, 62.21it/s]\n"}
+,{"stream_name":"stdout","time":10119.966733188,"data":"Running loglikelihood requests:  11%|█         | 6276/56209 [01:46\u003c13:22, 62.21it/s]\n"}
+,{"stream_name":"stdout","time":10135.712766988,"data":"Running loglikelihood requests:  13%|█▎        | 7128/56209 [02:00\u003c13:19, 61.39it/s]\n"}
+,{"stream_name":"stdout","time":10150.077877316,"data":"Running loglikelihood requests:  14%|█▍        | 8084/56209 [02:16\u003c13:03, 61.39it/s]\n"}
+,{"stream_name":"stdout","time":10165.71355135,"data":"Running loglikelihood requests:  16%|█▌        | 8966/56209 [02:30\u003c12:51, 61.27it/s]\n"}
+,{"stream_name":"stdout","time":10180.112734157,"data":"Running loglikelihood requests:  18%|█▊        | 9957/56209 [02:46\u003c12:34, 61.27it/s]\n"}
+,{"stream_name":"stdout","time":10195.714601717,"data":"Running loglikelihood requests:  19%|█▉        | 10850/56209 [03:00\u003c12:14, 61.76it/s]\n"}
+,{"stream_name":"stdout","time":10210.143278316,"data":"Running loglikelihood requests:  21%|██        | 11856/56209 [03:16\u003c11:58, 61.76it/s]\n"}
+,{"stream_name":"stdout","time":10225.715465271,"data":"Running loglikelihood requests:  23%|██▎       | 12784/56209 [03:30\u003c11:33, 62.63it/s]\n"}
+,{"stream_name":"stdout","time":10240.210719127,"data":"Running loglikelihood requests:  25%|██▍       | 13837/56209 [03:46\u003c11:16, 62.63it/s]\n"}
+,{"stream_name":"stdout","time":10255.716823561,"data":"Running loglikelihood requests:  26%|██▋       | 14801/56209 [04:00\u003c10:46, 64.05it/s]\n"}
+,{"stream_name":"stdout","time":10270.314871014,"data":"Running loglikelihood requests:  28%|██▊       | 15865/56209 [04:16\u003c10:29, 64.05it/s]\n"}
+,{"stream_name":"stdout","time":10285.717547678,"data":"Running loglikelihood requests:  30%|██▉       | 16849/56209 [04:30\u003c10:02, 65.29it/s]\n"}
+,{"stream_name":"stdout","time":10300.511762033,"data":"Running loglikelihood requests:  32%|███▏      | 17924/56209 [04:46\u003c09:46, 65.29it/s]\n"}
+,{"stream_name":"stdout","time":10315.718290681,"data":"Running loglikelihood requests:  34%|███▍      | 18982/56209 [05:00\u003c09:15, 67.03it/s]\n"}
+,{"stream_name":"stdout","time":10330.400290934,"data":"Running loglikelihood requests:  36%|███▌      | 20113/56209 [05:16\u003c08:58, 67.03it/s]\n"}
+,{"stream_name":"stdout","time":10345.726335154,"data":"Running loglikelihood requests:  38%|███▊      | 21210/56209 [05:30\u003c08:25, 69.23it/s]\n"}
+,{"stream_name":"stdout","time":10360.497980866,"data":"Running loglikelihood requests:  40%|███▉      | 22373/56209 [05:46\u003c08:08, 69.23it/s]\n"}
+,{"stream_name":"stdout","time":10375.720630067,"data":"Running loglikelihood requests:  42%|████▏     | 23497/56209 [06:00\u003c07:38, 71.29it/s]\n"}
+,{"stream_name":"stdout","time":10390.587192516,"data":"Running loglikelihood requests:  44%|████▍     | 24711/56209 [06:16\u003c07:21, 71.29it/s]\n"}
+,{"stream_name":"stdout","time":10405.721546442,"data":"Running loglikelihood requests:  46%|████▌     | 25910/56209 [06:30\u003c06:49, 74.00it/s]\n"}
+,{"stream_name":"stdout","time":10420.583239687,"data":"Running loglikelihood requests:  48%|████▊     | 27142/56209 [06:46\u003c06:32, 74.00it/s]\n"}
+,{"stream_name":"stdout","time":10435.730248445,"data":"Running loglikelihood requests:  50%|█████     | 28361/56209 [07:00\u003c06:04, 76.31it/s]\n"}
+,{"stream_name":"stdout","time":10450.657183654,"data":"Running loglikelihood requests:  53%|█████▎    | 29723/56209 [07:16\u003c05:47, 76.31it/s]\n"}
+,{"stream_name":"stdout","time":10465.722814148,"data":"Running loglikelihood requests:  55%|█████▌    | 31135/56209 [07:30\u003c05:09, 81.12it/s]\n"}
+,{"stream_name":"stdout","time":10480.704875437,"data":"Running loglikelihood requests:  58%|█████▊    | 32630/56209 [07:46\u003c04:50, 81.12it/s]\n"}
+,{"stream_name":"stdout","time":10495.724434974,"data":"Running loglikelihood requests:  61%|██████    | 34270/56209 [08:00\u003c04:08, 88.11it/s]\n"}
+,{"stream_name":"stdout","time":10510.726648384,"data":"Running loglikelihood requests:  64%|██████▍   | 36200/56209 [08:16\u003c03:47, 88.11it/s]\n"}
+,{"stream_name":"stdout","time":10525.724625121,"data":"Running loglikelihood requests:  68%|██████▊   | 38188/56209 [08:31\u003c02:58, 100.85it/s]\n"}
+,{"stream_name":"stdout","time":10540.781392939,"data":"Running loglikelihood requests:  72%|███████▏  | 40251/56209 [08:46\u003c02:38, 100.85it/s]\n"}
+,{"stream_name":"stdout","time":10555.725537304,"data":"Running loglikelihood requests:  75%|███████▌  | 42349/56209 [09:01\u003c02:03, 112.15it/s]\n"}
+,{"stream_name":"stdout","time":10570.79386886,"data":"Running loglikelihood requests:  79%|███████▉  | 44433/56209 [09:16\u003c01:44, 112.15it/s]\n"}
+,{"stream_name":"stdout","time":10585.726698944,"data":"Running loglikelihood requests:  83%|████████▎ | 46567/56209 [09:31\u003c01:19, 120.67it/s]\n"}
+,{"stream_name":"stdout","time":10600.847356548,"data":"Running loglikelihood requests:  87%|████████▋ | 48746/56209 [09:46\u003c01:01, 120.67it/s]\n"}
+,{"stream_name":"stdout","time":10615.727090626,"data":"Running loglikelihood requests:  91%|█████████ | 50948/56209 [10:01\u003c00:41, 128.21it/s]\n"}
+,{"stream_name":"stdout","time":10630.837931134,"data":"Running loglikelihood requests:  95%|█████████▍| 53180/56209 [10:16\u003c00:23, 128.21it/s]\n"}
+,{"stream_name":"stdout","time":10633.65951016,"data":"Running loglikelihood requests:  99%|█████████▉| 55620/56209 [10:31\u003c00:04, 136.46it/s]\n"}
+,{"stream_name":"stdout","time":10633.659541218,"data":"Running loglikelihood requests: 100%|██████████| 56209/56209 [10:33\u003c00:00, 88.66it/s] \n"}
+,{"stream_name":"stdout","time":10655.018639992,"data":"[08:56:32] [full_ft_final] likelihood tasks done in 12.1 min\n"}
+,{"stream_name":"stdout","time":10912.717072984,"data":"[09:00:50] [full_ft_final] GSM8K flex 0.6444 | hellaswag 0.4606 | boolq 0.6128 | arc_easy 0.6347\n"}
+,{"stream_name":"stdout","time":10914.435176912,"data":"--- task1.evaluate finished in 35.7 min\n"}
+,{"stream_name":"stdout","time":10914.472093664,"data":"il requests:  51%|█████     | 673/1319 [18:32\u003c13:02,  1.21s/it]\n"}
+,{"stream_name":"stdout","time":10914.472170147,"data":"Running generate_until requests:  53%|█████▎    | 704/1319 [18:44\u003c12:25,  1.21s/it]\n"}
+,{"stream_name":"stdout","time":10914.472176844,"data":"Running generate_until requests:  58%|█████▊    | 769/1319 [19:12\u003c08:37,  1.06it/s]\n"}
+,{"stream_name":"stdout","time":10914.472181776,"data":"Running generate_until requests:  61%|██████    | 800/1319 [19:24\u003c08:08,  1.06it/s]\n"}
+,{"stream_name":"stdout","time":10914.472186265,"data":"Running generate_until requests:  61%|██████    | 801/1319 [20:50\u003c10:40,  1.24s/it]\n"}
+,{"stream_name":"stdout","time":10914.472190096,"data":"Running generate_until requests:  66%|██████▌   | 864/1319 [21:01\u003c09:22,  1.24s/it]\n"}
+,{"stream_name":"stdout","time":10914.472193897,"data":"Running generate_until requests:  68%|██████▊   | 897/1319 [22:52\u003c08:47,  1.25s/it]\n"}
+,{"stream_name":"stdout","time":10914.472197624,"data":"Running generate_until requests:  73%|███████▎  | 960/1319 [23:04\u003c07:28,  1.25s/it]\n"}
+,{"stream_name":"stdout","time":10914.472201493,"data":"Running generate_until requests:  75%|███████▌  | 993/1319 [23:23\u003c05:02,  1.08it/s]\n"}
+,{"stream_name":"stdout","time":10914.47220529,"data":"Running generate_until requests:  80%|████████  | 1056/1319 [23:34\u003c04:03,  1.08it/s]\n"}
+,{"stream_name":"stdout","time":10914.472208958,"data":"Running generate_until requests:  83%|████████▎ | 1089/1319 [23:53\u003c02:46,  1.38it/s]\n"}
+,{"stream_name":"stdout","time":10914.472212793,"data":"Running generate_until requests:  87%|████████▋ | 1152/1319 [24:04\u003c02:01,  1.38it/s]\n"}
+,{"stream_name":"stdout","time":10914.472216616,"data":"Running generate_until requests:  92%|█████████▏| 1217/1319 [24:29\u003c00:56,  1.81it/s]\n"}
+,{"stream_name":"stdout","time":10914.472220369,"data":"Running generate_until requests:  97%|█████████▋| 1280/1319 [24:41\u003c00:21,  1.81it/s]\n"}
+,{"stream_name":"stdout","time":10914.472224111,"data":"Running generate_until requests: 100%|██████████| 1319/1319 [24:53\u003c00:00,  1.13s/it]\n"}
+,{"stream_name":"stdout","time":10914.472228006,"data":"[07:39:36] [full_ft_mid] GSM8K done in 25.3 min\n"}
+,{"stream_name":"stdout","time":10914.472236612,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":10914.472240551,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":10914.472243143,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":10914.472245746,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":10914.472273142,"data":"Overwriting default num_fewshot of hellaswag from None to 0\n"}
+,{"stream_name":"stdout","time":10914.472277144,"data":"Overwriting default num_fewshot of boolq from None to 0\n"}
+,{"stream_name":"stdout","time":10914.472281037,"data":"Overwriting default num_fewshot of arc_easy from None to 0\n"}
+,{"stream_name":"stdout","time":10914.472284761,"data":"\n"}
+,{"stream_name":"stdout","time":10914.472288508,"data":"  0%|          | 0/10042 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10914.472292496,"data":"100%|██████████| 10042/10042 [00:08\u003c00:00, 1121.37it/s]\n"}
+,{"stream_name":"stdout","time":10914.472324294,"data":"\n"}
+,{"stream_name":"stdout","time":10914.472327788,"data":"  0%|          | 0/3270 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10914.472331324,"data":"100%|██████████| 3270/3270 [00:01\u003c00:00, 1786.56it/s]\n"}
+,{"stream_name":"stdout","time":10914.472335048,"data":"\n"}
+,{"stream_name":"stdout","time":10914.472338344,"data":"  0%|          | 0/2376 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10914.472341867,"data":"100%|██████████| 2376/2376 [00:05\u003c00:00, 474.07it/s]\n"}
+,{"stream_name":"stdout","time":10914.47235341,"data":"\n"}
+,{"stream_name":"stdout","time":10914.472356709,"data":"Tokenizing inputs:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10914.472360582,"data":"Tokenizing inputs: 100%|██████████| 56209/56209 [00:27\u003c00:00, 2012.73it/s]\n"}
+,{"stream_name":"stdout","time":10914.472365222,"data":"\n"}
+,{"stream_name":"stdout","time":10914.47236893,"data":"Running loglikelihood requests:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10914.472373233,"data":"Running loglikelihood requests:   3%|▎         | 1505/56209 [00:30\u003c18:12, 50.06it/s]\n"}
+,{"stream_name":"stdout","time":10914.472377936,"data":"Running loglikelihood requests:   5%|▍         | 2711/56209 [00:43\u003c17:48, 50.06it/s]\n"}
+,{"stream_name":"stdout","time":10914.472382346,"data":"Running loglikelihood requests:   7%|▋         | 4112/56209 [01:00\u003c12:07, 71.58it/s]\n"}
+,{"stream_name":"stdout","time":10914.472386175,"data":"Running loglikelihood requests:   9%|▉         | 5045/56209 [01:13\u003c11:54, 71.58it/s]\n"}
+,{"stream_name":"stdout","time":10914.472389925,"data":"Running loglikelihood requests:  11%|█         | 6129/56209 [01:30\u003c12:00, 69.53it/s]\n"}
+,{"stream_name":"stdout","time":10914.472393644,"data":"Running loglikelihood requests:  13%|█▎        | 7037/56209 [01:43\u003c11:47, 69.53it/s]\n"}
+,{"stream_name":"stdout","time":10914.472397274,"data":"Running loglikelihood requests:  14%|█▍        | 8141/56209 [02:00\u003c11:41, 68.55it/s]\n"}
+,{"stream_name":"stdout","time":10914.472400888,"data":"Running loglikelihood requests:  16%|█▌        | 9096/56209 [02:13\u003c11:27, 68.55it/s]\n"}
+,{"stream_name":"stdout","time":10914.472404546,"data":"Running loglikelihood requests:  18%|█▊        | 10221/56209 [02:30\u003c11:08, 68.83it/s]\n"}
+,{"stream_name":"stdout","time":10914.472408234,"data":"Running loglikelihood requests:  20%|█▉        | 11148/56209 [02:43\u003c10:54, 68.83it/s]\n"}
+,{"stream_name":"stdout","time":10914.472411926,"data":"Running loglikelihood requests:  22%|██▏       | 12262/56209 [03:00\u003c10:41, 68.54it/s]\n"}
+,{"stream_name":"stdout","time":10914.472415671,"data":"Running loglikelihood requests:  23%|██▎       | 13185/56209 [03:13\u003c10:27, 68.54it/s]\n"}
+,{"stream_name":"stdout","time":10914.472419306,"data":"Running loglikelihood requests:  25%|██▌       | 14312/56209 [03:30\u003c10:12, 68.45it/s]\n"}
+,{"stream_name":"stdout","time":10914.472422959,"data":"Running loglikelihood requests:  27%|██▋       | 15245/56209 [03:43\u003c09:58, 68.45it/s]\n"}
+,{"stream_name":"stdout","time":10914.472427004,"data":"Running loglikelihood requests:  29%|██▉       | 16415/56209 [04:00\u003c09:37, 68.94it/s]\n"}
+,{"stream_name":"stdout","time":10914.472430692,"data":"Running loglikelihood requests:  31%|███       | 17388/56209 [04:13\u003c09:23, 68.94it/s]\n"}
+,{"stream_name":"stdout","time":10914.472434408,"data":"Running loglikelihood requests:  33%|███▎      | 18647/56209 [04:30\u003c08:51, 70.61it/s]\n"}
+,{"stream_name":"stdout","time":10914.472446705,"data":"Running loglikelihood requests:  35%|███▌      | 19693/56209 [04:43\u003c08:37, 70.61it/s]\n"}
+,{"stream_name":"stdout","time":10914.472460021,"data":"Running loglikelihood requests:  37%|███▋      | 21025/56209 [05:00\u003c08:00, 73.23it/s]\n"}
+,{"stream_name":"stdout","time":10914.472464978,"data":"Running loglikelihood requests:  39%|███▉      | 22110/56209 [05:13\u003c07:45, 73.23it/s]\n"}
+,{"stream_name":"stdout","time":10914.472469572,"data":"Running loglikelihood requests:  42%|████▏     | 23457/56209 [05:30\u003c07:13, 75.60it/s]\n"}
+,{"stream_name":"stdout","time":10914.472474008,"data":"Running loglikelihood requests:  44%|████▎     | 24550/56209 [05:43\u003c06:58, 75.60it/s]\n"}
+,{"stream_name":"stdout","time":10914.472478145,"data":"Running loglikelihood requests:  46%|████▌     | 25894/56209 [06:00\u003c06:32, 77.30it/s]\n"}
+,{"stream_name":"stdout","time":10914.472482337,"data":"Running loglikelihood requests:  48%|████▊     | 26987/56209 [06:13\u003c06:18, 77.30it/s]\n"}
+,{"stream_name":"stdout","time":10914.472486115,"data":"Running loglikelihood requests:  51%|█████     | 28402/56209 [06:30\u003c05:51, 79.20it/s]\n"}
+,{"stream_name":"stdout","time":10914.472489862,"data":"Running loglikelihood requests:  53%|█████▎    | 29681/56209 [06:43\u003c05:34, 79.20it/s]\n"}
+,{"stream_name":"stdout","time":10914.47249363,"data":"Running loglikelihood requests:  56%|█████▌    | 31353/56209 [07:00\u003c04:52, 84.98it/s]\n"}
+,{"stream_name":"stdout","time":10914.472497361,"data":"Running loglikelihood requests:  58%|█████▊    | 32743/56209 [07:13\u003c04:36, 84.98it/s]\n"}
+,{"stream_name":"stdout","time":10914.472501198,"data":"Running loglikelihood requests:  62%|██████▏   | 34663/56209 [07:30\u003c03:52, 92.60it/s]\n"}
+,{"stream_name":"stdout","time":10914.472507734,"data":"Running loglikelihood requests:  65%|██████▍   | 36472/56209 [07:43\u003c03:33, 92.60it/s]\n"}
+,{"stream_name":"stdout","time":10914.472511553,"data":"Running loglikelihood requests:  69%|██████▉   | 38780/56209 [08:00\u003c02:44, 106.03it/s]\n"}
+,{"stream_name":"stdout","time":10914.47251537,"data":"Running loglikelihood requests:  72%|███████▏  | 40551/56209 [08:13\u003c02:27, 106.03it/s]\n"}
+,{"stream_name":"stdout","time":10914.47251919,"data":"Running loglikelihood requests:  76%|███████▌  | 42708/56209 [08:30\u003c01:58, 113.46it/s]\n"}
+,{"stream_name":"stdout","time":10914.472523021,"data":"Running loglikelihood requests:  79%|███████▉  | 44563/56209 [08:43\u003c01:42, 113.46it/s]\n"}
+,{"stream_name":"stdout","time":10914.472526746,"data":"Running loglikelihood requests:  84%|████████▎ | 46999/56209 [09:00\u003c01:15, 122.32it/s]\n"}
+,{"stream_name":"stdout","time":10914.472531041,"data":"Running loglikelihood requests:  87%|████████▋ | 48946/56209 [09:13\u003c00:59, 122.32it/s]\n"}
+,{"stream_name":"stdout","time":10914.472534944,"data":"Running loglikelihood requests:  92%|█████████▏| 51515/56209 [09:30\u003c00:35, 130.72it/s]\n"}
+,{"stream_name":"stdout","time":10914.472542601,"data":"Running loglikelihood requests:  95%|█████████▌| 53611/56209 [09:43\u003c00:19, 130.72it/s]\n"}
+,{"stream_name":"stdout","time":10914.472555001,"data":"Running loglikelihood requests: 100%|██████████| 56209/56209 [09:57\u003c00:00, 94.04it/s] \n"}
+,{"stream_name":"stdout","time":10914.472559616,"data":"[07:50:59] [full_ft_mid] likelihood tasks done in 11.4 min\n"}
+,{"stream_name":"stdout","time":10914.472563683,"data":"[07:54:32] [full_ft_mid] GSM8K flex 0.5732 | hellaswag 0.4569 | boolq 0.6080 | arc_easy 0.6204\n"}
+,{"stream_name":"stdout","time":10914.472572147,"data":"\n"}
+,{"stream_name":"stdout","time":10930.839078071,"data":"[09:01:08] [full_ft_mid] layer 0: rho_k=0.1334 (chance 0.125) eta=0.01321 R_math=0.05232 R_nonmath=0.02545\n"}
+,{"stream_name":"stdout","time":10930.839122804,"data":"[09:01:08] [full_ft_mid] layer 13: rho_k=0.1487 (chance 0.125) eta=0.01543 R_math=0.05735 R_nonmath=0.03056\n"}
+,{"stream_name":"stdout","time":10930.839126711,"data":"[09:01:08] [full_ft_mid] layer 27: rho_k=0.1159 (chance 0.125) eta=0.01248 R_math=0.01996 R_nonmath=0.02808\n"}
+,{"stream_name":"stdout","time":10930.839129998,"data":"[09:01:08] [full_ft_final] layer 0: rho_k=0.1333 (chance 0.125) eta=0.01366 R_math=0.05328 R_nonmath=0.02619\n"}
+,{"stream_name":"stdout","time":10930.839132671,"data":"[09:01:08] [full_ft_final] layer 13: rho_k=0.1486 (chance 0.125) eta=0.01605 R_math=0.05792 R_nonmath=0.03117\n"}
+,{"stream_name":"stdout","time":10930.839135392,"data":"[09:01:08] [full_ft_final] layer 27: rho_k=0.1151 (chance 0.125) eta=0.01297 R_math=0.01975 R_nonmath=0.02824\n"}
+,{"stream_name":"stdout","time":10930.839138309,"data":"[09:01:08] diagnostics done\n"}
+,{"stream_name":"stdout","time":10932.290686871,"data":"--- task1.diagnostics finished in 0.3 min\n"}
+,{"stream_name":"stdout","time":10933.090100947,"data":"[09:01:10] report: runs=['full_ft'] conditions=['baseline', 'full_ft_mid', 'full_ft_final']\n"}
+,{"stream_name":"stdout","time":10937.379676892,"data":"[09:01:14] wrote /kaggle/working/task1_full_ft_report.zip (4.4 MiB)\n"}
+,{"stream_name":"stdout","time":10937.452385784,"data":"--- task1.report finished in 0.1 min\n"}
+,{"stream_name":"stdout","time":10937.613374963,"data":"15M\t/kaggle/working/task1\r\n"}
+,{"stream_name":"stdout","time":10937.613419971,"data":"2.4G\t/kaggle/working/task1_artifacts\r\n"}
+,{"stream_name":"stdout","time":10937.61342402,"data":"4.5M\t/kaggle/working/task1_full_ft_report.zip\r\n"}
+,{"stream_name":"stdout","time":10937.613427008,"data":"6.8G\t/tmp/atml_task1\r\n"}
+,{"stream_name":"stderr","time":10941.244121053,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":10941.244161744,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":10941.443731212,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":10941.443770568,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":10942.31388191,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":10942.449223811,"data":"[NbConvertApp] Writing 502462 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":10945.120659117,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":10945.719437439,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":10945.719493037,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":10945.719874022,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":10945.720207987,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":10945.720498192,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":10945.720693806,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":10945.720933058,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":10945.721203656,"data":"[NbConvertApp] Writing 348005 bytes to __results__.html\n"}
+]

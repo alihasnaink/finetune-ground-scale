@@ -1,0 +1,625 @@
+[{"stream_name":"stderr","time":8.064161177,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.064218999,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.064225832,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.064230191,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.667927732,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.66797261,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.667977128,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.667979966,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.871957147,"data":"Wed Nov 11 16:28:38 2026       \r\n"}
+,{"stream_name":"stdout","time":9.871992922,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":9.871996745,"data":"| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\r\n"}
+,{"stream_name":"stdout","time":9.872014093,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":9.872018968,"data":"| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\r\n"}
+,{"stream_name":"stdout","time":9.872023312,"data":"| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\r\n"}
+,{"stream_name":"stdout","time":9.872027238,"data":"|                                         |                        |               MIG M. |\r\n"}
+,{"stream_name":"stdout","time":9.872030819,"data":"|=========================================+========================+======================|\r\n"}
+,{"stream_name":"stdout","time":9.922358476,"data":"|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":9.922403082,"data":"| N/A   37C    P8              9W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":9.92240891,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":9.922413158,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":9.922417268,"data":"|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |\r\n"}
+,{"stream_name":"stdout","time":9.922421299,"data":"| N/A   37C    P8             11W /   70W |       0MiB /  15360MiB |      0%      Default |\r\n"}
+,{"stream_name":"stdout","time":9.922425111,"data":"|                                         |                        |                  N/A |\r\n"}
+,{"stream_name":"stdout","time":9.922429153,"data":"+-----------------------------------------+------------------------+----------------------+\r\n"}
+,{"stream_name":"stdout","time":9.922432481,"data":"\r\n"}
+,{"stream_name":"stdout","time":9.922435719,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stdout","time":9.922438966,"data":"| Processes:                                                                              |\r\n"}
+,{"stream_name":"stdout","time":9.922453536999999,"data":"|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\r\n"}
+,{"stream_name":"stdout","time":9.922457595000001,"data":"|        ID   ID                                                               Usage      |\r\n"}
+,{"stream_name":"stdout","time":9.922460818,"data":"|=========================================================================================|\r\n"}
+,{"stream_name":"stdout","time":9.922464333,"data":"|  No running processes found                                                             |\r\n"}
+,{"stream_name":"stdout","time":9.92246771,"data":"+-----------------------------------------------------------------------------------------+\r\n"}
+,{"stream_name":"stderr","time":10.359548785,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":10.561893917999999,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stderr","time":10.561925592,"data":"\n"}
+,{"stream_name":"stderr","time":10.561929112,"data":"Cloning into '/kaggle/working/repo'...\n"}
+,{"stream_name":"stdout","time":14.043523706,"data":"dc30af7 task 2\n"}
+,{"stream_name":"stdout","time":14.043561221,"data":"\n"}
+,{"stream_name":"stdout","time":18.871788172,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":19.226475953,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":19.480284492,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":21.809934577,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":22.165383081,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":22.419277809,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":24.141586961,"data":"  Building wheel for sqlitedict (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":24.394982642,"data":"  Building wheel for word2number (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":49.407497522,"data":"torch 2.11.0+cu130 | transformers 5.20.2 | lm_eval 0.4.13\n"}
+,{"stream_name":"stdout","time":49.408481341,"data":"GPUs: ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":49.433871009,"data":"{'0': ['lora16', 'oplora'], '1': ['lora4']}\n"}
+,{"stream_name":"stdout","time":51.996251743,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":78.978680231,"data":"[16:29:46] base model Qwen/Qwen3-0.6B @ c1899de289a04d12100db370d81485cdf75e47ca -\u003e /root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca\n"}
+,{"stream_name":"stdout","time":81.077937772,"data":"\n"}
+,{"stream_name":"stdout","time":81.077983446,"data":"Generating train split:   0%|          | 0/7473 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":81.077991062,"data":"Generating train split: 100%|██████████| 7473/7473 [00:00\u003c00:00, 72975.07 examples/s]\n"}
+,{"stream_name":"stdout","time":81.077997517,"data":"\n"}
+,{"stream_name":"stdout","time":81.078001688,"data":"Generating test split:   0%|          | 0/1319 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":81.078006191,"data":"Generating test split: 100%|██████████| 1319/1319 [00:00\u003c00:00, 311379.92 examples/s]\n"}
+,{"stream_name":"stdout","time":81.078018488,"data":"[16:29:49] GSM8K test questions for decontamination: 1319\n"}
+,{"stream_name":"stdout","time":93.057604044,"data":"\n"}
+,{"stream_name":"stdout","time":99.250870769,"data":"Generating train split:   0%|          | 0/395000 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":99.250918171,"data":"Generating train split: 100%|██████████| 395000/395000 [00:06\u003c00:00, 63772.30 examples/s]\n"}
+,{"stream_name":"stdout","time":99.250924652,"data":"[16:30:07] MetaMathQA rows: 395000; columns: ['type', 'query', 'original_question', 'response']\n"}
+,{"stream_name":"stdout","time":100.468495999,"data":"[16:30:08]   scanned 2000 rows, selected 2000\n"}
+,{"stream_name":"stdout","time":106.844374828,"data":"[16:30:14]   scanned 12000 rows, selected 12000\n"}
+,{"stream_name":"stdout","time":113.000729107,"data":"[16:30:21]   scanned 22000 rows, selected 22000\n"}
+,{"stream_name":"stdout","time":119.043409631,"data":"[16:30:27]   scanned 32000 rows, selected 31998\n"}
+,{"stream_name":"stdout","time":125.098616764,"data":"[16:30:33]   scanned 42000 rows, selected 40000\n"}
+,{"stream_name":"stdout","time":125.384897239,"data":"[16:30:33] selected 40000 examples (last source index 40001); excluded {'empty': 0, 'gsm8k_test_match': 0, 'too_long': 2}; sha256=d46b7f0b1022\n"}
+,{"stream_name":"stdout","time":138.346609628,"data":"\n"}
+,{"stream_name":"stdout","time":138.346678889,"data":"Generating train split:   0%|          | 0/39905 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":138.346689892,"data":"Generating train split: 100%|██████████| 39905/39905 [00:00\u003c00:00, 292379.30 examples/s]\n"}
+,{"stream_name":"stdout","time":138.346696498,"data":"\n"}
+,{"stream_name":"stdout","time":138.34670148,"data":"Generating test split:   0%|          | 0/10003 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":138.346707209,"data":"Generating test split: 100%|██████████| 10003/10003 [00:00\u003c00:00, 283948.23 examples/s]\n"}
+,{"stream_name":"stdout","time":138.34671346,"data":"\n"}
+,{"stream_name":"stdout","time":138.55366747,"data":"Generating validation split:   0%|          | 0/10042 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":138.553725545,"data":"Generating validation split: 100%|██████████| 10042/10042 [00:00\u003c00:00, 290993.01 examples/s]\n"}
+,{"stream_name":"stdout","time":138.55373457,"data":"\n"}
+,{"stream_name":"stdout","time":143.873758722,"data":"Map:   0%|          | 0/39905 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":143.873797521,"data":"Map: 100%|██████████| 39905/39905 [00:05\u003c00:00, 7524.67 examples/s]\n"}
+,{"stream_name":"stdout","time":147.678106352,"data":"\n"}
+,{"stream_name":"stdout","time":149.286698517,"data":"Map:   0%|          | 0/10042 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":149.286735613,"data":"Map: 100%|██████████| 10042/10042 [00:01\u003c00:00, 6244.77 examples/s]\n"}
+,{"stream_name":"stdout","time":150.391803689,"data":"[16:30:58] probe set: 32 math + 32 non-math prompts\n"}
+,{"stream_name":"stdout","time":159.74613681,"data":"/kaggle/working/repo/task1/prepare.py:51: DeprecationWarning: get_task_dict is deprecated. Use TaskManager.load() instead.\n"}
+,{"stream_name":"stdout","time":159.746179752,"data":"  tasks = get_task_dict([cfg.eval.gsm8k_task, *cfg.eval.mc_tasks], TaskManager())\n"}
+,{"stream_name":"stdout","time":164.907339441,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":164.907385326,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":166.920955768,"data":"\n"}
+,{"stream_name":"stdout","time":166.920997798,"data":"Generating train split:   0%|          | 0/9427 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":166.921004423,"data":"Generating train split: 100%|██████████| 9427/9427 [00:00\u003c00:00, 389346.59 examples/s]\n"}
+,{"stream_name":"stdout","time":166.921010026,"data":"\n"}
+,{"stream_name":"stdout","time":166.92101381,"data":"Generating validation split:   0%|          | 0/3270 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":166.921018116,"data":"Generating validation split: 100%|██████████| 3270/3270 [00:00\u003c00:00, 316818.14 examples/s]\n"}
+,{"stream_name":"stdout","time":166.921022963,"data":"\n"}
+,{"stream_name":"stdout","time":166.921026645,"data":"Generating test split:   0%|          | 0/3245 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":166.921030663,"data":"Generating test split: 100%|██████████| 3245/3245 [00:00\u003c00:00, 314352.41 examples/s]\n"}
+,{"stream_name":"stdout","time":169.139317573,"data":"\n"}
+,{"stream_name":"stdout","time":169.139361295,"data":"Generating train split:   0%|          | 0/2251 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":169.13936771,"data":"Generating train split: 100%|██████████| 2251/2251 [00:00\u003c00:00, 350472.49 examples/s]\n"}
+,{"stream_name":"stdout","time":169.139372636,"data":"\n"}
+,{"stream_name":"stdout","time":169.139376084,"data":"Generating test split:   0%|          | 0/2376 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":169.139379943,"data":"Generating test split: 100%|██████████| 2376/2376 [00:00\u003c00:00, 388086.23 examples/s]\n"}
+,{"stream_name":"stdout","time":169.139383774,"data":"\n"}
+,{"stream_name":"stdout","time":169.139386989,"data":"Generating validation split:   0%|          | 0/570 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stdout","time":169.139390554,"data":"Generating validation split: 100%|██████████| 570/570 [00:00\u003c00:00, 184699.73 examples/s]\n"}
+,{"stream_name":"stdout","time":169.431625785,"data":"[16:31:17] eval task arc_easy: 2376 docs\n"}
+,{"stream_name":"stdout","time":169.431681905,"data":"[16:31:17] eval task boolq: 3270 docs\n"}
+,{"stream_name":"stdout","time":170.472185036,"data":"[16:31:18] eval task hellaswag: 10042 docs\n"}
+,{"stream_name":"stdout","time":170.472219855,"data":"[16:31:18] eval task gsm8k_cot: 1319 docs\n"}
+,{"stream_name":"stdout","time":170.472223894,"data":"[16:31:18] prepare done\n"}
+,{"stream_name":"stdout","time":174.642411356,"data":"--- task1.prepare finished in 2.1 min\n"}
+,{"stream_name":"stdout","time":181.909043066,"data":"[16:31:29] imported from /kaggle/input/notebooks/alihasnain11/task1-full-ft6e1c1a4687/task1: ['eval/baseline', 'eval/full_ft_final', 'eval/full_ft_mid', 'runs/full_ft', 'diagnostics/activation_full_ft.csv', 'diagnostics/activation_summary_full_ft.csv', 'diagnostics/weight_space_full_ft.csv', 'env/env_full_ft.json']\n"}
+,{"stream_name":"stdout","time":181.90909499,"data":"[16:31:29] imported from /tmp/atml_task1/t1_import_4v8n4yy5/task1_full_ft_report/task1: nothing new\n"}
+,{"stream_name":"stdout","time":181.9091021,"data":"[16:31:29] evaluation conditions now available: ['baseline', 'full_ft_final', 'full_ft_mid']\n"}
+,{"stream_name":"stdout","time":181.909107031,"data":"--- task1.import_prior finished in 0.1 min\n"}
+,{"stream_name":"stdout","time":182.284659875,"data":"[16:31:30] imported from /kaggle/input/notebooks/alihasnain11/task1-full-ft6e1c1a4687/task1: nothing new\n"}
+,{"stream_name":"stdout","time":182.284699594,"data":"[16:31:30] imported from /tmp/atml_task1/t1_import_oi3vqsud/task1_full_ft_report/task1: nothing new\n"}
+,{"stream_name":"stdout","time":182.284705905,"data":"[16:31:30] evaluation conditions now available: ['baseline', 'full_ft_final', 'full_ft_mid']\n"}
+,{"stream_name":"stdout","time":182.284710133,"data":"--- task1.import_prior finished in 0.0 min\n"}
+,{"stream_name":"stdout","time":182.50471924,"data":"[16:31:30] imported from /kaggle/input/notebooks/alihasnain11/task1-full-ft6e1c1a4687/task1: nothing new\n"}
+,{"stream_name":"stdout","time":182.50477377,"data":"[16:31:30] imported from /tmp/atml_task1/t1_import_szu27vww/task1_full_ft_report/task1: nothing new\n"}
+,{"stream_name":"stdout","time":182.504780549,"data":"[16:31:30] evaluation conditions now available: ['baseline', 'full_ft_final', 'full_ft_mid']\n"}
+,{"stream_name":"stdout","time":182.50478861,"data":"--- task1.import_prior finished in 0.0 min\n"}
+,{"stream_name":"stdout","time":182.504793082,"data":"baseline imported\n"}
+,{"stream_name":"stdout","time":182.694419713,"data":"lane GPU 1: ['lora4'] -\u003e /kaggle/working/task1/lane_gpu1.log\n"}
+,{"stream_name":"stdout","time":191.919183366,"data":"[16:31:39] data: 40000 examples, sha256=d46b7f0b1022; 1250 updates x 32\n"}
+,{"stream_name":"stdout","time":198.087238244,"data":"[16:31:46] lora: r=16 alpha=32 dropout=0.05 on 196 projections, 10,092,544 adapter parameters\n"}
+,{"stream_name":"stdout","time":198.087279462,"data":"[16:31:46] params: trainable 10,092,544 / total 606,142,464\n"}
+,{"stream_name":"stdout","time":207.985463712,"data":"[16:31:55] update 1/1250 loss 1.0286 lr 0.00e+00 gnorm 4.135 scale 65536 9.89s/upd peak 2.16GB eta 206min\n"}
+,{"stream_name":"stdout","time":387.357323474,"data":"[16:34:55] update 25/1250 loss 0.2793 lr 1.26e-04 gnorm 0.413 scale 65536 7.62s/upd peak 2.29GB eta 155min\n"}
+,{"stream_name":"stdout","time":578.95957158,"data":"[16:38:06] update 50/1250 loss 0.2553 lr 2.00e-04 gnorm 0.306 scale 65536 7.82s/upd peak 2.38GB eta 152min\n"}
+,{"stream_name":"stdout","time":767.211086627,"data":"[16:41:15] update 75/1250 loss 0.2552 lr 2.00e-04 gnorm 0.326 scale 65536 7.65s/upd peak 2.38GB eta 149min\n"}
+,{"stream_name":"stdout","time":958.287301325,"data":"[16:44:26] update 100/1250 loss 0.2575 lr 1.99e-04 gnorm 0.303 scale 65536 8.24s/upd peak 2.38GB eta 146min\n"}
+,{"stream_name":"stdout","time":1148.557330086,"data":"[16:47:36] update 125/1250 loss 0.2796 lr 1.98e-04 gnorm 0.316 scale 65536 7.85s/upd peak 2.38GB eta 143min\n"}
+,{"stream_name":"stdout","time":1335.634783302,"data":"[16:50:43] update 150/1250 loss 0.2440 lr 1.96e-04 gnorm 0.291 scale 65536 7.49s/upd peak 2.38GB eta 139min\n"}
+,{"stream_name":"stdout","time":1526.32398043,"data":"[16:53:54] update 175/1250 loss 0.2163 lr 1.94e-04 gnorm 0.281 scale 65536 7.61s/upd peak 2.38GB eta 136min\n"}
+,{"stream_name":"stdout","time":1711.419134014,"data":"[16:56:59] update 200/1250 loss 0.2086 lr 1.91e-04 gnorm 0.344 scale 65536 7.39s/upd peak 2.38GB eta 132min\n"}
+,{"stream_name":"stdout","time":1901.037017125,"data":"[17:00:09] update 225/1250 loss 0.2533 lr 1.89e-04 gnorm 0.298 scale 65536 7.79s/upd peak 2.38GB eta 129min\n"}
+,{"stream_name":"stdout","time":2085.820208195,"data":"[17:03:13] update 250/1250 loss 0.2509 lr 1.85e-04 gnorm 0.335 scale 65536 7.10s/upd peak 2.38GB eta 126min\n"}
+,{"stream_name":"stdout","time":2277.230849035,"data":"[17:06:25] update 275/1250 loss 0.2426 lr 1.82e-04 gnorm 0.254 scale 65536 9.17s/upd peak 2.38GB eta 123min\n"}
+,{"stream_name":"stdout","time":2467.370407631,"data":"[17:09:35] update 300/1250 loss 0.2136 lr 1.78e-04 gnorm 0.279 scale 65536 7.56s/upd peak 2.38GB eta 120min\n"}
+,{"stream_name":"stdout","time":2558.914844582,"data":"[17:11:06] recovery checkpoint @ update 312 (9984 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":2659.590841971,"data":"[17:12:47] update 325/1250 loss 0.2426 lr 1.74e-04 gnorm 0.291 scale 65536 7.26s/upd peak 2.38GB eta 117min\n"}
+,{"stream_name":"stdout","time":2852.32414502,"data":"[17:16:00] update 350/1250 loss 0.2299 lr 1.69e-04 gnorm 0.267 scale 65536 7.74s/upd peak 2.38GB eta 114min\n"}
+,{"stream_name":"stdout","time":3039.859083507,"data":"[17:19:07] update 375/1250 loss 0.1915 lr 1.64e-04 gnorm 0.270 scale 65536 7.24s/upd peak 2.38GB eta 110min\n"}
+,{"stream_name":"stdout","time":3226.384981847,"data":"[17:22:14] update 400/1250 loss 0.2138 lr 1.59e-04 gnorm 0.278 scale 65536 7.16s/upd peak 2.38GB eta 107min\n"}
+,{"stream_name":"stdout","time":3411.884343382,"data":"[17:25:19] update 425/1250 loss 0.2307 lr 1.54e-04 gnorm 0.297 scale 65536 7.23s/upd peak 2.38GB eta 104min\n"}
+,{"stream_name":"stdout","time":3598.344545756,"data":"[17:28:26] update 450/1250 loss 0.2293 lr 1.48e-04 gnorm 0.284 scale 65536 7.06s/upd peak 2.38GB eta 101min\n"}
+,{"stream_name":"stdout","time":3784.509961073,"data":"[17:31:32] update 475/1250 loss 0.1815 lr 1.43e-04 gnorm 0.228 scale 65536 7.72s/upd peak 2.38GB eta 98min\n"}
+,{"stream_name":"stdout","time":3973.503376692,"data":"[17:34:41] update 500/1250 loss 0.2129 lr 1.37e-04 gnorm 0.264 scale 65536 8.23s/upd peak 2.38GB eta 94min\n"}
+,{"stream_name":"stdout","time":4160.160571431,"data":"[17:37:48] update 525/1250 loss 0.2000 lr 1.31e-04 gnorm 0.246 scale 65536 7.51s/upd peak 2.38GB eta 91min\n"}
+,{"stream_name":"stdout","time":4349.511860176,"data":"[17:40:57] update 550/1250 loss 0.2054 lr 1.24e-04 gnorm 0.264 scale 65536 7.22s/upd peak 2.38GB eta 88min\n"}
+,{"stream_name":"stdout","time":4532.483848681,"data":"[17:44:00] update 575/1250 loss 0.2075 lr 1.18e-04 gnorm 0.282 scale 65536 7.44s/upd peak 2.38GB eta 85min\n"}
+,{"stream_name":"stdout","time":4715.625698657,"data":"[17:47:03] update 600/1250 loss 0.2035 lr 1.12e-04 gnorm 0.268 scale 65536 7.32s/upd peak 2.38GB eta 82min\n"}
+,{"stream_name":"stdout","time":4899.449450741,"data":"[17:50:07] update 625/1250 loss 0.2040 lr 1.05e-04 gnorm 0.243 scale 65536 8.39s/upd peak 2.38GB eta 78min\n"}
+,{"stream_name":"stdout","time":4899.674567147,"data":"[17:50:07] pruned recovery checkpoint update_0312\n"}
+,{"stream_name":"stdout","time":4899.674608437,"data":"[17:50:07] recovery checkpoint @ update 625 (20000 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":5084.689493169,"data":"[17:53:12] update 650/1250 loss 0.1817 lr 9.87e-05 gnorm 0.268 scale 65536 7.02s/upd peak 2.38GB eta 75min\n"}
+,{"stream_name":"stdout","time":5267.377007933,"data":"[17:56:15] update 675/1250 loss 0.2175 lr 9.22e-05 gnorm 0.265 scale 65536 7.34s/upd peak 2.38GB eta 72min\n"}
+,{"stream_name":"stdout","time":5453.724810648,"data":"[17:59:21] update 700/1250 loss 0.2143 lr 8.58e-05 gnorm 0.266 scale 65536 7.23s/upd peak 2.38GB eta 69min\n"}
+,{"stream_name":"stdout","time":5639.033327259,"data":"[18:02:27] update 725/1250 loss 0.1947 lr 7.94e-05 gnorm 0.256 scale 65536 7.35s/upd peak 2.38GB eta 66min\n"}
+,{"stream_name":"stdout","time":5827.935181711,"data":"[18:05:35] update 750/1250 loss 0.1581 lr 7.31e-05 gnorm 0.237 scale 65536 7.34s/upd peak 2.38GB eta 63min\n"}
+,{"stream_name":"stdout","time":6015.161780695,"data":"[18:08:43] update 775/1250 loss 0.1844 lr 6.69e-05 gnorm 0.244 scale 65536 7.48s/upd peak 2.38GB eta 59min\n"}
+,{"stream_name":"stdout","time":6202.938117843,"data":"[18:11:50] update 800/1250 loss 0.1826 lr 6.09e-05 gnorm 0.250 scale 65536 7.17s/upd peak 2.38GB eta 56min\n"}
+,{"stream_name":"stdout","time":6386.418782906,"data":"[18:14:54] update 825/1250 loss 0.2290 lr 5.50e-05 gnorm 0.289 scale 65536 7.20s/upd peak 2.38GB eta 53min\n"}
+,{"stream_name":"stdout","time":6570.952471496,"data":"[18:17:58] update 850/1250 loss 0.2035 lr 4.93e-05 gnorm 0.245 scale 65536 7.12s/upd peak 2.38GB eta 50min\n"}
+,{"stream_name":"stdout","time":6753.572617378,"data":"[18:21:01] update 875/1250 loss 0.1913 lr 4.39e-05 gnorm 0.262 scale 65536 7.21s/upd peak 2.38GB eta 47min\n"}
+,{"stream_name":"stdout","time":6938.782805292,"data":"[18:24:06] update 900/1250 loss 0.1821 lr 3.86e-05 gnorm 0.258 scale 65536 7.35s/upd peak 2.38GB eta 44min\n"}
+,{"stream_name":"stdout","time":7123.963210766,"data":"[18:27:11] update 925/1250 loss 0.1944 lr 3.36e-05 gnorm 0.247 scale 65536 7.22s/upd peak 2.38GB eta 41min\n"}
+,{"stream_name":"stdout","time":7210.617049202,"data":"[18:28:38] pruned recovery checkpoint update_0625\n"}
+,{"stream_name":"stdout","time":7210.617090814,"data":"[18:28:38] recovery checkpoint @ update 937 (29984 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":7306.420239705,"data":"[18:30:14] update 950/1250 loss 0.2047 lr 2.89e-05 gnorm 0.290 scale 65536 7.05s/upd peak 2.38GB eta 37min\n"}
+,{"stream_name":"stdout","time":7493.853162784,"data":"[18:33:21] update 975/1250 loss 0.2194 lr 2.45e-05 gnorm 0.285 scale 65536 7.19s/upd peak 2.38GB eta 34min\n"}
+,{"stream_name":"stdout","time":7677.15424054,"data":"[18:36:25] update 1000/1250 loss 0.2205 lr 2.04e-05 gnorm 0.263 scale 65536 7.62s/upd peak 2.38GB eta 31min\n"}
+,{"stream_name":"stdout","time":7864.420618923,"data":"[18:39:32] update 1025/1250 loss 0.1930 lr 1.67e-05 gnorm 0.264 scale 65536 7.41s/upd peak 2.38GB eta 28min\n"}
+,{"stream_name":"stdout","time":8047.734722869,"data":"[18:42:35] update 1050/1250 loss 0.2311 lr 1.33e-05 gnorm 0.282 scale 65536 7.28s/upd peak 2.38GB eta 25min\n"}
+,{"stream_name":"stdout","time":8235.046199888,"data":"[18:45:43] update 1075/1250 loss 0.1788 lr 1.02e-05 gnorm 0.278 scale 65536 7.24s/upd peak 2.38GB eta 22min\n"}
+,{"stream_name":"stdout","time":8419.675922582,"data":"[18:48:47] update 1100/1250 loss 0.2125 lr 7.56e-06 gnorm 0.281 scale 65536 7.16s/upd peak 2.38GB eta 19min\n"}
+,{"stream_name":"stdout","time":8601.927601438,"data":"[18:51:49] update 1125/1250 loss 0.2092 lr 5.29e-06 gnorm 0.265 scale 65536 7.58s/upd peak 2.38GB eta 16min\n"}
+,{"stream_name":"stdout","time":8787.029209012,"data":"[18:54:55] update 1150/1250 loss 0.1704 lr 3.41e-06 gnorm 0.250 scale 65536 7.37s/upd peak 2.38GB eta 12min\n"}
+,{"stream_name":"stdout","time":8967.762588268,"data":"[18:57:55] update 1175/1250 loss 0.1839 lr 1.93e-06 gnorm 0.247 scale 65536 6.93s/upd peak 2.38GB eta 9min\n"}
+,{"stream_name":"stdout","time":9150.747710329,"data":"[19:00:58] update 1200/1250 loss 0.1793 lr 8.73e-07 gnorm 0.258 scale 65536 6.93s/upd peak 2.38GB eta 6min\n"}
+,{"stream_name":"stdout","time":9334.306519231,"data":"[19:04:02] update 1225/1250 loss 0.2410 lr 2.27e-07 gnorm 0.276 scale 65536 7.31s/upd peak 2.38GB eta 3min\n"}
+,{"stream_name":"stdout","time":9523.467766135,"data":"[19:07:11] update 1250/1250 loss 0.1797 lr 3.36e-10 gnorm 0.255 scale 65536 7.41s/upd peak 2.38GB eta 0min\n"}
+,{"stream_name":"stdout","time":9561.547101622,"data":"[19:07:49] [final] subspace check: max rho_out 1.668e-01, max rho_in 1.647e-01 (k=128)\n"}
+,{"stream_name":"stdout","time":9564.630081582,"data":"[19:07:52] merge check: merged vs unmerged mean|Δlogit| 0.0068 (top-1 agree 0.9987); adapter effect 1.3452\n"}
+,{"stream_name":"stdout","time":9564.630113072,"data":"[19:07:52] [final] ||theta-theta0||_2 = 13.3171; FP16 export 1.12 GiB\n"}
+,{"stream_name":"stdout","time":9564.907998177,"data":"[19:07:52] pruned recovery checkpoint update_0937\n"}
+,{"stream_name":"stdout","time":9564.908044967,"data":"[19:07:52] recovery checkpoint @ update 1250 (40000 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":9564.908078598,"data":"[19:07:52] training done: 155.4 min, skipped 0 updates\n"}
+,{"stream_name":"stdout","time":9566.48190142,"data":"--- task1.train finished in 156.4 min\n"}
+,{"stream_name":"stdout","time":9574.680808157,"data":"[19:08:02] [lora16_final] evaluating /kaggle/working/task1_artifacts/exports/lora16/final\n"}
+,{"stream_name":"stdout","time":9576.576775391,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":9576.576809296,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":9576.577038371,"data":"generation_kwargs: {'max_gen_toks': 1024} specified through cli, these settings will update set parameters in yaml tasks. Ensure 'do_sample=True' for non-greedy decoding!\n"}
+,{"stream_name":"stdout","time":9586.102685831,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":9586.752487386,"data":"Overwriting default num_fewshot of gsm8k_cot from 8 to 0\n"}
+,{"stream_name":"stdout","time":9586.752520058,"data":"\n"}
+,{"stream_name":"stdout","time":9589.188761007,"data":"  0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":9589.188794066,"data":"100%|██████████| 1319/1319 [00:02\u003c00:00, 546.91it/s]\n"}
+,{"stream_name":"stdout","time":9589.188800089,"data":"\n"}
+,{"stream_name":"stdout","time":9719.127397665,"data":"Running generate_until requests:   0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":9736.658240094,"data":"Running generate_until requests:   3%|▎         | 33/1319 [02:09\u003c1:24:23,  3.94s/it]\n"}
+,{"stream_name":"stdout","time":9852.710934479,"data":"Running generate_until requests:   7%|▋         | 96/1319 [02:27\u003c1:20:15,  3.94s/it]\n"}
+,{"stream_name":"stdout","time":9866.661182974,"data":"Running generate_until requests:  10%|▉         | 129/1319 [04:23\u003c37:23,  1.89s/it] \n"}
+,{"stream_name":"stdout","time":9956.117324245,"data":"Running generate_until requests:  12%|█▏        | 160/1319 [04:37\u003c36:24,  1.89s/it]\n"}
+,{"stream_name":"stdout","time":9966.663151238,"data":"Running generate_until requests:  12%|█▏        | 161/1319 [06:06\u003c43:35,  2.26s/it]\n"}
+,{"stream_name":"stdout","time":10059.233138932,"data":"Running generate_until requests:  15%|█▍        | 192/1319 [06:17\u003c42:25,  2.26s/it]\n"}
+,{"stream_name":"stdout","time":10076.66626414,"data":"Running generate_until requests:  15%|█▍        | 193/1319 [07:50\u003c47:31,  2.53s/it]\n"}
+,{"stream_name":"stdout","time":10097.292658221,"data":"Running generate_until requests:  17%|█▋        | 224/1319 [08:07\u003c46:12,  2.53s/it]\n"}
+,{"stream_name":"stdout","time":10108.604392635,"data":"Running generate_until requests:  19%|█▉        | 257/1319 [08:28\u003c29:27,  1.66s/it]\n"}
+,{"stream_name":"stdout","time":10133.267991733,"data":"Running generate_until requests:  22%|██▏       | 288/1319 [08:39\u003c28:36,  1.66s/it]\n"}
+,{"stream_name":"stdout","time":10146.669364685,"data":"Running generate_until requests:  27%|██▋       | 353/1319 [09:04\u003c16:37,  1.03s/it]\n"}
+,{"stream_name":"stdout","time":10169.299599894,"data":"Running generate_until requests:  29%|██▉       | 384/1319 [09:17\u003c16:05,  1.03s/it]\n"}
+,{"stream_name":"stdout","time":10186.670858636,"data":"Running generate_until requests:  34%|███▍      | 449/1319 [09:40\u003c11:03,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":10205.170686449,"data":"Running generate_until requests:  39%|███▉      | 512/1319 [09:57\u003c10:15,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":10216.671605379,"data":"Running generate_until requests:  41%|████▏     | 545/1319 [10:15\u003c07:58,  1.62it/s]\n"}
+,{"stream_name":"stdout","time":10328.460963017,"data":"Running generate_until requests:  44%|████▎     | 576/1319 [10:27\u003c07:39,  1.62it/s]\n"}
+,{"stream_name":"stdout","time":10338.60890111,"data":"Running generate_until requests:  49%|████▊     | 641/1319 [12:19\u003c09:35,  1.18it/s]\n"}
+,{"stream_name":"stdout","time":10428.326988094,"data":"Running generate_until requests:  51%|█████     | 672/1319 [12:29\u003c09:09,  1.18it/s]\n"}
+,{"stream_name":"stdout","time":10438.611628756,"data":"Running generate_until requests:  51%|█████     | 673/1319 [13:59\u003c12:35,  1.17s/it]\n"}
+,{"stream_name":"stdout","time":10461.381784766,"data":"Running generate_until requests:  53%|█████▎    | 704/1319 [14:09\u003c11:59,  1.17s/it]\n"}
+,{"stream_name":"stdout","time":10476.676930013,"data":"Running generate_until requests:  56%|█████▌    | 737/1319 [14:32\u003c09:31,  1.02it/s]\n"}
+,{"stream_name":"stdout","time":10496.665740162,"data":"Running generate_until requests:  58%|█████▊    | 768/1319 [14:47\u003c09:01,  1.02it/s]\n"}
+,{"stream_name":"stdout","time":10506.678193363,"data":"Running generate_until requests:  61%|██████    | 801/1319 [15:07\u003c07:23,  1.17it/s]\n"}
+,{"stream_name":"stdout","time":10536.49847906,"data":"Running generate_until requests:  63%|██████▎   | 832/1319 [15:17\u003c06:57,  1.17it/s]\n"}
+,{"stream_name":"stdout","time":10546.679218323,"data":"Running generate_until requests:  68%|██████▊   | 897/1319 [15:47\u003c04:49,  1.46it/s]\n"}
+,{"stream_name":"stdout","time":10567.586602944,"data":"Running generate_until requests:  70%|███████   | 928/1319 [15:57\u003c04:28,  1.46it/s]\n"}
+,{"stream_name":"stdout","time":10578.614742249,"data":"Running generate_until requests:  75%|███████▌  | 993/1319 [16:18\u003c03:01,  1.79it/s]\n"}
+,{"stream_name":"stdout","time":10607.843377916,"data":"Running generate_until requests:  80%|████████  | 1056/1319 [16:29\u003c02:26,  1.79it/s]\n"}
+,{"stream_name":"stdout","time":10618.616056394,"data":"Running generate_until requests:  85%|████████▍ | 1121/1319 [16:58\u003c01:31,  2.17it/s]\n"}
+,{"stream_name":"stdout","time":10647.155293144,"data":"Running generate_until requests:  87%|████████▋ | 1152/1319 [17:09\u003c01:16,  2.17it/s]\n"}
+,{"stream_name":"stdout","time":10658.616836466,"data":"Running generate_until requests:  95%|█████████▍| 1249/1319 [17:37\u003c00:28,  2.47it/s]\n"}
+,{"stream_name":"stdout","time":10663.954923769,"data":"Running generate_until requests:  99%|█████████▉| 1312/1319 [17:49\u003c00:02,  2.47it/s]\n"}
+,{"stream_name":"stdout","time":10663.954953988,"data":"Running generate_until requests: 100%|██████████| 1319/1319 [17:54\u003c00:00,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":10672.891056786,"data":"[19:26:20] [lora16_final] GSM8K done in 18.3 min\n"}
+,{"stream_name":"stdout","time":10672.891099509,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":10672.89110817,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":10687.049996045,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":10687.050049893,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":10688.83070673,"data":"Overwriting default num_fewshot of hellaswag from None to 0\n"}
+,{"stream_name":"stdout","time":10688.830743197,"data":"Overwriting default num_fewshot of boolq from None to 0\n"}
+,{"stream_name":"stdout","time":10688.83074888,"data":"Overwriting default num_fewshot of arc_easy from None to 0\n"}
+,{"stream_name":"stdout","time":10689.777778386,"data":"\n"}
+,{"stream_name":"stdout","time":10697.956066002,"data":"  0%|          | 0/10042 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10697.956120618,"data":"100%|██████████| 10042/10042 [00:08\u003c00:00, 1227.93it/s]\n"}
+,{"stream_name":"stdout","time":10697.95612949,"data":"\n"}
+,{"stream_name":"stdout","time":10699.841528013,"data":"  0%|          | 0/3270 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10699.841603586,"data":"100%|██████████| 3270/3270 [00:01\u003c00:00, 1849.80it/s]\n"}
+,{"stream_name":"stdout","time":10699.84161125,"data":"\n"}
+,{"stream_name":"stdout","time":10704.872941734,"data":"  0%|          | 0/2376 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10704.872989746,"data":"100%|██████████| 2376/2376 [00:04\u003c00:00, 483.44it/s]\n"}
+,{"stream_name":"stdout","time":10704.87299825,"data":"\n"}
+,{"stream_name":"stdout","time":10732.135691141,"data":"Tokenizing inputs:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10732.135733949,"data":"Tokenizing inputs: 100%|██████████| 56209/56209 [00:27\u003c00:00, 2064.59it/s]\n"}
+,{"stream_name":"stdout","time":10732.898287803,"data":"\n"}
+,{"stream_name":"stdout","time":10762.944958816,"data":"Running loglikelihood requests:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":10776.98538618,"data":"Running loglikelihood requests:   3%|▎         | 1409/56209 [00:30\u003c19:28, 46.91it/s]\n"}
+,{"stream_name":"stdout","time":10792.968236783,"data":"Running loglikelihood requests:   5%|▍         | 2552/56209 [00:44\u003c19:03, 46.91it/s]\n"}
+,{"stream_name":"stdout","time":10806.986602745,"data":"Running loglikelihood requests:   7%|▋         | 3930/56209 [01:00\u003c12:40, 68.71it/s]\n"}
+,{"stream_name":"stdout","time":10823.100612252,"data":"Running loglikelihood requests:   9%|▊         | 4823/56209 [01:14\u003c12:27, 68.71it/s]\n"}
+,{"stream_name":"stdout","time":10836.987236615,"data":"Running loglikelihood requests:  10%|█         | 5819/56209 [01:30\u003c12:44, 65.95it/s]\n"}
+,{"stream_name":"stdout","time":10853.172462152,"data":"Running loglikelihood requests:  12%|█▏        | 6685/56209 [01:44\u003c12:30, 65.95it/s]\n"}
+,{"stream_name":"stdout","time":10866.988227223,"data":"Running loglikelihood requests:  14%|█▎        | 7695/56209 [02:00\u003c12:31, 64.54it/s]\n"}
+,{"stream_name":"stdout","time":10883.16827779,"data":"Running loglikelihood requests:  15%|█▌        | 8588/56209 [02:14\u003c12:17, 64.54it/s]\n"}
+,{"stream_name":"stdout","time":10896.999452332,"data":"Running loglikelihood requests:  17%|█▋        | 9620/56209 [02:30\u003c12:03, 64.40it/s]\n"}
+,{"stream_name":"stdout","time":10913.267157607,"data":"Running loglikelihood requests:  19%|█▊        | 10509/56209 [02:44\u003c11:49, 64.40it/s]\n"}
+,{"stream_name":"stdout","time":10926.989865183,"data":"Running loglikelihood requests:  21%|██        | 11555/56209 [03:00\u003c11:33, 64.36it/s]\n"}
+,{"stream_name":"stdout","time":10943.298443121,"data":"Running loglikelihood requests:  22%|██▏       | 12468/56209 [03:14\u003c11:19, 64.36it/s]\n"}
+,{"stream_name":"stdout","time":10956.990713485,"data":"Running loglikelihood requests:  24%|██▍       | 13582/56209 [03:30\u003c10:51, 65.39it/s]\n"}
+,{"stream_name":"stdout","time":10973.408454762,"data":"Running loglikelihood requests:  26%|██▌       | 14512/56209 [03:44\u003c10:37, 65.39it/s]\n"}
+,{"stream_name":"stdout","time":10986.991603451,"data":"Running loglikelihood requests:  28%|██▊       | 15617/56209 [04:00\u003c10:14, 66.09it/s]\n"}
+,{"stream_name":"stdout","time":11003.485898754,"data":"Running loglikelihood requests:  29%|██▉       | 16550/56209 [04:14\u003c10:00, 66.09it/s]\n"}
+,{"stream_name":"stdout","time":11016.992225208,"data":"Running loglikelihood requests:  31%|███▏      | 17675/56209 [04:30\u003c09:36, 66.82it/s]\n"}
+,{"stream_name":"stdout","time":11033.527352185,"data":"Running loglikelihood requests:  33%|███▎      | 18687/56209 [04:44\u003c09:21, 66.82it/s]\n"}
+,{"stream_name":"stdout","time":11046.993048997,"data":"Running loglikelihood requests:  35%|███▌      | 19933/56209 [05:00\u003c08:42, 69.40it/s]\n"}
+,{"stream_name":"stdout","time":11063.571391049,"data":"Running loglikelihood requests:  37%|███▋      | 20975/56209 [05:14\u003c08:27, 69.40it/s]\n"}
+,{"stream_name":"stdout","time":11076.99411827,"data":"Running loglikelihood requests:  40%|███▉      | 22258/56209 [05:30\u003c07:52, 71.84it/s]\n"}
+,{"stream_name":"stdout","time":11093.64399989,"data":"Running loglikelihood requests:  41%|████▏     | 23325/56209 [05:44\u003c07:37, 71.84it/s]\n"}
+,{"stream_name":"stdout","time":11106.995107747,"data":"Running loglikelihood requests:  44%|████▍     | 24679/56209 [06:00\u003c07:03, 74.48it/s]\n"}
+,{"stream_name":"stdout","time":11123.70451194,"data":"Running loglikelihood requests:  46%|████▌     | 25773/56209 [06:14\u003c06:48, 74.48it/s]\n"}
+,{"stream_name":"stdout","time":11136.996023394,"data":"Running loglikelihood requests:  48%|████▊     | 27119/56209 [06:30\u003c06:20, 76.51it/s]\n"}
+,{"stream_name":"stdout","time":11153.755474507,"data":"Running loglikelihood requests:  50%|█████     | 28205/56209 [06:44\u003c06:06, 76.51it/s]\n"}
+,{"stream_name":"stdout","time":11166.996857527,"data":"Running loglikelihood requests:  53%|█████▎    | 29724/56209 [07:00\u003c05:32, 79.58it/s]\n"}
+,{"stream_name":"stdout","time":11183.823723309,"data":"Running loglikelihood requests:  55%|█████▌    | 31026/56209 [07:14\u003c05:16, 79.58it/s]\n"}
+,{"stream_name":"stdout","time":11196.997615437,"data":"Running loglikelihood requests:  58%|█████▊    | 32744/56209 [07:30\u003c04:33, 85.87it/s]\n"}
+,{"stream_name":"stdout","time":11213.851350813,"data":"Running loglikelihood requests:  61%|██████    | 34211/56209 [07:44\u003c04:16, 85.87it/s]\n"}
+,{"stream_name":"stdout","time":11226.998590015,"data":"Running loglikelihood requests:  65%|██████▍   | 36448/56209 [08:00\u003c03:23, 97.14it/s]\n"}
+,{"stream_name":"stdout","time":11243.996841654,"data":"Running loglikelihood requests:  68%|██████▊   | 38277/56209 [08:14\u003c03:04, 97.14it/s]\n"}
+,{"stream_name":"stdout","time":11256.999601613,"data":"Running loglikelihood requests:  72%|███████▏  | 40696/56209 [08:30\u003c02:20, 110.48it/s]\n"}
+,{"stream_name":"stdout","time":11273.8947927,"data":"Running loglikelihood requests:  76%|███████▌  | 42639/56209 [08:44\u003c02:02, 110.48it/s]\n"}
+,{"stream_name":"stdout","time":11287.011211017,"data":"Running loglikelihood requests:  80%|████████  | 45147/56209 [09:00\u003c01:30, 121.80it/s]\n"}
+,{"stream_name":"stdout","time":11303.944048761,"data":"Running loglikelihood requests:  84%|████████▍ | 47156/56209 [09:14\u003c01:14, 121.80it/s]\n"}
+,{"stream_name":"stdout","time":11317.001253121,"data":"Running loglikelihood requests:  88%|████████▊ | 49740/56209 [09:31\u003c00:49, 131.13it/s]\n"}
+,{"stream_name":"stdout","time":11333.9676613,"data":"Running loglikelihood requests:  92%|█████████▏| 51804/56209 [09:44\u003c00:33, 131.13it/s]\n"}
+,{"stream_name":"stdout","time":11341.858488131,"data":"Running loglikelihood requests:  97%|█████████▋| 54563/56209 [10:01\u003c00:11, 140.00it/s]\n"}
+,{"stream_name":"stdout","time":11341.858553805,"data":"Running loglikelihood requests: 100%|██████████| 56209/56209 [10:08\u003c00:00, 92.30it/s] \n"}
+,{"stream_name":"stdout","time":11362.012956916,"data":"[19:37:50] [lora16_final] likelihood tasks done in 11.5 min\n"}
+,{"stream_name":"stdout","time":11550.891950441,"data":"[19:40:58] [lora16_final] GSM8K flex 0.6224 | hellaswag 0.4756 | boolq 0.7260 | arc_easy 0.6406\n"}
+,{"stream_name":"stdout","time":11552.677742085,"data":"--- task1.evaluate finished in 33.1 min\n"}
+,{"stream_name":"stdout","time":11561.531063526,"data":"[19:41:09] data: 40000 examples, sha256=d46b7f0b1022; 1250 updates x 32\n"}
+,{"stream_name":"stdout","time":11566.162821958,"data":"[19:41:14] oplora: r=16 alpha=32 dropout=0.05 on 196 projections, 10,092,544 adapter parameters, protection rank k=128\n"}
+,{"stream_name":"stdout","time":11597.689860073,"data":"[19:41:45] OPLoRA bases: 196 x (U_k, V_k), 308.0 MiB FP32 on cuda, SVD preprocessing 31.5s\n"}
+,{"stream_name":"stdout","time":11597.689911895,"data":"[19:41:45] params: trainable 10,092,544 / total 606,142,464\n"}
+,{"stream_name":"stdout","time":11608.04070983,"data":"[19:41:56] update 1/1250 loss 1.0286 lr 0.00e+00 gnorm 3.680 scale 65536 10.36s/upd peak 2.46GB eta 216min\n"}
+,{"stream_name":"stdout","time":11843.015937204,"data":"[19:45:51] update 25/1250 loss 0.2839 lr 1.26e-04 gnorm 0.426 scale 65536 9.89s/upd peak 2.59GB eta 200min\n"}
+,{"stream_name":"stdout","time":12084.560255252,"data":"[19:49:52] update 50/1250 loss 0.2568 lr 2.00e-04 gnorm 0.278 scale 65536 9.70s/upd peak 2.68GB eta 195min\n"}
+,{"stream_name":"stdout","time":12321.249551579,"data":"[19:53:49] update 75/1250 loss 0.2559 lr 2.00e-04 gnorm 0.296 scale 65536 9.42s/upd peak 2.68GB eta 189min\n"}
+,{"stream_name":"stdout","time":12557.381339373,"data":"[19:57:45] update 100/1250 loss 0.2582 lr 1.99e-04 gnorm 0.284 scale 65536 10.00s/upd peak 2.68GB eta 184min\n"}
+,{"stream_name":"stdout","time":12792.822416629,"data":"[20:01:40] update 125/1250 loss 0.2816 lr 1.98e-04 gnorm 0.295 scale 65536 9.81s/upd peak 2.68GB eta 179min\n"}
+,{"stream_name":"stdout","time":13027.071762741,"data":"[20:05:35] update 150/1250 loss 0.2449 lr 1.96e-04 gnorm 0.266 scale 65536 9.19s/upd peak 2.68GB eta 175min\n"}
+,{"stream_name":"stdout","time":13262.982769309,"data":"[20:09:30] update 175/1250 loss 0.2167 lr 1.94e-04 gnorm 0.262 scale 65536 9.71s/upd peak 2.68GB eta 170min\n"}
+,{"stream_name":"stdout","time":13497.22924073,"data":"[20:13:25] update 200/1250 loss 0.2092 lr 1.91e-04 gnorm 0.269 scale 65536 9.32s/upd peak 2.68GB eta 166min\n"}
+,{"stream_name":"stdout","time":13735.559497341,"data":"[20:17:23] update 225/1250 loss 0.2533 lr 1.89e-04 gnorm 0.282 scale 65536 9.68s/upd peak 2.68GB eta 162min\n"}
+,{"stream_name":"stdout","time":13971.703551301,"data":"[20:21:19] update 250/1250 loss 0.2517 lr 1.85e-04 gnorm 0.315 scale 65536 9.43s/upd peak 2.68GB eta 158min\n"}
+,{"stream_name":"stdout","time":14210.216007269,"data":"[20:25:18] update 275/1250 loss 0.2410 lr 1.82e-04 gnorm 0.237 scale 65536 10.83s/upd peak 2.68GB eta 154min\n"}
+,{"stream_name":"stdout","time":14447.77128406,"data":"[20:29:15] update 300/1250 loss 0.2161 lr 1.78e-04 gnorm 0.269 scale 65536 9.17s/upd peak 2.68GB eta 150min\n"}
+,{"stream_name":"stdout","time":14561.861948464,"data":"[20:31:09] recovery checkpoint @ update 312 (9984 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":14685.969070372,"data":"[20:33:13] update 325/1250 loss 0.2429 lr 1.74e-04 gnorm 0.283 scale 65536 9.18s/upd peak 2.68GB eta 146min\n"}
+,{"stream_name":"stdout","time":14924.534691525,"data":"[20:37:12] update 350/1250 loss 0.2291 lr 1.69e-04 gnorm 0.249 scale 65536 9.65s/upd peak 2.68GB eta 143min\n"}
+,{"stream_name":"stdout","time":15161.066933395,"data":"[20:41:09] update 375/1250 loss 0.1923 lr 1.64e-04 gnorm 0.254 scale 65536 9.49s/upd peak 2.68GB eta 139min\n"}
+,{"stream_name":"stdout","time":15397.414985669,"data":"[20:45:05] update 400/1250 loss 0.2138 lr 1.59e-04 gnorm 0.265 scale 65536 9.30s/upd peak 2.68GB eta 135min\n"}
+,{"stream_name":"stdout","time":15631.909260469,"data":"[20:48:59] update 425/1250 loss 0.2331 lr 1.54e-04 gnorm 0.275 scale 65536 9.41s/upd peak 2.68GB eta 131min\n"}
+,{"stream_name":"stdout","time":15868.180066092,"data":"[20:52:56] update 450/1250 loss 0.2314 lr 1.48e-04 gnorm 0.271 scale 65536 9.12s/upd peak 2.68GB eta 127min\n"}
+,{"stream_name":"stdout","time":16102.070191712,"data":"[20:56:50] update 475/1250 loss 0.1833 lr 1.43e-04 gnorm 0.219 scale 65536 9.37s/upd peak 2.68GB eta 122min\n"}
+,{"stream_name":"stdout","time":16339.147099074,"data":"[21:00:47] update 500/1250 loss 0.2124 lr 1.37e-04 gnorm 0.250 scale 65536 9.96s/upd peak 2.68GB eta 119min\n"}
+,{"stream_name":"stdout","time":16575.777926004,"data":"[21:04:43] update 525/1250 loss 0.2020 lr 1.31e-04 gnorm 0.236 scale 65536 9.72s/upd peak 2.68GB eta 115min\n"}
+,{"stream_name":"stdout","time":16814.704701552,"data":"[21:08:42] update 550/1250 loss 0.2046 lr 1.24e-04 gnorm 0.249 scale 65536 9.42s/upd peak 2.68GB eta 111min\n"}
+,{"stream_name":"stdout","time":17048.325542121,"data":"[21:12:36] update 575/1250 loss 0.2075 lr 1.18e-04 gnorm 0.259 scale 65536 9.42s/upd peak 2.68GB eta 107min\n"}
+,{"stream_name":"stdout","time":17282.405309023,"data":"[21:16:30] update 600/1250 loss 0.2037 lr 1.12e-04 gnorm 0.258 scale 65536 9.13s/upd peak 2.68GB eta 103min\n"}
+,{"stream_name":"stdout","time":17518.222608302,"data":"[21:20:26] update 625/1250 loss 0.2028 lr 1.05e-04 gnorm 0.220 scale 65536 10.28s/upd peak 2.68GB eta 99min\n"}
+,{"stream_name":"stdout","time":17518.461758023,"data":"[21:20:26] pruned recovery checkpoint update_0312\n"}
+,{"stream_name":"stdout","time":17518.461796664,"data":"[21:20:26] recovery checkpoint @ update 625 (20000 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":17754.681267292,"data":"[21:24:22] update 650/1250 loss 0.1825 lr 9.87e-05 gnorm 0.248 scale 65536 9.44s/upd peak 2.68GB eta 95min\n"}
+,{"stream_name":"stdout","time":17990.44764816,"data":"[21:28:18] update 675/1250 loss 0.2188 lr 9.22e-05 gnorm 0.255 scale 65536 9.42s/upd peak 2.68GB eta 91min\n"}
+,{"stream_name":"stdout","time":18229.847523911,"data":"[21:32:17] update 700/1250 loss 0.2146 lr 8.58e-05 gnorm 0.248 scale 65536 9.33s/upd peak 2.68GB eta 87min\n"}
+,{"stream_name":"stdout","time":18466.184747943,"data":"[21:36:14] update 725/1250 loss 0.1957 lr 7.94e-05 gnorm 0.240 scale 65536 9.32s/upd peak 2.68GB eta 83min\n"}
+,{"stream_name":"stdout","time":18704.403056735,"data":"[21:40:12] update 750/1250 loss 0.1595 lr 7.31e-05 gnorm 0.227 scale 65536 9.40s/upd peak 2.68GB eta 79min\n"}
+,{"stream_name":"stdout","time":18938.891883814,"data":"[21:44:06] update 775/1250 loss 0.1846 lr 6.69e-05 gnorm 0.231 scale 65536 9.25s/upd peak 2.68GB eta 75min\n"}
+,{"stream_name":"stdout","time":19175.346877804,"data":"[21:48:03] update 800/1250 loss 0.1831 lr 6.09e-05 gnorm 0.241 scale 65536 9.33s/upd peak 2.68GB eta 71min\n"}
+,{"stream_name":"stdout","time":19409.779161673,"data":"[21:51:57] update 825/1250 loss 0.2284 lr 5.50e-05 gnorm 0.272 scale 65536 9.32s/upd peak 2.68GB eta 67min\n"}
+,{"stream_name":"stdout","time":19644.195850235,"data":"[21:55:52] update 850/1250 loss 0.2039 lr 4.93e-05 gnorm 0.232 scale 65536 9.22s/upd peak 2.68GB eta 63min\n"}
+,{"stream_name":"stdout","time":19876.563586092,"data":"[21:59:44] update 875/1250 loss 0.1928 lr 4.39e-05 gnorm 0.252 scale 65536 9.02s/upd peak 2.68GB eta 59min\n"}
+,{"stream_name":"stdout","time":20109.95369443,"data":"[22:03:37] update 900/1250 loss 0.1837 lr 3.86e-05 gnorm 0.248 scale 65536 9.13s/upd peak 2.68GB eta 55min\n"}
+,{"stream_name":"stdout","time":20345.317121267,"data":"[22:07:33] update 925/1250 loss 0.1952 lr 3.36e-05 gnorm 0.236 scale 65536 9.27s/upd peak 2.68GB eta 51min\n"}
+,{"stream_name":"stdout","time":20456.165437633,"data":"[22:09:24] pruned recovery checkpoint update_0625\n"}
+,{"stream_name":"stdout","time":20456.1654807,"data":"[22:09:24] recovery checkpoint @ update 937 (29984 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":20576.742029036,"data":"[22:11:24] update 950/1250 loss 0.2047 lr 2.89e-05 gnorm 0.357 scale 65536 8.96s/upd peak 2.68GB eta 47min\n"}
+,{"stream_name":"stdout","time":20813.67322144,"data":"[22:15:21] update 975/1250 loss 0.2210 lr 2.45e-05 gnorm 0.279 scale 65536 9.29s/upd peak 2.68GB eta 43min\n"}
+,{"stream_name":"stdout","time":21044.927366538,"data":"[22:19:12] update 1000/1250 loss 0.2213 lr 2.04e-05 gnorm 0.254 scale 65536 9.46s/upd peak 2.68GB eta 39min\n"}
+,{"stream_name":"stdout","time":21278.435463018,"data":"[22:23:06] update 1025/1250 loss 0.1927 lr 1.67e-05 gnorm 0.246 scale 65536 9.24s/upd peak 2.68GB eta 35min\n"}
+,{"stream_name":"stdout","time":21510.044003162,"data":"[22:26:58] update 1050/1250 loss 0.2314 lr 1.33e-05 gnorm 0.267 scale 65536 9.04s/upd peak 2.68GB eta 31min\n"}
+,{"stream_name":"stdout","time":21745.43597789,"data":"[22:30:53] update 1075/1250 loss 0.1791 lr 1.02e-05 gnorm 0.263 scale 65536 8.95s/upd peak 2.68GB eta 28min\n"}
+,{"stream_name":"stdout","time":21978.788412215,"data":"[22:34:46] update 1100/1250 loss 0.2132 lr 7.56e-06 gnorm 0.271 scale 65536 9.27s/upd peak 2.68GB eta 24min\n"}
+,{"stream_name":"stdout","time":22210.131169957,"data":"[22:38:38] update 1125/1250 loss 0.2100 lr 5.29e-06 gnorm 0.251 scale 65536 9.54s/upd peak 2.68GB eta 20min\n"}
+,{"stream_name":"stdout","time":22444.381975925,"data":"[22:42:32] update 1150/1250 loss 0.1717 lr 3.41e-06 gnorm 0.239 scale 65536 9.46s/upd peak 2.68GB eta 16min\n"}
+,{"stream_name":"stdout","time":22676.584022362,"data":"[22:46:24] update 1175/1250 loss 0.1837 lr 1.93e-06 gnorm 0.237 scale 65536 9.28s/upd peak 2.68GB eta 12min\n"}
+,{"stream_name":"stdout","time":22911.172672205,"data":"[22:50:19] update 1200/1250 loss 0.1797 lr 8.73e-07 gnorm 0.246 scale 65536 9.31s/upd peak 2.68GB eta 8min\n"}
+,{"stream_name":"stdout","time":23142.71771922,"data":"[22:54:10] update 1225/1250 loss 0.2415 lr 2.27e-07 gnorm 0.263 scale 65536 9.11s/upd peak 2.68GB eta 4min\n"}
+,{"stream_name":"stdout","time":23379.275213877,"data":"[22:58:07] update 1250/1250 loss 0.1804 lr 3.36e-10 gnorm 0.243 scale 65536 9.42s/upd peak 2.68GB eta 0min\n"}
+,{"stream_name":"stdout","time":23383.263945078,"data":"[22:58:11] [final] subspace check: max rho_out 1.587e-08, max rho_in 3.485e-08 (k=128)\n"}
+,{"stream_name":"stdout","time":23385.765343347,"data":"[22:58:13] merge check: merged vs unmerged mean|Δlogit| 0.0068 (top-1 agree 1.0000); adapter effect 1.3434\n"}
+,{"stream_name":"stdout","time":23385.765383239,"data":"[22:58:13] [final] ||theta-theta0||_2 = 12.4317; FP16 export 1.12 GiB\n"}
+,{"stream_name":"stdout","time":23386.009551319,"data":"[22:58:14] pruned recovery checkpoint update_0937\n"}
+,{"stream_name":"stdout","time":23386.009612029,"data":"[22:58:14] recovery checkpoint @ update 1250 (40000 examples): 0.11 GiB\n"}
+,{"stream_name":"stdout","time":23386.009617062,"data":"[22:58:14] training done: 196.3 min, skipped 0 updates\n"}
+,{"stream_name":"stdout","time":23387.543409098,"data":"--- task1.train finished in 197.2 min\n"}
+,{"stream_name":"stdout","time":23395.37312604,"data":"[22:58:23] [oplora_final] evaluating /kaggle/working/task1_artifacts/exports/oplora/final\n"}
+,{"stream_name":"stdout","time":23397.216589224,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":23397.216628501,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":23397.216649647,"data":"generation_kwargs: {'max_gen_toks': 1024} specified through cli, these settings will update set parameters in yaml tasks. Ensure 'do_sample=True' for non-greedy decoding!\n"}
+,{"stream_name":"stdout","time":23406.506661468,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":23407.152709316,"data":"Overwriting default num_fewshot of gsm8k_cot from 8 to 0\n"}
+,{"stream_name":"stdout","time":23407.152745378,"data":"\n"}
+,{"stream_name":"stdout","time":23409.463233235,"data":"  0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":23409.463266719,"data":"100%|██████████| 1319/1319 [00:02\u003c00:00, 580.66it/s]\n"}
+,{"stream_name":"stdout","time":23409.463272509,"data":"\n"}
+,{"stream_name":"stdout","time":23449.77464731,"data":"Running generate_until requests:   0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":23467.061609651,"data":"Running generate_until requests:   3%|▎         | 33/1319 [00:40\u003c26:11,  1.22s/it]\n"}
+,{"stream_name":"stdout","time":23555.386145918,"data":"Running generate_until requests:   5%|▍         | 64/1319 [00:57\u003c25:33,  1.22s/it]\n"}
+,{"stream_name":"stdout","time":23567.063081106,"data":"Running generate_until requests:   5%|▍         | 65/1319 [02:25\u003c50:45,  2.43s/it]\n"}
+,{"stream_name":"stdout","time":23672.463415716,"data":"Running generate_until requests:   7%|▋         | 96/1319 [02:37\u003c49:30,  2.43s/it]\n"}
+,{"stream_name":"stdout","time":23687.066142892,"data":"Running generate_until requests:  10%|▉         | 129/1319 [04:23\u003c40:45,  2.05s/it]\n"}
+,{"stream_name":"stdout","time":23775.514133526,"data":"Running generate_until requests:  12%|█▏        | 160/1319 [04:37\u003c39:41,  2.05s/it]\n"}
+,{"stream_name":"stdout","time":23787.068616282,"data":"Running generate_until requests:  12%|█▏        | 161/1319 [06:06\u003c46:35,  2.41s/it]\n"}
+,{"stream_name":"stdout","time":23815.014402422,"data":"Running generate_until requests:  15%|█▍        | 192/1319 [06:17\u003c45:20,  2.41s/it]\n"}
+,{"stream_name":"stdout","time":23827.069816549,"data":"Running generate_until requests:  19%|█▉        | 257/1319 [06:45\u003c22:33,  1.27s/it]\n"}
+,{"stream_name":"stdout","time":23929.204293983,"data":"Running generate_until requests:  22%|██▏       | 288/1319 [06:57\u003c21:53,  1.27s/it]\n"}
+,{"stream_name":"stdout","time":23939.563317393,"data":"Running generate_until requests:  24%|██▍       | 321/1319 [08:39\u003c24:10,  1.45s/it]\n"}
+,{"stream_name":"stdout","time":24030.499154697,"data":"Running generate_until requests:  27%|██▋       | 352/1319 [08:50\u003c23:25,  1.45s/it]\n"}
+,{"stream_name":"stdout","time":24047.074361262,"data":"Running generate_until requests:  27%|██▋       | 353/1319 [10:21\u003c28:55,  1.80s/it]\n"}
+,{"stream_name":"stdout","time":24062.725966592,"data":"Running generate_until requests:  32%|███▏      | 416/1319 [10:37\u003c27:02,  1.80s/it]\n"}
+,{"stream_name":"stdout","time":24077.07568327,"data":"Running generate_until requests:  34%|███▍      | 449/1319 [10:53\u003c16:15,  1.12s/it]\n"}
+,{"stream_name":"stdout","time":24100.008940369,"data":"Running generate_until requests:  39%|███▉      | 512/1319 [11:07\u003c15:04,  1.12s/it]\n"}
+,{"stream_name":"stdout","time":24117.076988421,"data":"Running generate_until requests:  41%|████▏     | 545/1319 [11:30\u003c10:42,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":24131.517872479,"data":"Running generate_until requests:  46%|████▌     | 608/1319 [11:47\u003c09:49,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":24147.077834569,"data":"Running generate_until requests:  49%|████▊     | 641/1319 [12:02\u003c07:19,  1.54it/s]\n"}
+,{"stream_name":"stdout","time":24199.907754029,"data":"Running generate_until requests:  51%|█████     | 672/1319 [12:17\u003c06:59,  1.54it/s]\n"}
+,{"stream_name":"stdout","time":24217.079051465,"data":"Running generate_until requests:  51%|█████     | 673/1319 [13:10\u003c09:20,  1.15it/s]\n"}
+,{"stream_name":"stdout","time":24230.581681799,"data":"Running generate_until requests:  53%|█████▎    | 704/1319 [13:27\u003c08:53,  1.15it/s]\n"}
+,{"stream_name":"stdout","time":24247.080016343,"data":"Running generate_until requests:  56%|█████▌    | 737/1319 [13:41\u003c07:17,  1.33it/s]\n"}
+,{"stream_name":"stdout","time":24265.185702926,"data":"Running generate_until requests:  58%|█████▊    | 768/1319 [13:57\u003c06:54,  1.33it/s]\n"}
+,{"stream_name":"stdout","time":24277.080773895,"data":"Running generate_until requests:  61%|██████    | 801/1319 [14:15\u003c05:57,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":24302.013304136,"data":"Running generate_until requests:  63%|██████▎   | 832/1319 [14:27\u003c05:35,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":24317.081724925,"data":"Running generate_until requests:  68%|██████▊   | 897/1319 [14:52\u003c04:00,  1.75it/s]\n"}
+,{"stream_name":"stdout","time":24332.318551385,"data":"Running generate_until requests:  73%|███████▎  | 960/1319 [15:07\u003c03:24,  1.75it/s]\n"}
+,{"stream_name":"stdout","time":24347.082860576,"data":"Running generate_until requests:  75%|███████▌  | 993/1319 [15:22\u003c02:36,  2.09it/s]\n"}
+,{"stream_name":"stdout","time":24365.057620185,"data":"Running generate_until requests:  80%|████████  | 1056/1319 [15:37\u003c02:06,  2.09it/s]\n"}
+,{"stream_name":"stdout","time":24377.083482191,"data":"Running generate_until requests:  83%|████████▎ | 1089/1319 [15:55\u003c01:39,  2.31it/s]\n"}
+,{"stream_name":"stdout","time":24399.930194332,"data":"Running generate_until requests:  85%|████████▍ | 1120/1319 [16:07\u003c01:26,  2.31it/s]\n"}
+,{"stream_name":"stdout","time":24417.084552276,"data":"Running generate_until requests:  90%|████████▉ | 1185/1319 [16:30\u003c00:54,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":24431.470737927,"data":"Running generate_until requests:  97%|█████████▋| 1280/1319 [16:47\u003c00:15,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":24431.470778945,"data":"Running generate_until requests: 100%|█████████▉| 1313/1319 [17:02\u003c00:02,  2.88it/s]\n"}
+,{"stream_name":"stdout","time":24431.470786541,"data":"Running generate_until requests: 100%|██████████| 1319/1319 [17:02\u003c00:00,  1.29it/s]\n"}
+,{"stream_name":"stdout","time":24439.989835243,"data":"[23:15:48] [oplora_final] GSM8K done in 17.4 min\n"}
+,{"stream_name":"stdout","time":24439.989882017,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":24439.989888537,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":24453.892845683,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":24453.892890941,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":24455.648171307,"data":"Overwriting default num_fewshot of hellaswag from None to 0\n"}
+,{"stream_name":"stdout","time":24455.648207989,"data":"Overwriting default num_fewshot of boolq from None to 0\n"}
+,{"stream_name":"stdout","time":24455.648214053,"data":"Overwriting default num_fewshot of arc_easy from None to 0\n"}
+,{"stream_name":"stdout","time":24456.575762885,"data":"\n"}
+,{"stream_name":"stdout","time":24464.543082395,"data":"  0%|          | 0/10042 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":24464.543163346,"data":"100%|██████████| 10042/10042 [00:07\u003c00:00, 1262.04it/s]\n"}
+,{"stream_name":"stdout","time":24464.54317288,"data":"\n"}
+,{"stream_name":"stdout","time":24466.373534782,"data":"  0%|          | 0/3270 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":24466.373607519,"data":"100%|██████████| 3270/3270 [00:01\u003c00:00, 1890.74it/s]\n"}
+,{"stream_name":"stdout","time":24466.373615697,"data":"\n"}
+,{"stream_name":"stdout","time":24471.226045526,"data":"  0%|          | 0/2376 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":24471.226078842,"data":"100%|██████████| 2376/2376 [00:04\u003c00:00, 501.91it/s]\n"}
+,{"stream_name":"stdout","time":24471.22611302,"data":"\n"}
+,{"stream_name":"stdout","time":24498.006356501,"data":"Tokenizing inputs:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":24498.006398199,"data":"Tokenizing inputs: 100%|██████████| 56209/56209 [00:26\u003c00:00, 2101.65it/s]\n"}
+,{"stream_name":"stdout","time":24498.790137077,"data":"\n"}
+,{"stream_name":"stdout","time":24528.927707671,"data":"Running loglikelihood requests:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":24539.586907432,"data":"Running loglikelihood requests:   3%|▎         | 1409/56209 [00:30\u003c19:31, 46.77it/s]\n"}
+,{"stream_name":"stdout","time":24558.917687702,"data":"Running loglikelihood requests:   4%|▍         | 2252/56209 [00:40\u003c19:13, 46.77it/s]\n"}
+,{"stream_name":"stdout","time":24569.602668776,"data":"Running loglikelihood requests:   7%|▋         | 3923/56209 [01:00\u003c12:43, 68.51it/s]\n"}
+,{"stream_name":"stdout","time":24588.92688205,"data":"Running loglikelihood requests:   8%|▊         | 4607/56209 [01:10\u003c12:33, 68.51it/s]\n"}
+,{"stream_name":"stdout","time":24599.588713932,"data":"Running loglikelihood requests:  10%|█         | 5819/56209 [01:30\u003c12:42, 66.08it/s]\n"}
+,{"stream_name":"stdout","time":24619.036081329,"data":"Running loglikelihood requests:  12%|█▏        | 6498/56209 [01:40\u003c12:32, 66.08it/s]\n"}
+,{"stream_name":"stdout","time":24629.589162188,"data":"Running loglikelihood requests:  14%|█▎        | 7703/56209 [02:00\u003c12:29, 64.70it/s]\n"}
+,{"stream_name":"stdout","time":24649.079136443,"data":"Running loglikelihood requests:  15%|█▍        | 8389/56209 [02:10\u003c12:19, 64.70it/s]\n"}
+,{"stream_name":"stdout","time":24659.589910354,"data":"Running loglikelihood requests:  17%|█▋        | 9620/56209 [02:30\u003c12:03, 64.38it/s]\n"}
+,{"stream_name":"stdout","time":24679.106996846,"data":"Running loglikelihood requests:  18%|█▊        | 10289/56209 [02:40\u003c11:53, 64.38it/s]\n"}
+,{"stream_name":"stdout","time":24689.590881512,"data":"Running loglikelihood requests:  21%|██        | 11555/56209 [03:00\u003c11:33, 64.40it/s]\n"}
+,{"stream_name":"stdout","time":24709.205449117,"data":"Running loglikelihood requests:  22%|██▏       | 12261/56209 [03:10\u003c11:22, 64.40it/s]\n"}
+,{"stream_name":"stdout","time":24719.591693924,"data":"Running loglikelihood requests:  24%|██▍       | 13598/56209 [03:30\u003c10:50, 65.54it/s]\n"}
+,{"stream_name":"stdout","time":24739.197539902,"data":"Running loglikelihood requests:  25%|██▌       | 14311/56209 [03:40\u003c10:39, 65.54it/s]\n"}
+,{"stream_name":"stdout","time":24749.602601977,"data":"Running loglikelihood requests:  28%|██▊       | 15629/56209 [04:00\u003c10:12, 66.22it/s]\n"}
+,{"stream_name":"stdout","time":24769.298341456,"data":"Running loglikelihood requests:  29%|██▉       | 16349/56209 [04:10\u003c10:01, 66.22it/s]\n"}
+,{"stream_name":"stdout","time":24779.59358124,"data":"Running loglikelihood requests:  31%|███▏      | 17691/56209 [04:30\u003c09:35, 66.94it/s]\n"}
+,{"stream_name":"stdout","time":24799.380166535,"data":"Running loglikelihood requests:  33%|███▎      | 18473/56209 [04:40\u003c09:23, 66.94it/s]\n"}
+,{"stream_name":"stdout","time":24809.594106386,"data":"Running loglikelihood requests:  36%|███▌      | 19965/56209 [05:00\u003c08:40, 69.62it/s]\n"}
+,{"stream_name":"stdout","time":24829.446701689,"data":"Running loglikelihood requests:  37%|███▋      | 20759/56209 [05:10\u003c08:29, 69.62it/s]\n"}
+,{"stream_name":"stdout","time":24839.594611463,"data":"Running loglikelihood requests:  40%|███▉      | 22306/56209 [05:30\u003c07:49, 72.15it/s]\n"}
+,{"stream_name":"stdout","time":24859.443991522,"data":"Running loglikelihood requests:  41%|████      | 23125/56209 [05:40\u003c07:38, 72.15it/s]\n"}
+,{"stream_name":"stdout","time":24869.60613087,"data":"Running loglikelihood requests:  44%|████▍     | 24736/56209 [06:00\u003c07:00, 74.82it/s]\n"}
+,{"stream_name":"stdout","time":24889.449226866,"data":"Running loglikelihood requests:  45%|████▌     | 25569/56209 [06:10\u003c06:49, 74.82it/s]\n"}
+,{"stream_name":"stdout","time":24899.596032318,"data":"Running loglikelihood requests:  48%|████▊     | 27168/56209 [06:30\u003c06:18, 76.71it/s]\n"}
+,{"stream_name":"stdout","time":24919.536570729,"data":"Running loglikelihood requests:  50%|████▉     | 28003/56209 [06:40\u003c06:07, 76.71it/s]\n"}
+,{"stream_name":"stdout","time":24929.596665142,"data":"Running loglikelihood requests:  53%|█████▎    | 29816/56209 [07:00\u003c05:29, 80.14it/s]\n"}
+,{"stream_name":"stdout","time":24949.591140755,"data":"Running loglikelihood requests:  55%|█████▍    | 30790/56209 [07:10\u003c05:17, 80.14it/s]\n"}
+,{"stream_name":"stdout","time":24959.597562343,"data":"Running loglikelihood requests:  58%|█████▊    | 32818/56209 [07:30\u003c04:31, 86.09it/s]\n"}
+,{"stream_name":"stdout","time":24979.608611055,"data":"Running loglikelihood requests:  60%|██████    | 33899/56209 [07:40\u003c04:19, 86.09it/s]\n"}
+,{"stream_name":"stdout","time":24997.113093673,"data":"Running loglikelihood requests:  65%|██████▌   | 36557/56209 [08:00\u003c03:21, 97.66it/s]\n"}
+,{"stream_name":"stdout","time":25009.667802212,"data":"Running loglikelihood requests:  69%|██████▉   | 39038/56209 [08:18\u003c02:55, 97.66it/s]\n"}
+,{"stream_name":"stdout","time":25027.114001109,"data":"Running loglikelihood requests:  73%|███████▎  | 40858/56209 [08:30\u003c02:17, 111.33it/s]\n"}
+,{"stream_name":"stdout","time":25039.694402926,"data":"Running loglikelihood requests:  77%|███████▋  | 43427/56209 [08:48\u003c01:54, 111.33it/s]\n"}
+,{"stream_name":"stdout","time":25057.114745182,"data":"Running loglikelihood requests:  81%|████████  | 45321/56209 [09:00\u003c01:28, 122.53it/s]\n"}
+,{"stream_name":"stdout","time":25069.725357133,"data":"Running loglikelihood requests:  85%|████████▌ | 47928/56209 [09:18\u003c01:07, 122.53it/s]\n"}
+,{"stream_name":"stdout","time":25087.115908931,"data":"Running loglikelihood requests:  89%|████████▊ | 49844/56209 [09:30\u003c00:48, 130.96it/s]\n"}
+,{"stream_name":"stdout","time":25099.764690149,"data":"Running loglikelihood requests:  94%|█████████▎| 52571/56209 [09:48\u003c00:27, 130.96it/s]\n"}
+,{"stream_name":"stdout","time":25107.09740633,"data":"Running loglikelihood requests:  97%|█████████▋| 54660/56209 [10:00\u003c00:11, 139.78it/s]\n"}
+,{"stream_name":"stdout","time":25107.097466062,"data":"Running loglikelihood requests: 100%|██████████| 56209/56209 [10:08\u003c00:00, 92.40it/s] \n"}
+,{"stream_name":"stdout","time":25127.146874593,"data":"[23:27:15] [oplora_final] likelihood tasks done in 11.5 min\n"}
+,{"stream_name":"stdout","time":25305.624364376,"data":"[23:30:13] [oplora_final] GSM8K flex 0.6217 | hellaswag 0.4739 | boolq 0.7208 | arc_easy 0.6313\n"}
+,{"stream_name":"stdout","time":25307.16504009,"data":"--- task1.evaluate finished in 32.0 min\n"}
+,{"stream_name":"stdout","time":25307.199124646,"data":"===== lane GPU 1 (exit 0) =====\n"}
+,{"stream_name":"stdout","time":25307.199155593,"data":"_fewshot of gsm8k_cot from 8 to 0\n"}
+,{"stream_name":"stdout","time":25307.199162204,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199166662,"data":"  0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199171693,"data":"100%|██████████| 1319/1319 [00:02\u003c00:00, 531.45it/s]\n"}
+,{"stream_name":"stdout","time":25307.199177224,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199181759,"data":"Running generate_until requests:   0%|          | 0/1319 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199186488,"data":"Running generate_until requests:   0%|          | 1/1319 [01:56\u003c42:40:10, 116.55s/it]\n"}
+,{"stream_name":"stdout","time":25307.199191368,"data":"Running generate_until requests:   5%|▍         | 65/1319 [04:00\u003c1:06:24,  3.18s/it] \n"}
+,{"stream_name":"stdout","time":25307.199196188,"data":"Running generate_until requests:  10%|▉         | 128/1319 [04:17\u003c1:03:04,  3.18s/it]\n"}
+,{"stream_name":"stdout","time":25307.199201569,"data":"Running generate_until requests:  10%|▉         | 129/1319 [06:00\u003c47:51,  2.41s/it]  \n"}
+,{"stream_name":"stdout","time":25307.199206072,"data":"Running generate_until requests:  12%|█▏        | 160/1319 [06:17\u003c46:37,  2.41s/it]\n"}
+,{"stream_name":"stdout","time":25307.199211132,"data":"Running generate_until requests:  12%|█▏        | 161/1319 [07:44\u003c51:20,  2.66s/it]\n"}
+,{"stream_name":"stdout","time":25307.199216296,"data":"Running generate_until requests:  15%|█▍        | 192/1319 [07:57\u003c49:58,  2.66s/it]\n"}
+,{"stream_name":"stdout","time":25307.199221516,"data":"Running generate_until requests:  15%|█▍        | 193/1319 [09:27\u003c53:07,  2.83s/it]\n"}
+,{"stream_name":"stdout","time":25307.199226333,"data":"Running generate_until requests:  17%|█▋        | 224/1319 [09:39\u003c51:39,  2.83s/it]\n"}
+,{"stream_name":"stdout","time":25307.199241195,"data":"Running generate_until requests:  19%|█▉        | 257/1319 [10:06\u003c31:57,  1.81s/it]\n"}
+,{"stream_name":"stdout","time":25307.199246186,"data":"Running generate_until requests:  22%|██▏       | 288/1319 [10:17\u003c31:01,  1.81s/it]\n"}
+,{"stream_name":"stdout","time":25307.199250572,"data":"Running generate_until requests:  27%|██▋       | 353/1319 [12:13\u003c25:14,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":25307.199254965,"data":"Running generate_until requests:  32%|███▏      | 416/1319 [12:27\u003c23:35,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":25307.199258684,"data":"Running generate_until requests:  34%|███▍      | 449/1319 [12:48\u003c15:28,  1.07s/it]\n"}
+,{"stream_name":"stdout","time":25307.199262823,"data":"Running generate_until requests:  39%|███▉      | 512/1319 [12:59\u003c14:21,  1.07s/it]\n"}
+,{"stream_name":"stdout","time":25307.199266858,"data":"Running generate_until requests:  39%|███▉      | 513/1319 [14:39\u003c16:52,  1.26s/it]\n"}
+,{"stream_name":"stdout","time":25307.199270753,"data":"Running generate_until requests:  44%|████▎     | 576/1319 [14:49\u003c15:33,  1.26s/it]\n"}
+,{"stream_name":"stdout","time":25307.199274587,"data":"Running generate_until requests:  49%|████▊     | 641/1319 [15:19\u003c09:26,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":25307.199278987,"data":"Running generate_until requests:  51%|█████     | 672/1319 [15:37\u003c09:00,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":25307.199284518,"data":"Running generate_until requests:  51%|█████     | 673/1319 [16:59\u003c12:24,  1.15s/it]\n"}
+,{"stream_name":"stdout","time":25307.199288352,"data":"Running generate_until requests:  56%|█████▌    | 736/1319 [17:17\u003c11:11,  1.15s/it]\n"}
+,{"stream_name":"stdout","time":25307.199292275,"data":"Running generate_until requests:  58%|█████▊    | 769/1319 [17:36\u003c07:55,  1.16it/s]\n"}
+,{"stream_name":"stdout","time":25307.199296758,"data":"Running generate_until requests:  63%|██████▎   | 832/1319 [17:47\u003c07:01,  1.16it/s]\n"}
+,{"stream_name":"stdout","time":25307.199300674,"data":"Running generate_until requests:  63%|██████▎   | 833/1319 [19:25\u003c08:47,  1.08s/it]\n"}
+,{"stream_name":"stdout","time":25307.199304806,"data":"Running generate_until requests:  66%|██████▌   | 864/1319 [19:37\u003c08:13,  1.08s/it]\n"}
+,{"stream_name":"stdout","time":25307.199308695,"data":"Running generate_until requests:  68%|██████▊   | 897/1319 [21:22\u003c09:03,  1.29s/it]\n"}
+,{"stream_name":"stdout","time":25307.199312885,"data":"Running generate_until requests:  73%|███████▎  | 960/1319 [21:37\u003c07:42,  1.29s/it]\n"}
+,{"stream_name":"stdout","time":25307.199316896,"data":"Running generate_until requests:  78%|███████▊  | 1025/1319 [22:00\u003c04:10,  1.17it/s]\n"}
+,{"stream_name":"stdout","time":25307.19932153,"data":"Running generate_until requests:  82%|████████▏ | 1088/1319 [22:17\u003c03:17,  1.17it/s]\n"}
+,{"stream_name":"stdout","time":25307.199325875,"data":"Running generate_until requests:  85%|████████▍ | 1121/1319 [22:39\u003c02:20,  1.41it/s]\n"}
+,{"stream_name":"stdout","time":25307.19933026,"data":"Running generate_until requests:  87%|████████▋ | 1152/1319 [22:49\u003c01:58,  1.41it/s]\n"}
+,{"stream_name":"stdout","time":25307.199334593,"data":"Running generate_until requests:  87%|████████▋ | 1153/1319 [24:17\u003c02:49,  1.02s/it]\n"}
+,{"stream_name":"stdout","time":25307.199338506,"data":"Running generate_until requests:  90%|████████▉ | 1184/1319 [24:27\u003c02:17,  1.02s/it]\n"}
+,{"stream_name":"stdout","time":25307.199349606,"data":"Running generate_until requests:  97%|█████████▋| 1281/1319 [24:50\u003c00:26,  1.44it/s]\n"}
+,{"stream_name":"stdout","time":25307.199353646,"data":"Running generate_until requests: 100%|██████████| 1319/1319 [24:58\u003c00:00,  1.14s/it]\n"}
+,{"stream_name":"stdout","time":25307.199357508,"data":"[19:33:51] [lora4_final] GSM8K done in 25.3 min\n"}
+,{"stream_name":"stdout","time":25307.199361149,"data":"`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.\n"}
+,{"stream_name":"stdout","time":25307.199366615,"data":"Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration\n"}
+,{"stream_name":"stdout","time":25307.19937045,"data":"[Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean\n"}
+,{"stream_name":"stdout","time":25307.199374592,"data":"[Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True\n"}
+,{"stream_name":"stdout","time":25307.199378327,"data":"Overwriting default num_fewshot of hellaswag from None to 0\n"}
+,{"stream_name":"stdout","time":25307.199381942,"data":"Overwriting default num_fewshot of boolq from None to 0\n"}
+,{"stream_name":"stdout","time":25307.199386343,"data":"Overwriting default num_fewshot of arc_easy from None to 0\n"}
+,{"stream_name":"stdout","time":25307.199390416,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199394621,"data":"  0%|          | 0/10042 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199399046,"data":"100%|██████████| 10042/10042 [00:08\u003c00:00, 1232.58it/s]\n"}
+,{"stream_name":"stdout","time":25307.199403595,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199408128,"data":"  0%|          | 0/3270 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199412319,"data":"100%|██████████| 3270/3270 [00:01\u003c00:00, 1824.21it/s]\n"}
+,{"stream_name":"stdout","time":25307.199415986,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199419311,"data":"  0%|          | 0/2376 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199423126,"data":"100%|██████████| 2376/2376 [00:04\u003c00:00, 481.61it/s]\n"}
+,{"stream_name":"stdout","time":25307.199427638,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199431184,"data":"Tokenizing inputs:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199435492,"data":"Tokenizing inputs: 100%|██████████| 56209/56209 [00:27\u003c00:00, 2040.73it/s]\n"}
+,{"stream_name":"stdout","time":25307.199440004,"data":"\n"}
+,{"stream_name":"stdout","time":25307.199443596,"data":"Running loglikelihood requests:   0%|          | 0/56209 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":25307.199549558,"data":"Running loglikelihood requests:   3%|▎         | 1441/56209 [00:30\u003c19:04, 47.87it/s]\n"}
+,{"stream_name":"stdout","time":25307.199559522,"data":"Running loglikelihood requests:   4%|▍         | 2396/56209 [00:41\u003c18:44, 47.87it/s]\n"}
+,{"stream_name":"stdout","time":25307.199563709,"data":"Running loglikelihood requests:   7%|▋         | 3987/56209 [01:00\u003c12:30, 69.59it/s]\n"}
+,{"stream_name":"stdout","time":25307.199567369,"data":"Running loglikelihood requests:   8%|▊         | 4757/56209 [01:11\u003c12:19, 69.59it/s]\n"}
+,{"stream_name":"stdout","time":25307.199571057,"data":"Running loglikelihood requests:  11%|█         | 5952/56209 [01:30\u003c12:23, 67.62it/s]\n"}
+,{"stream_name":"stdout","time":25307.199582404,"data":"Running loglikelihood requests:  12%|█▏        | 6701/56209 [01:41\u003c12:12, 67.62it/s]\n"}
+,{"stream_name":"stdout","time":25307.199586425,"data":"Running loglikelihood requests:  14%|█▍        | 7910/56209 [02:00\u003c12:04, 66.68it/s]\n"}
+,{"stream_name":"stdout","time":25307.199590018,"data":"Running loglikelihood requests:  15%|█▌        | 8685/56209 [02:11\u003c11:52, 66.68it/s]\n"}
+,{"stream_name":"stdout","time":25307.199593773,"data":"Running loglikelihood requests:  18%|█▊        | 9942/56209 [02:30\u003c11:30, 67.04it/s]\n"}
+,{"stream_name":"stdout","time":25307.199598275,"data":"Running loglikelihood requests:  19%|█▉        | 10713/56209 [02:41\u003c11:18, 67.04it/s]\n"}
+,{"stream_name":"stdout","time":25307.199602061,"data":"Running loglikelihood requests:  21%|██▏       | 11978/56209 [03:00\u003c10:57, 67.24it/s]\n"}
+,{"stream_name":"stdout","time":25307.199606011,"data":"Running loglikelihood requests:  23%|██▎       | 12749/56209 [03:11\u003c10:46, 67.24it/s]\n"}
+,{"stream_name":"stdout","time":25307.19961032,"data":"Running loglikelihood requests:  25%|██▍       | 14034/56209 [03:30\u003c10:24, 67.58it/s]\n"}
+,{"stream_name":"stdout","time":25307.199614437,"data":"Running loglikelihood requests:  26%|██▋       | 14792/56209 [03:41\u003c10:12, 67.58it/s]\n"}
+,{"stream_name":"stdout","time":25307.199620822,"data":"Running loglikelihood requests:  29%|██▊       | 16103/56209 [04:00\u003c09:49, 68.00it/s]\n"}
+,{"stream_name":"stdout","time":25307.199624761,"data":"Running loglikelihood requests:  30%|███       | 16882/56209 [04:11\u003c09:38, 68.00it/s]\n"}
+,{"stream_name":"stdout","time":25307.199628882,"data":"Running loglikelihood requests:  32%|███▏      | 18236/56209 [04:30\u003c09:10, 68.94it/s]\n"}
+,{"stream_name":"stdout","time":25307.199654965,"data":"Running loglikelihood requests:  34%|███▍      | 19089/56209 [04:41\u003c08:58, 68.94it/s]\n"}
+,{"stream_name":"stdout","time":25307.19965935,"data":"Running loglikelihood requests:  37%|███▋      | 20542/56209 [05:00\u003c08:20, 71.32it/s]\n"}
+,{"stream_name":"stdout","time":25307.199663231,"data":"Running loglikelihood requests:  38%|███▊      | 21417/56209 [05:11\u003c08:07, 71.32it/s]\n"}
+,{"stream_name":"stdout","time":25307.199667075,"data":"Running loglikelihood requests:  41%|████      | 22923/56209 [05:30\u003c07:31, 73.74it/s]\n"}
+,{"stream_name":"stdout","time":25307.199670695,"data":"Running loglikelihood requests:  42%|████▏     | 23815/56209 [05:41\u003c07:19, 73.74it/s]\n"}
+,{"stream_name":"stdout","time":25307.199675175,"data":"Running loglikelihood requests:  45%|████▌     | 25354/56209 [06:00\u003c06:46, 75.89it/s]\n"}
+,{"stream_name":"stdout","time":25307.199679349,"data":"Running loglikelihood requests:  47%|████▋     | 26246/56209 [06:11\u003c06:34, 75.89it/s]\n"}
+,{"stream_name":"stdout","time":25307.199683893,"data":"Running loglikelihood requests:  49%|████▉     | 27741/56209 [06:30\u003c06:10, 76.94it/s]\n"}
+,{"stream_name":"stdout","time":25307.199688403,"data":"Running loglikelihood requests:  51%|█████     | 28686/56209 [06:41\u003c05:57, 76.94it/s]\n"}
+,{"stream_name":"stdout","time":25307.199692955,"data":"Running loglikelihood requests:  54%|█████▍    | 30523/56209 [07:00\u003c05:14, 81.66it/s]\n"}
+,{"stream_name":"stdout","time":25307.199697054,"data":"Running loglikelihood requests:  56%|█████▌    | 31605/56209 [07:11\u003c05:01, 81.66it/s]\n"}
+,{"stream_name":"stdout","time":25307.199700949,"data":"Running loglikelihood requests:  60%|█████▉    | 33613/56209 [07:30\u003c04:16, 88.04it/s]\n"}
+,{"stream_name":"stdout","time":25307.199710646,"data":"Running loglikelihood requests:  62%|██████▏   | 34946/56209 [07:41\u003c04:01, 88.04it/s]\n"}
+,{"stream_name":"stdout","time":25307.199715535,"data":"Running loglikelihood requests:  67%|██████▋   | 37552/56209 [08:01\u003c03:04, 100.98it/s]\n"}
+,{"stream_name":"stdout","time":25307.199720575,"data":"Running loglikelihood requests:  69%|██████▉   | 39062/56209 [08:11\u003c02:49, 100.98it/s]\n"}
+,{"stream_name":"stdout","time":25307.199724137,"data":"Running loglikelihood requests:  74%|███████▍  | 41761/56209 [08:31\u003c02:08, 112.73it/s]\n"}
+,{"stream_name":"stdout","time":25307.199727881,"data":"Running loglikelihood requests:  77%|███████▋  | 43285/56209 [08:41\u003c01:54, 112.73it/s]\n"}
+,{"stream_name":"stdout","time":25307.199731698,"data":"Running loglikelihood requests:  82%|████████▏ | 46088/56209 [09:01\u003c01:22, 122.16it/s]\n"}
+,{"stream_name":"stdout","time":25307.199737,"data":"Running loglikelihood requests:  85%|████████▍ | 47645/56209 [09:11\u003c01:10, 122.16it/s]\n"}
+,{"stream_name":"stdout","time":25307.199741385,"data":"Running loglikelihood requests:  90%|████████▉ | 50555/56209 [09:31\u003c00:43, 130.17it/s]\n"}
+,{"stream_name":"stdout","time":25307.199746055,"data":"Running loglikelihood requests:  93%|█████████▎| 52190/56209 [09:41\u003c00:30, 130.17it/s]\n"}
+,{"stream_name":"stdout","time":25307.199750269,"data":"Running loglikelihood requests:  99%|█████████▊| 55462/56209 [10:01\u003c00:05, 140.16it/s]\n"}
+,{"stream_name":"stdout","time":25307.199754165,"data":"Running loglikelihood requests: 100%|██████████| 56209/56209 [10:04\u003c00:00, 93.00it/s] \n"}
+,{"stream_name":"stdout","time":25307.199758429,"data":"[19:45:16] [lora4_final] likelihood tasks done in 11.4 min\n"}
+,{"stream_name":"stdout","time":25307.199762344,"data":"[19:46:56] [lora4_final] GSM8K flex 0.6012 | hellaswag 0.4740 | boolq 0.6639 | arc_easy 0.6322\n"}
+,{"stream_name":"stdout","time":25307.199767125,"data":"\n"}
+,{"stream_name":"stdout","time":25322.284665531,"data":"[23:30:30] [lora4_final] layer 0: rho_k=0.1373 (chance 0.125) eta=0.00927 R_math=0.07189 R_nonmath=0.01516\n"}
+,{"stream_name":"stdout","time":25322.284748981,"data":"[23:30:30] [lora4_final] layer 13: rho_k=0.1401 (chance 0.125) eta=0.01016 R_math=0.09777 R_nonmath=0.01408\n"}
+,{"stream_name":"stdout","time":25322.284757446,"data":"[23:30:30] [lora4_final] layer 27: rho_k=0.1055 (chance 0.125) eta=0.00683 R_math=0.00427 R_nonmath=0.00545\n"}
+,{"stream_name":"stdout","time":25322.284762198,"data":"[23:30:30] diagnostics done\n"}
+,{"stream_name":"stdout","time":25323.68646193,"data":"--- task1.diagnostics finished in 0.3 min\n"}
+,{"stream_name":"stdout","time":25334.886834943,"data":"[23:30:42] [lora16_final] layer 0: rho_k=0.1426 (chance 0.125) eta=0.01476 R_math=0.04334 R_nonmath=0.02817\n"}
+,{"stream_name":"stdout","time":25334.886882599,"data":"[23:30:42] [lora16_final] layer 13: rho_k=0.1419 (chance 0.125) eta=0.01830 R_math=0.05814 R_nonmath=0.02515\n"}
+,{"stream_name":"stdout","time":25334.886905172,"data":"[23:30:42] [lora16_final] layer 27: rho_k=0.1160 (chance 0.125) eta=0.01148 R_math=0.01004 R_nonmath=0.01358\n"}
+,{"stream_name":"stdout","time":25334.886911096,"data":"[23:30:42] diagnostics done\n"}
+,{"stream_name":"stdout","time":25336.193007382,"data":"--- task1.diagnostics finished in 0.2 min\n"}
+,{"stream_name":"stdout","time":25347.403086506,"data":"[23:30:55] [oplora_final] layer 0: rho_k=0.0000 (chance 0.125) eta=0.01475 R_math=0.05238 R_nonmath=0.03220\n"}
+,{"stream_name":"stdout","time":25347.4031311,"data":"[23:30:55] [oplora_final] layer 13: rho_k=0.0000 (chance 0.125) eta=0.01868 R_math=0.06062 R_nonmath=0.02804\n"}
+,{"stream_name":"stdout","time":25347.403147972,"data":"[23:30:55] [oplora_final] layer 27: rho_k=0.0000 (chance 0.125) eta=0.00942 R_math=0.00954 R_nonmath=0.01265\n"}
+,{"stream_name":"stdout","time":25347.403151643,"data":"[23:30:55] diagnostics done\n"}
+,{"stream_name":"stdout","time":25348.512658567,"data":"--- task1.diagnostics finished in 0.2 min\n"}
+,{"stream_name":"stdout","time":25349.250765227,"data":"[23:30:57] report: runs=['full_ft', 'lora4', 'lora16', 'oplora'] conditions=['baseline', 'full_ft_mid', 'full_ft_final', 'lora4_final', 'lora16_final', 'oplora_final']\n"}
+,{"stream_name":"stdout","time":25355.472342318,"data":"[23:31:03] wrote /kaggle/working/task1_adapters_report.zip (8.4 MiB)\n"}
+,{"stream_name":"stdout","time":25355.570903012,"data":"--- task1.report finished in 0.1 min\n"}
+,{"stream_name":"stdout","time":25355.708000708,"data":"29M\t/kaggle/working/task1\r\n"}
+,{"stream_name":"stdout","time":25355.70803598,"data":"3.6G\t/kaggle/working/task1_artifacts\r\n"}
+,{"stream_name":"stdout","time":25355.708041237,"data":"8.4M\t/kaggle/working/task1_adapters_report.zip\r\n"}
+,{"stream_name":"stdout","time":25355.708044964,"data":"303M\t/tmp/atml_task1\r\n"}
+,{"stream_name":"stderr","time":25359.004034979,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":25359.004094867,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":25359.185051618,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":25359.185093323,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":25360.000650208,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":25360.131702129,"data":"[NbConvertApp] Writing 699576 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":25362.727883231,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":25363.29974163,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":25363.299779582,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":25363.300092122,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":25363.300330576,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":25363.300561192,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":25363.300728163,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":25363.300954465,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":25363.301172255,"data":"[NbConvertApp] Writing 388185 bytes to __results__.html\n"}
+]

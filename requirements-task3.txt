@@ -1,0 +1,11 @@
+transformers>=4.56,<6
+accelerate>=1.0
+huggingface_hub
+safetensors
+math-verify[antlr4_13_2]==0.9.0
+pandas
+pyarrow
+pyyaml
+numpy
+scipy
+matplotlib

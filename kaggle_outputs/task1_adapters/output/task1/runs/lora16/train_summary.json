@@ -1,0 +1,31 @@
+{
+  "run_name": "lora16",
+  "method": "lora",
+  "updates": 1250,
+  "examples_seen": 40000,
+  "train_time_s": 9324.17805900602,
+  "train_time_note": "sum of per-update wall time (forward/backward/optimizer); excludes checkpointing, exports and evaluation",
+  "peak_mem_allocated_gb": 4.803946018218994,
+  "peak_mem_reserved_gb": 5.501953125,
+  "gpu": "Tesla T4",
+  "trainable_params": 10092544,
+  "total_params": 606142464,
+  "skipped_updates": 0,
+  "recovery_checkpoint_bytes": {
+    "312": 121586786,
+    "625": 121586810,
+    "937": 121586832,
+    "1250": 121586854
+  },
+  "export_bytes": {
+    "final": 1203563952
+  },
+  "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265",
+  "lr": 0.0002,
+  "l2sp_lambda": 0.0,
+  "amp": "fp16 autocast + dynamic loss scaling, fp32 master weights",
+  "overhead_adapter_params": 10092544,
+  "overhead_adapter_bytes_fp32": 40370176,
+  "overhead_export_merge_s": 3.499468956999408,
+  "overhead_export_note": "merge dW into a fresh FP32 backbone copy + FP16 save (projected factors for OPLoRA)"
+}

@@ -1,0 +1,74 @@
+seed: 6304
+model:
+  name: Qwen/Qwen3-0.6B
+  revision: main
+paths:
+  out_root: /kaggle/working/task1
+  artifacts_root: /kaggle/working/task1_artifacts
+  scratch_root: /tmp/atml_task1
+data:
+  dataset: meta-math/MetaMathQA
+  split: train
+  num_examples: 40000
+  max_seq_len: 2048
+  gsm8k_dataset: openai/gsm8k
+  gsm8k_config: main
+train:
+  micro_batch_size: 2
+  grad_accum: 16
+  num_updates: 1250
+  weight_decay: 0.01
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  warmup_updates: 38
+  grad_clip: 1.0
+  gradient_checkpointing: true
+  ce_chunk_tokens: 512
+  init_loss_scale: 65536.0
+  checkpoint_updates:
+  - 312
+  - 625
+  - 937
+  - 1250
+  midpoint_update: 625
+  keep_last_checkpoints: 1
+  l2sp_lambda: 0.001
+  lr: 2.0e-05
+  l2sp_ref_storage: auto
+eval:
+  gsm8k_task: gsm8k_cot
+  gsm8k_max_gen_toks: 1024
+  gsm8k_batch_size: 32
+  mc_tasks:
+  - hellaswag
+  - boolq
+  - arc_easy
+  mc_batch_size: 8
+  limit: null
+  bootstrap_iters: 1000
+qualitative:
+  questions_file: task1/assets/first_plot_questions.yaml
+  max_new_tokens: 512
+  annotate_ids:
+  - what_is_your_wish
+  - enough_of_my_husband
+probe:
+  n_math: 32
+  n_nonmath: 32
+diagnostics:
+  module: down_proj
+  layers:
+  - 0
+  - 13
+  - 27
+  protect_rank: 128
+  r_eps: 1.0e-08
+analysis:
+  bootstrap_resamples: 1000
+  reference_lambda: 0.001
+run_name: l2sp
+method: l2sp
+stages:
+- final

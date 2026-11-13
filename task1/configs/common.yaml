@@ -1,0 +1,71 @@
+# Shared settings for every Task 1 run (PA3 manual, Section 1).
+# Method configs (e.g. full_ft.yaml) are deep-merged on top of this file.
+
+seed: 6304
+
+model:
+  name: Qwen/Qwen3-0.6B
+  revision: main            # resolved commit hash is recorded in env.json
+
+paths:
+  # Small, persisted outputs (logs, metrics, tables, figures). Zipped at the end.
+  out_root: /kaggle/working/task1
+  # Medium-size files kept in the Kaggle output but NOT zipped (FP32 diagnostic deltas).
+  artifacts_root: /kaggle/working/task1_artifacts
+  # Large, disposable files (recovery checkpoints, FP16 exports, token cache).
+  scratch_root: /tmp/atml_task1
+
+data:
+  dataset: meta-math/MetaMathQA
+  split: train
+  num_examples: 40000       # first 40k eligible examples, source order, never shuffled
+  max_seq_len: 2048         # formatted (prompt + response + <|im_end|>) token limit
+  gsm8k_dataset: openai/gsm8k
+  gsm8k_config: main
+
+train:
+  micro_batch_size: 2
+  grad_accum: 16            # effective batch 32
+  num_updates: 1250         # 40,000 / 32
+  weight_decay: 0.01        # not applied to biases / params with < 2 dims
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  warmup_updates: 38
+  grad_clip: 1.0
+  gradient_checkpointing: true
+  ce_chunk_tokens: 512      # chunked LM-head + CE on response positions (memory only; T4-safe)
+  init_loss_scale: 65536.0
+  # Recovery checkpoints after 9,984 / 20,000 / 29,984 / 40,000 examples.
+  checkpoint_updates: [312, 625, 937, 1250]
+  midpoint_update: 625      # 20,000 examples -> FP16 export for the midpoint evaluation
+  keep_last_checkpoints: 1  # disk budget on Kaggle; older recovery checkpoints are pruned
+  l2sp_lambda: 0.0
+
+eval:
+  gsm8k_task: gsm8k_cot
+  gsm8k_max_gen_toks: 1024
+  gsm8k_batch_size: 32
+  mc_tasks: [hellaswag, boolq, arc_easy]
+  mc_batch_size: 8          # 32 OOMs on a T4: longest BoolQ batch x 152k-vocab FP16 logits
+  limit: null               # set only for smoke tests; null = complete splits
+  bootstrap_iters: 1000     # lm-eval stderr bootstrap (mean metrics use closed form)
+
+qualitative:
+  questions_file: task1/assets/first_plot_questions.yaml
+  max_new_tokens: 512
+  annotate_ids: [what_is_your_wish, enough_of_my_husband]  # first/last plain questions
+
+probe:
+  n_math: 32                # GSM8K test questions
+  n_nonmath: 32             # HellaSwag validation contexts
+
+diagnostics:
+  module: down_proj
+  layers: [0, 13, 27]
+  protect_rank: 128         # k used for rho_k (same k as OPLoRA)
+  r_eps: 1.0e-8
+
+analysis:
+  bootstrap_resamples: 1000
+  # lambda used to express unregularised runs' displacement as an L2-SP penalty for comparison
+  reference_lambda: 1.0e-3

@@ -1,0 +1,95 @@
+{
+  "n_questions": 50,
+  "scorer": "math-verify 0.9.0",
+  "extractor": "last-literal-boxed-balanced-v2 (supplied-export rule)",
+  "strategies": [
+    {
+      "strategy": "single",
+      "n_questions": 50,
+      "accuracy_pct": 66.0,
+      "final_no_answer_pct": 4.0,
+      "responses_extracted_pct": 96.0,
+      "responses_truncated_pct": 4.0,
+      "mean_input_tokens": 108.38,
+      "mean_output_tokens": 738.26,
+      "output_allowance": 3072,
+      "mean_time_s": 34.66686179921999,
+      "total_time_min": 28.88905149934999,
+      "peak_mem_gb": 6.086716175079346
+    },
+    {
+      "strategy": "parallel",
+      "n_questions": 50,
+      "accuracy_pct": 62.0,
+      "final_no_answer_pct": 10.0,
+      "responses_extracted_pct": 86.66666666666667,
+      "responses_truncated_pct": 14.0,
+      "mean_input_tokens": 325.14,
+      "mean_output_tokens": 1877.58,
+      "output_allowance": 3072,
+      "mean_time_s": 86.25488663108007,
+      "total_time_min": 71.87907219256672,
+      "peak_mem_gb": 5.93518590927124
+    },
+    {
+      "strategy": "refine",
+      "n_questions": 50,
+      "accuracy_pct": 62.0,
+      "final_no_answer_pct": 0.0,
+      "responses_extracted_pct": 95.0,
+      "responses_truncated_pct": 5.0,
+      "mean_input_tokens": 870.26,
+      "mean_output_tokens": 1141.72,
+      "output_allowance": 3072,
+      "mean_time_s": 53.518217009339985,
+      "total_time_min": 44.59851417444999,
+      "peak_mem_gb": 6.173698902130127
+    }
+  ],
+  "initial_accuracy_pct": 62.0,
+  "parallel_oracle_coverage_pct": 68.0,
+  "refine_transitions": {
+    "W->C": 0,
+    "C->W": 0,
+    "C->C": 31,
+    "W->W": 19
+  },
+  "refine_answer_changed_pct": 10.0,
+  "differences": {
+    "parallel_minus_single": {
+      "mean_pp": -4.0,
+      "ci95_pp": [
+        -16.0,
+        8.0
+      ]
+    },
+    "refine_minus_single": {
+      "mean_pp": -4.0,
+      "ci95_pp": [
+        -14.000000000000002,
+        8.0
+      ]
+    },
+    "refine_minus_parallel": {
+      "mean_pp": 0.0,
+      "ci95_pp": [
+        -6.0,
+        6.0
+      ]
+    },
+    "refine_minus_initial": {
+      "mean_pp": 0.0,
+      "ci95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    "parallel_minus_initial": {
+      "mean_pp": 0.0,
+      "ci95_pp": [
+        -6.0,
+        6.0
+      ]
+    }
+  }
+}

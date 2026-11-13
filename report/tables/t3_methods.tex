@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Held-out accuracy (\%; 800 questions, 10 orders) by budget $N$; at $N{=}1$ all methods equal FirstAns (63.6, 53.9). Bold: best per column; last row: oracle coverage. Curves in Figure~\ref{fig:t3-n}.}
+\label{tab:t3-methods}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccccccc}
+\toprule
+ & \multicolumn{5}{c}{MATH (Qwen2.5-3B)} & \multicolumn{5}{c}{MathVista (Qwen2.5-VL-3B)} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-11}
+Method & $N{=}2$ & $N{=}4$ & $N{=}8$ & $N{=}16$ & $N{=}32$ & $N{=}2$ & $N{=}4$ & $N{=}8$ & $N{=}16$ & $N{=}32$ \\
+\midrule
+FirstAns & 63.6 & 63.6 & 63.6 & 63.6 & 63.6 & 53.9 & 53.9 & 53.9 & 53.9 & 53.9 \\
+Self-consistency & 63.6 & 69.0 & 71.6 & 73.2 & 74.0 & 53.9 & \textbf{58.7} & 60.8 & 62.5 & 63.2 \\
+Max mean log-prob & 65.9 & 66.8 & 67.4 & 66.4 & 64.0 & 54.8 & 54.3 & 52.7 & 50.8 & 48.1 \\
+Max self-certainty & \textbf{66.5} & 68.6 & 70.2 & 70.6 & 70.6 & 55.2 & 55.1 & 55.2 & 55.1 & 54.6 \\
+Self-certainty + RWC & \textbf{66.5} & \textbf{69.7} & \textbf{72.8} & \textbf{74.5} & \textbf{75.6} & 55.2 & 57.0 & 60.7 & 62.2 & 63.8 \\
+Shortest (length control) & 64.8 & 64.9 & 64.1 & 63.1 & 62.4 & 55.4 & 55.0 & 54.5 & 54.4 & 53.7 \\
+\midrule
+Max vision $V$ & -- & -- & -- & -- & -- & 55.3 & 54.5 & 53.9 & 53.6 & 53.6 \\
+Vision + RWC & -- & -- & -- & -- & -- & 55.3 & 57.5 & 60.5 & 62.3 & 63.9 \\
+Max VisConf $Z$ & -- & -- & -- & -- & -- & \textbf{56.2} & 56.7 & 56.9 & 57.2 & 57.8 \\
+VisConf + RWC & -- & -- & -- & -- & -- & \textbf{56.2} & 58.5 & \textbf{61.5} & \textbf{63.3} & \textbf{64.5} \\
+Max token fusion $Z^\text{tok}$ & -- & -- & -- & -- & -- & 56.0 & 56.6 & 56.0 & 55.9 & 56.2 \\
+Token fusion + RWC & -- & -- & -- & -- & -- & 56.0 & 58.5 & 61.2 & 63.0 & 63.9 \\
+\midrule
+\emph{Oracle coverage} & \emph{72.3} & \emph{79.0} & \emph{84.4} & \emph{88.3} & \emph{91.4} & \emph{66.8} & \emph{76.2} & \emph{82.9} & \emph{87.0} & \emph{89.5} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

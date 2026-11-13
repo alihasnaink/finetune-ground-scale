@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Manual annotation of 42 responses (2 open-ended prompts $\times$ 3 output formats $\times$ 7 conditions; greedy, 512-token cap). Format: JSON/template responses that follow the requested format; repetition and math framing: mild / strong counts.}
+\label{tab:t1-annotation}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccc}
+\toprule
+Condition & Truncated & Format ok & Plain ok & Coherence (0--2) & Repetition & Math framing \\
+\midrule
+Baseline & 0 & 4/4 & 2/2 & 1.83 & 0/0 & 0/0 \\
+Full FT (mid) & 2 & 3/4 & 2/2 & 1.33 & 1/2 & 0/0 \\
+Full FT (final) & 2 & 3/4 (+1 partial) & 0/2 (+2 partial) & 1.33 & 0/2 & 3/1 \\
+L2-SP & 0 & 2/4 (+2 partial) & 2/2 & 1.67 & 0/0 & 3/0 \\
+LoRA $r{=}4$ & 0 & 3/4 & 2/2 & 1.67 & 0/0 & 0/0 \\
+LoRA $r{=}16$ & 1 & 2/4 (+1 partial) & 2/2 & 1.83 & 0/1 & 1/0 \\
+OPLoRA & 0 & 3/4 & 2/2 & 1.83 & 1/0 & 2/0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

@@ -1,0 +1,40 @@
+{
+  "dataset": "meta-math/MetaMathQA",
+  "split": "train",
+  "rows_in_source": 395000,
+  "rows_scanned_through_source_index": 40001,
+  "num_selected": 40000,
+  "excluded_counts": {
+    "empty": 0,
+    "gsm8k_test_match": 0,
+    "too_long": 2
+  },
+  "normalization": "NFKC + lowercase + whitespace collapse + strip",
+  "gsm8k_test_questions": 1319,
+  "max_seq_len": 2048,
+  "tokens": {
+    "response_total": 7100056,
+    "prompt_total": 2808367,
+    "formatted_mean": 247.710575,
+    "formatted_median": 219.0,
+    "formatted_p99": 681.0,
+    "formatted_max": 1941,
+    "response_mean": 177.5014
+  },
+  "type_counts": {
+    "GSM_AnsAug": 8140,
+    "GSM_FOBAR": 4043,
+    "GSM_Rephrased": 8044,
+    "GSM_SV": 4100,
+    "MATH_AnsAug": 7580,
+    "MATH_FOBAR": 1574,
+    "MATH_Rephrased": 5015,
+    "MATH_SV": 1504
+  },
+  "chat_template_check": {
+    "checked": 200,
+    "mismatches": 2
+  },
+  "loss_tokens": "assistant response tokens + <|im_end|>; prompt and padding masked",
+  "data_sha256": "d46b7f0b10222bc997d14431a4d1a2605682d59117eeb54dcb4734076a8b9265"
+}

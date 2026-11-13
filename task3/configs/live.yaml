@@ -1,0 +1,40 @@
+# Task 3, Step 4: live MATH generation (single longer response vs parallel sampling vs sequential refinement)
+seed: 6304
+
+paths:
+  out_root: outputs/task3            # T3_OUT_ROOT
+  prior_search: null                 # T3_PRIOR_SEARCH: earlier outputs whose finished calls are reused
+
+data:
+  # written by `python -m task3.prepare_splits` from the supplied data and committed (the raw data is not)
+  split_file: task3/data/split_math.json
+  live_questions: task3/data/live_questions.json
+  n_live: 50                         # first 50 evaluation questions of the seeded permutation
+
+model:
+  name: Qwen/Qwen2.5-3B-Instruct
+  revision: aa8e72537993ba99e69dfaafa59ed015b17504d1   # pinned in the supplied README.MD
+  # (the commit actually loaded is also recorded in run_info_lane*.json)
+  dtype: float16                     # FP16 weights, no quantization
+  attn_implementation: sdpa
+
+generation:
+  temperature: 0.7
+  top_p: 0.8
+  top_k: 20
+  repetition_penalty: 1.0
+  batch_size: 1
+  system: "You are a helpful assistant."
+  instruction: "Think step by step inside <think> </think> tags, then give your final answer inside \\boxed{}."
+  refine_instruction: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."
+
+strategies:
+  total_allowance: 3072
+  single_max_new: 3072
+  parallel_n: 3
+  parallel_max_new: 1024
+  refine_initial: parallel_0         # the first parallel response is the shared initial response
+  refine_max_new: 2048
+
+# per-call seed = seed + 1000 * live_index + offset (independently seeded calls)
+seed_offsets: {parallel_0: 1, parallel_1: 2, parallel_2: 3, single: 4, refine: 5}
